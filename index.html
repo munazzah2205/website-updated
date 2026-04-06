@@ -1,0 +1,374 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+        <title>Work | Munazzah Zainab</title>
+
+        <!-- Tailwind -->
+        <script src="https://cdn.tailwindcss.com"></script>
+
+        <!-- Font -->
+        <link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@300;400;500;600&display=swap" rel="stylesheet">
+        <link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined" rel="stylesheet">
+        <link href="website-images/logo-white.png" rel="shortcut icon" type="image/x-icon">
+
+        <style>
+            body {
+                font-family: 'Plus Jakarta Sans', sans-serif;
+            }
+
+            /* NAV */
+            .nav-link {
+                position: relative;
+                transition: color 0.3s ease;
+                color: #6b7280;
+            }
+
+            .nav-underline {
+                position: absolute;
+                left: 0;
+                bottom: -4px;
+                width: 0%;
+                height: 1px;
+                background: #b08a94;
+                transition: width 0.3s ease;
+            }
+
+            .nav-link:hover {
+                color: #b08a94;
+            }
+
+            .nav-link:hover .nav-underline {
+                width: 100%;
+            }
+
+            .nav-link.active {
+                color: #b08a94;
+            }
+
+            .nav-link.active .nav-underline {
+                width: 100%;
+            }
+
+            /* LINK SYSTEM */
+            .link-primary {
+                position: relative;
+                color: #6b7280;
+                transition: all 0.3s ease;
+            }
+
+            .link-primary::after {
+                content: "";
+                position: absolute;
+                left: 0;
+                bottom: -2px;
+                width: 100%;
+                height: 1px;
+                background: #b08a94;
+                transform: scaleX(0);
+                transform-origin: left;
+                transition: transform 0.3s ease;
+            }
+
+            .link-primary:hover {
+                color: #b08a94;
+            }
+
+            .link-primary:hover::after {
+                transform: scaleX(1);
+            }
+
+            .link-subtle {
+                transition: all 0.3s ease;
+            }
+
+            .link-subtle:hover {
+                color: #b08a94;
+            }
+
+            .highlight span {
+                display: inline-block;
+                opacity: 0;
+                filter: blur(8px);
+                transform: translateY(10px);
+                animation: revealWord 0.8s ease forwards;
+            }
+
+            /* Stagger timing */
+            .highlight span:nth-child(1) { animation-delay: 0.4s; }
+            .highlight span:nth-child(2) { animation-delay: 0.8s; }
+            .highlight span:nth-child(3) { animation-delay: 1.2s; }
+
+            @keyframes revealWord {
+                to {
+                    opacity: 1;
+                    filter: blur(0);
+                    transform: translateY(0);
+                }
+            }
+
+            .fade-up {
+                opacity: 0;
+                transform: translateY(40px);
+                transition: all 0.8s ease;
+            }
+
+            .fade-up.show {
+                opacity: 1;
+                transform: translateY(0);
+            }
+
+            .delay-100 { animation-delay: 0.1s; }
+            .delay-200 { animation-delay: 0.2s; }
+            .delay-300 { animation-delay: 0.3s; }
+            .delay-500 { animation-delay: 0.5s; }
+
+        </style>
+    </head>
+
+    <body class="bg-[#f7f6f4] text-[#1a1a1a] overflow-x-hidden">
+
+        <!-- NAVBAR -->
+        <header class="fixed top-0 left-0 w-full z-50">
+            <div class="px-6 md:px-16 py-6 flex items-center justify-between backdrop-blur-md bg-[#f7f6f4]/70 border-b border-white/40">
+                <div class="w-[56px] h-[20px]">
+                    <img src="website-images/website-logo.png">
+                </div>
+                <nav class="flex items-center gap-8 text-sm">
+                    <a href="index.html" class="nav-link group">Work<span class="nav-underline"></span></a>
+                    <a href="about.html" class="nav-link group">About<span class="nav-underline"></span></a>
+                    <a href="assets/resume.pdf" target="_blank" class="nav-link group">Resume<span class="nav-underline"></span></a>
+                </nav>
+            </div>
+        </header>
+
+        <!-- HERO -->
+        <section class="relative px-6 md:px-16 pt-40 pb-32 overflow-hidden">
+            <div class="absolute top-[-120px] right-[-120px] w-[420px] h-[420px] bg-[#e8dfe4] rounded-full blur-[140px] opacity-60"></div>
+            <div class="max-w-5xl relative">
+                <h1 class="text-[clamp(48px,6vw,92px)] leading-[1.05] tracking-tight font-semibold">
+                Designing digital<br>
+                experiences that feel<br>
+                <span class="highlight text-[#b08a94]">
+                    <span>clear,</span>
+                    <span>calm</span>
+                    <span>and intentional.</span>
+                </span>
+                </h1>
+            </div>
+        </section>
+
+        <!-- ================= SELECTED WORK INTRO ================= -->
+        <section class="px-6 md:px-16 pt-32 pb-16 fade-up">
+
+            <div class="max-w-4xl">
+
+                <!-- MAIN HEADING -->
+                 <p class="text-sm uppercase tracking-widest text-[#b08a94] mb-4">
+                CASE STUDIES
+                </p>
+                <h2 class="text-[clamp(36px,4vw,56px)] leading-[1.1] tracking-tight font-semibold mb-6">
+                Selected Work
+                </h2>
+
+                <!-- DESCRIPTION -->
+                <p class="text-gray-600 max-w-xl leading-relaxed">
+                These case studies document my work across real client engagements, 
+                where I design and refine digital experiences by balancing user needs, 
+                business intent, and technical feasibility.
+                </p>
+
+            </div>
+
+        </section>
+
+        <!-- HOS -->
+        <section class="bg-[#0d0d0d] text-white px-6 md:px-16 py-32 fade-up">
+            <div class="max-w-6xl mx-auto grid md:grid-cols-2 gap-16 items-center">
+                
+                <div class="bg-white/5 p-4 md:p-6 rounded-2xl flex justify-center items-center">
+                    <img 
+                        src="website-images/hos-laptop.png" 
+                        class="w-[95%] md:w-[95%] rounded-xl hover:scale-105 transition duration-700"
+                    />
+                </div>
+
+                <div>
+                    <p class="text-s uppercase tracking-widest text-gray-400 mb-3">House of Shaarag</p>
+                    <h2 class="text-3xl md:text-3xl font-semibold">
+                    Designing a digital experience that balances spatial elegance with structured storytelling.
+                    </h2>
+                    <a href="hos.html" target="_blank" class="inline-block mt-6 text-sm link-primary text-gray-400">Explore Case Study →</a>
+                </div>
+            </div>
+        </section>
+
+
+        <!-- ECOPATH -->
+        <section class="bg-[#0d0d0d] text-white px-6 md:px-16 py-32 fade-up">
+            <div class="max-w-6xl mx-auto grid md:grid-cols-2 gap-16 items-center">
+                <div>
+                    <p class="text-s uppercase tracking-widest text-gray-400 mb-3">Ecopath</p>
+                    <h2 class="text-3xl md:text-3xl font-semibold">
+                    Reframing a sustainable infrastructure brand to communicate expertise, reliability, 
+                    and long-term impact.
+                    </h2>
+                    <a href="ecopath.html" target="_blank" class="inline-block mt-6 text-sm link-primary text-gray-400">Explore Case Study →</a>
+                </div>
+
+                <div class="bg-white/5 p-4 md:p-6 rounded-2xl flex justify-center items-center">
+                    <img 
+                        src="website-images/laptop-ecopath.png" 
+                        class="w-[95%] md:w-[95%] rounded-xl hover:scale-105 transition duration-700"
+                    />
+                </div>
+            </div>
+        </section>
+
+        <!-- AKASHDEEP -->
+        <section class="bg-[#0d0d0d] text-white px-6 md:px-16 py-32 fade-up">
+            <div class="max-w-6xl mx-auto grid md:grid-cols-2 gap-16 items-center">
+                
+                <div class="bg-white/5 p-4 md:p-6 rounded-2xl flex justify-center items-center">
+                    <img 
+                        src="website-images/akashdeep-laptop.png" 
+                        class="w-[95%] md:w-[95%] rounded-xl hover:scale-105 transition duration-700"
+                    />
+                </div>
+
+                <div>
+                    <p class="text-s uppercase tracking-widest text-gray-400 mb-3">Akashdeep</p>
+                    <h2 class="text-3xl md:text-3xl font-semibold">
+                    Modernising an architecture studio’s digital presence to increase brand 
+                    clarity and digital trust.
+                    </h2>
+                    <a href="akashdeep.html" target="_blank" class="inline-block mt-6 text-sm link-primary text-gray-400">Explore Case Study →</a>
+                </div>
+            </div>
+        </section>
+
+
+        <!-- ================= SKILLS / APPROACH ================= -->
+        <section class="px-6 md:px-16 py-40 bg-[#f7f6f4] fade-up">
+
+            <div class="max-w-6xl mx-auto grid md:grid-cols-3 gap-10">
+
+                <!-- CARD 1 -->
+                <div class="bg-white/60 backdrop-blur-md p-8 rounded-2xl border border-white/40 shadow-[0_10px_30px_rgba(0,0,0,0.05)] hover:shadow-[0_20px_50px_rgba(0,0,0,0.08)] transition duration-300">
+
+                    <span class="material-symbols-outlined text-[#b08a94] text-[28px] mb-6 block">
+                    psychology
+                    </span>
+
+                    <h3 class="text-lg font-medium mb-2">
+                    Empathy Research
+                    </h3>
+
+                    <p class="text-sm text-gray-600 leading-relaxed">
+                    Deep-diving into user behavior to uncover the “why” behind every 
+                    interaction and decision.
+                    </p>
+
+                </div>
+
+                <!-- CARD 2 -->
+                <div class="bg-white/60 backdrop-blur-md p-8 rounded-2xl border border-white/40 shadow-[0_10px_30px_rgba(0,0,0,0.05)] hover:shadow-[0_20px_50px_rgba(0,0,0,0.08)] transition duration-300">
+
+                    <span class="material-symbols-outlined text-[#b08a94] text-[28px] mb-6 block">
+                    account_tree
+                    </span>
+
+                    <h3 class="text-lg font-medium mb-2">
+                    System Thinking
+                    </h3>
+
+                    <p class="text-sm text-gray-600 leading-relaxed">
+                    Building scalable design systems that maintain consistency across 
+                    complex digital ecosystems.
+                    </p>
+
+                </div>
+
+                <!-- CARD 3 -->
+                <div class="bg-white/60 backdrop-blur-md p-8 rounded-2xl border border-white/40 shadow-[0_10px_30px_rgba(0,0,0,0.05)] hover:shadow-[0_20px_50px_rgba(0,0,0,0.08)] transition duration-300">
+
+                    <!-- ICON -->
+                    <span class="material-symbols-outlined text-[#b08a94] text-[28px] mb-6 block">
+                    auto_awesome
+                    </span>
+
+                    <h3 class="text-lg font-medium mb-2">
+                    Visual Refinement
+                    </h3>
+
+                    <p class="text-sm text-gray-600 leading-relaxed">
+                    Crafting high-fidelity interfaces that balance aesthetic beauty 
+                    with pixel-perfect technical execution.
+                    </p>
+
+                </div>
+
+            </div>
+        </section>
+
+        <!-- DESIGN THEORY -->
+        <section class="px-6 md:px-16 py-20 text-center fade-up">
+            <p class="text-2xl text-[#b08a94] md:text-3xl italic max-w-3xl mx-auto">
+            “Design is not just what it looks or feels like — it’s how it works, driven by human empathy.”
+            </p>
+        </section>
+
+        <!--- FOOTER -->
+        <footer class="px-6 md:px-16 py-6 border-t border-gray-200 flex flex-col md:flex-row justify-between text-sm text-gray-600">
+            <div>
+                <div class="pl-8">
+                    <img src="website-images/website-logo.png" class="w-[56px] h-[40px]">
+                </div>
+                <p class="text-xs mt-1">© 2026 Munazzah Zainab</p>
+            </div>
+
+            <div class="flex gap-6 mt-4 md:mt-0 py-6">
+                <a href="https://www.linkedin.com/in/munazzah-zainab-a243401b6" 
+                    target="_blank" 
+                    rel="noopener noreferrer"
+                    class="link-subtle uppercase text-xs">
+                    LinkedIn
+                </a>
+
+                <a href="mailto:zainabmunazzah14@gmail.com?subject=Project Inquiry&body=Hi Munazzah," 
+                    class="link-subtle uppercase text-xs">
+                    Email
+                </a>
+            </div>
+        </footer>
+
+        <!-- ACTIVE NAV -->
+        <script>
+
+            const observer = new IntersectionObserver((entries) => {
+                entries.forEach((entry) => {
+                if (entry.isIntersecting) {
+                entry.target.classList.add('show');
+                }
+                });
+            }, {
+                threshold: 0.2
+            });
+
+            document.querySelectorAll('.fade-up').forEach((el) => {
+                observer.observe(el);
+            });
+
+            const links = document.querySelectorAll('.nav-link');
+            const currentPage = window.location.pathname.split("/").pop();
+
+            links.forEach(link => {
+                if (link.getAttribute("href") === currentPage || currentPage === "") {
+                link.classList.add("active");
+                }
+            });
+        </script>
+
+    </body>
+</html>

@@ -1,0 +1,292 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+        <title>Scribbles | Talkies</title>
+
+        <script src="https://cdn.tailwindcss.com"></script>
+
+        <link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@300;400;500;600&display=swap" rel="stylesheet">
+        <link href="website-images/logo-white.png" rel="shortcut icon" type="image/x-icon">
+
+        <style>
+            .font-jakarta { font-family: 'Plus Jakarta Sans', sans-serif; }
+            .font-liberation { font-family: Arial, sans-serif; }
+
+            .fade-up {
+                opacity: 0;
+                transform: translateY(40px);
+                transition: all 0.8s ease;
+            }
+
+            .fade-up.show {
+                opacity: 1;
+                transform: translateY(0);
+            }
+
+            .delay-100 { animation-delay: 0.1s; }
+            .delay-200 { animation-delay: 0.2s; }
+            .delay-300 { animation-delay: 0.3s; }
+            .delay-500 { animation-delay: 0.5s; }
+        </style>
+    </head>
+
+    <body class="bg-[#0d0d0d] text-white font-jakarta">
+
+        <!-- HERO -->
+        <section class="px-6 md:px-16 py-16 mb-24 fade-up">
+            <div class="max-w-7xl mx-auto grid md:grid-cols-2 gap-16 items-center">
+                <div>
+                    <p class="text-xs tracking-[0.3em] uppercase text-gray-400 mb-6">
+                    Scriibles · Concept App
+                    </p>
+
+                    <h1 class="font-liberation text-[clamp(60px,8vw,140px)] leading-[0.95] tracking-tight mb-6">
+                    TALKIES
+                    </h1>
+
+                    <p class="text-base md:text-lg text-gray-400 max-w-md">
+                    A conceptual movie booking experience focused on clarity, seamless navigation, and 
+                    reducing friction across the booking journey.
+                    </p>
+                </div>
+
+                <div class="">
+                    <img src="website-images/talkies-hero.png" class="object-cover"/>
+                </div>
+            </div>
+        </section>
+
+        <!-- PURPOSE -->
+        <section class="px-6 md:px-16 pb-40 fade-up">
+            <div class="max-w-7xl mx-auto">
+
+                <h2 class="font-liberation text-[clamp(40px,5vw,80px)] mb-6">
+                PURPOSE
+                </h2>
+
+                <p class="text-gray-400 max-w-2xl ">
+                Talkies is a conceptual movie ticketing app designed to simplify the booking experience by 
+                addressing common usability gaps in existing platforms. The focus is on prioritizing user 
+                needs through clear flows, intuitive interactions, and visually refined, friction-free design. 
+                This project also served as a hands-on exploration to strengthen my UX thinking, flow 
+                structuring, and interaction design skills.
+                </p>
+            </div>
+        </section>
+
+         <!-- INSIGHTS -->
+        <section class="px-6 md:px-16 pb-28 fade-up">
+            <div class="max-w-7xl mx-auto">
+
+                <h2 class="font-liberation text-[clamp(40px,5vw,80px)] mb-6">
+                INSIGHTS
+                </h2>
+
+                <p class="text-gray-400 max-w-2xl ">
+                To ground this exploration in real user behavior, a short survey was conducted alongside 
+                qualitative observations. The goal was to validate assumptions and identify patterns around 
+                how users discover, evaluate, and book movie tickets.
+                </p>
+
+                <div class="max-w-7xl mx-auto pt-24">
+                    <img src="website-images/talkies-insights.png" class="w-full"/>
+                </div>
+
+            </div>
+        </section>
+
+        <!-- UX FOCUS -->
+        <section class="px-6 md:px-16 py-28 fade-up">
+            <div class="max-w-7xl mx-auto">
+                <h2 class="font-liberation text-[clamp(40px,5vw,80px)] mb-12 text-center">
+                UX FOCUS AREAS
+                </h2>
+
+                <div class="flex flex-wrap gap-4">
+                    <span class="px-4 py-2 bg-[#262626] text-sm">Booking flow clarity</span>
+                    <span class="px-4 py-2 bg-[#262626] text-sm">Seat selection usability</span>
+                    <span class="px-4 py-2 bg-[#262626] text-sm">Reduced cognitive load</span>
+                    <span class="px-4 py-2 bg-[#262626] text-sm">Visual hierarchy</span>
+                    <span class="px-4 py-2 bg-[#262626] text-sm">Friction-free checkout</span>
+                    <span class="px-4 py-2 bg-[#262626] text-sm">Typography-led layouts</span>
+                </div>
+            </div>
+        </section>
+
+        <!-- BLUEPRINT -->
+        <section class="px-6 md:px-16 py-28 fade-up">
+            <div class="max-w-7xl mx-auto">
+                <h2 class="font-liberation text-[clamp(40px,5vw,80px)] mb-12 text-center">
+                EXPERIENCE BLUEPRINT
+                </h2>
+                <img src="website-images/talkies-blueprint.png" class="w-full p-16"/>
+            </div>
+        </section>
+
+        <!-- EARLY EXPLORATIONS -->
+        <section class="bg-[#1a1a1a] px-6 md:px-16 py-28 fade-up">
+            <div class="max-w-7xl mx-auto">
+
+                <h2 class="font-liberation text-[clamp(40px,5vw,80px)] mb-6">
+                EARLY EXPLORATIONS
+                </h2>
+
+                <p class="text-gray-400 mb-16 max-w-2xl">
+                The experience was shaped by mapping the end-to-end flow and breaking it into clear, 
+                manageable moments. Early explorations helped reason through structure, screen relationships, 
+                and user decision points—allowing assumptions to be tested, navigation to be refined, and a 
+                strong foundation to be established before moving forward.
+                </p>
+
+                <!-- ROW 1 → SINGLE LARGE IMAGE -->
+                <div class="mb-16">
+                    <img src="website-images/talkies-sketches.png" class="w-full object-contain pb-16"/>
+                </div>
+
+                <!-- ROW 2 → SCROLL -->
+                <div class="flex gap-8 overflow-x-auto pb-4" id="dragScroll">
+                    <img src="website-images/talkies-lofi-1.png" class="h-[520px] md:h-[520px] object-contain shadow-lg"/>
+                    <img src="website-images/talkies-lofi-2.png" class="h-[520px] md:h-[520px] object-contain shadow-lg"/>
+                    <img src="website-images/talkies-lofi-3.png" class="h-[520px] md:h-[520px] object-contain shadow-lg"/>
+                    <img src="website-images/talkies-lofi-4.png" class="h-[520px] md:h-[520px] object-contain shadow-lg"/>
+                    <img src="website-images/talkies-lofi-5.png" class="h-[520px] md:h-[520px] object-contain shadow-lg"/>
+                    <img src="website-images/talkies-lofi-6.png" class="h-[520px] md:h-[520px] object-contain shadow-lg"/>
+                </div>
+            </div>
+        </section>
+
+        <!-- SYSTEM BREAKDOWN -->
+        <section class="bg-[#444444] px-6 md:px-16 py-28 fade-up">
+            <div class="max-w-7xl mx-auto">
+
+                <h2 class="font-liberation text-[clamp(40px,5vw,80px)] mb-6">
+                SYSTEM BREAKDOWN
+                </h2>
+
+                <p class="text-gray-400 mb-16 max-w-2xl">
+                A structured system of reusable components ensuring consistency across the experience.
+                </p>
+
+                <div class="grid md:grid-cols-2 gap-6 items-start">
+                    <div class="flex flex-col gap-6">
+                        <img src="website-images/talkies-typo.png" class="w-full"/>
+                        <img src="website-images/talkies-component-payments.png" class="w-full shadow-lg"/>
+                        <img src="website-images/talkies-component-form.png" class="w-full shadow-lg"/>
+                        <img src="website-images/talkies-component-hifi.png" class="w-full shadow-lg"/>
+                    </div>
+
+                    <div class="flex flex-col gap-6">
+                        <img src="website-images/talkies-component-navigation.png" class="w-full shadow-lg"/>
+                        <img src="website-images/talkies-component-booking.png" class="w-full shadow-lg"/>
+                    </div>
+                </div>
+
+            </div>
+        </section>
+
+        <!-- FINAL UI GROUPS -->
+        <section class="px-6 md:px-16 py-28 fade-up">
+            <div class="max-w-7xl mx-auto">
+
+                <h2 class="font-liberation text-[clamp(40px,5vw,80px)] uppercase mb-6">
+                Bringing It Together
+                </h2>
+
+                <p class="text-gray-400 mb-16 max-w-2xl">
+                With the core experience defined, the focus shifted to aligning structure, interaction, 
+                and visual language into a cohesive system. Each decision from layout to component 
+                behavior was shaped to support clarity, reduce friction, and create a seamless booking 
+                experience grounded in user needs.
+                </p>
+
+                <div class="pb-12 pt-12">
+                    <h3 class="text-xl mb-6 text-white">Booking UI</h3>
+                    <div class="flex gap-6 overflow-x-auto pb-4" id="dragScroll">
+                        <img src="website-images/talkies-booking-1.png" class="h-[500px] shadow-lg"/>
+                        <img src="website-images/talkies-booking-2.png" class="h-[500px] shadow-lg"/>
+                        <img src="website-images/talkies-booking-3.png" class="h-[500px] shadow-lg"/>
+                        <img src="website-images/talkies-booking-4.png" class="h-[500px] shadow-lg"/>
+                        <img src="website-images/talkies-booking-5.png" class="h-[500px] shadow-lg"/>
+                        <img src="website-images/talkies-booking-6.png" class="h-[500px] shadow-lg"/>
+                        <img src="website-images/talkies-booking-7.png" class="h-[500px] shadow-lg"/>
+                    </div>
+                </div>
+
+                <div class="pb-12 pt-12">
+                    <h3 class="text-xl mb-6 text-white">Payment UI</h3>
+                    <div class="flex gap-6 overflow-x-auto pb-4" id="dragScroll">
+                        <img src="website-images/talkies-payment-1.png" class="h-[500px] shadow-lg"/>
+                        <img src="website-images/talkies-payment-2.png" class="h-[500px] shadow-lg"/>
+                        <img src="website-images/talkies-payment-3.png" class="h-[500px] shadow-lg"/>
+                        <img src="website-images/talkies-payment-4.png" class="h-[500px] shadow-lg"/>
+                </div>
+
+                <div class="pb-12 pt-12">
+                    <h3 class="text-xl mb-6 text-white">Account UI</h3>
+                    <div class="flex gap-6 overflow-x-auto pb-4" id="dragScroll">
+                        <img src="website-images/talkies-account-1.png" class="h-[500px] shadow-lg"/>
+                        <img src="website-images/talkies-account-2.png" class="h-[500px] shadow-lg"/>
+                        <img src="website-images/talkies-account-3.png" class="h-[500px] shadow-lg"/>
+                        <img src="website-images/talkies-account-4.png" class="h-[500px] shadow-lg"/>
+                        <img src="website-images/talkies-account-5.png" class="h-[500px] shadow-lg"/>
+                        <img src="website-images/talkies-account-6.png" class="h-[500px] shadow-lg"/>
+                        <img src="website-images/talkies-account-7.png" class="h-[500px] shadow-lg"/>
+                        <img src="website-images/talkies-account-8.png" class="h-[500px] shadow-lg"/>
+                </div>
+            </div>
+        </section>
+
+        <!-- DISCLAIMER -->
+        <section class="px-6 md:px-16 py-16 text-center fade-up">
+            <p class="text-[#FF0033] max-w-3xl mx-auto text-sm">
+            Disclaimer - Talkies is a self-initiated conceptual project created for learning purposes. Not affiliated 
+            with any platform.
+            </p>
+        </section>
+
+        <!-- DRAG SCROLL SCRIPT -->
+        <script>
+            
+            const observer = new IntersectionObserver((entries) => {
+                entries.forEach((entry) => {
+                if (entry.isIntersecting) {
+                entry.target.classList.add('show');
+                }
+                });
+            }, {
+                threshold: 0.2
+            });
+
+            document.querySelectorAll('.fade-up').forEach((el) => {
+                observer.observe(el);
+            });
+
+            const scroll = document.querySelectorAll('#dragScroll, .overflow-x-auto');
+
+            scroll.forEach(container => {
+                let isDown = false;
+                let startX;
+                let scrollLeft;
+
+                container.addEventListener('mousedown', e => {
+                    isDown = true;
+                    startX = e.pageX - container.offsetLeft;
+                    scrollLeft = container.scrollLeft;
+                });
+
+                container.addEventListener('mouseleave', () => isDown = false);
+                container.addEventListener('mouseup', () => isDown = false);
+
+                container.addEventListener('mousemove', e => {
+                    if(!isDown) return;
+                    e.preventDefault();
+                    const x = e.pageX - container.offsetLeft;
+                    const walk = (x - startX);
+                    container.scrollLeft = scrollLeft - walk;
+                });
+            });
+        </script>
+    </body>
+</html>

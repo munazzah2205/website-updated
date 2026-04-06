@@ -1,0 +1,943 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+        <title>Case Study | Akashdeep</title>
+
+        <!-- Tailwind CDN -->
+        <script src="https://cdn.tailwindcss.com"></script>
+
+        <!-- Fonts -->
+        <link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@300;400;500;600&display=swap" rel="stylesheet">
+        <link href="website-images/logo-white.png" rel="shortcut icon" type="image/x-icon">
+
+        <style>
+            @font-face {
+            font-family: 'Liberation Sans';
+            src: local('Liberation Sans'), local('LiberationSans');
+            }
+
+            .font-jakarta {
+            font-family: 'Plus Jakarta Sans', sans-serif;
+            }
+
+            .font-liberation {
+            font-family: 'Liberation Sans', Arial, sans-serif;
+            }
+
+    
+            @font-face {
+                font-family: 'HelveticaCompressed';
+                src: url('fonts/helvetica-extra-\ compressed.otf') format('woff2'),
+                url('./fonts/helvetica-compressed.woff') format('woff');
+                font-weight: normal;
+                font-style: normal;
+            }
+
+            @font-face {
+                font-family: 'SpotifyMix';
+                src: url('fonts/spotifymix-regular.woff') format('woff2'),
+                url('./fonts/spotify-mix.woff') format('woff');
+                font-weight: normal;
+                font-style: normal;
+            }
+
+            .font-helveticaCompressed {
+                font-family: 'HelveticaCompressed', sans-serif;
+            }
+
+            .font-spotify {
+                font-family: 'SpotifyMix', sans-serif;
+            }
+
+            .fade-up {
+                opacity: 0;
+                transform: translateY(40px);
+                transition: all 0.8s ease;
+            }
+
+            .fade-up.show {
+                opacity: 1;
+                transform: translateY(0);
+            }
+
+            .delay-100 { animation-delay: 0.1s; }
+            .delay-200 { animation-delay: 0.2s; }
+            .delay-300 { animation-delay: 0.3s; }
+            .delay-500 { animation-delay: 0.5s; }
+
+        </style>
+    </head>
+
+    <body class="bg-black">
+
+        <!-- HERO SECTION -->
+        <section class="relative bg-cover h-screen bg-[position:10%_40%] flex items-center px- md:px-16 text-white fade-up"
+            style="background-image: url('akashdeep-images/hero-akashdeep.png');">
+
+            <!-- Overlay -->
+            <div class="absolute inset-0 bg-black/70"></div>
+
+            <!-- Content -->
+            <div class="relative z-10 max-w-4xl">
+      
+                <!-- Tag -->
+                <p class="text-xs tracking-[0.3em] opacity-70 mb-5 font-jakarta">
+                CASE STUDY 2025 | UI/UX DESIGN | ARCHITECTURE WEBSITE</p>
+
+                <!-- Heading -->
+                <h1 class="text-[clamp(60px,8vw,190px)] leading-[0.95] font-medium tracking-tight mb-6 font-liberation">
+                AKASHDEEP <br />
+                DESIGN <br />
+                STUDIO</h1>
+
+                <!-- Subtitle -->
+                <p class="text-base md:text-lg max-w-md opacity-80 font-jakarta">
+                Modernising an architecture studio’s digital presence to increase brand clarity and digital trust.
+                </p>
+
+            </div>
+        </section>
+
+        <!-- BRAND + MOCKUP SECTION -->
+        <div class="mt-24 md:mt-32 pb-16 md:pb-24 flex flex-col items-center">
+
+            <!-- Laptop Mockup -->
+            <div class="w-full max-w-5xl mx-auto  transform fade-up delay-500 hover:scale-[1.02] transition duration-700">
+
+                <div class="p-12 shadow-[0_40px_100px_rgba(0,0,0,0.6)]">
+                    <img src="akashdeep-images/akashdeep-laptop.png" class="w-full h-full object-cover rounded-lg "/>
+                </div>
+
+            </div>
+
+        </div>
+
+        <section class="bg-[#f5f5f5] text-[#1a2a4a] px-6 md:px-16 py-20 fade-up">
+
+            <div class="max-w-7xl mx-auto grid md:grid-cols-2 gap-16">
+
+                <!-- LEFT: PROJECT OVERVIEW -->
+                <div>
+                    <h2 class="font-liberation text-[clamp(36px,4vw,64px)] leading-[1] mb-8">
+                    PROJECT <br /> OVERVIEW
+                    </h2>
+
+                    <div class="font-jakarta text-base md:text-lg leading-relaxed space-y-6 text-[#2e2e2e]">
+                        <p>Akashdeep Design Studio wanted to transform their outdated website into a modern and 
+                           visually distinctive digital presence. As the brand enters a new era under the next 
+                           generation, the website needed to showcase their architectural expertise while 
+                           effectively renewing brand identity rooted in heritage, innovation and 
+                           contemporary design.
+                        </p>
+
+                        <p>We aimed to create a multi-experience platform with unique layout structures, 
+                           animation-driven storytelling, and professional-driven interactions—all aligned
+                           with the client’s vision of rebranding into a competitive design industry.
+                        </p>
+                    </div>
+                </div>
+
+                <!-- RIGHT: CLIENT CONTEXT -->
+                <div>
+                    <h2 class="font-liberation text-[clamp(36px,4vw,64px)] leading-[1] mb-8">
+                    CLIENT <br /> CONTEXT
+                    </h2>
+
+                    <div class="font-jakarta text-base md:text-lg leading-relaxed text-[#2e2e2e] mb-10">
+                        <p>
+                        Akashdeep Design Studio is an established architecture and interior design practice known for 
+                        delivering modern, innovative, and functionally-driven spaces. With the next generation taking 
+                        charge, the studio is expanding into new markets and requires a digital presence that reflects their 
+                        long-standing legacy and forward-thinking approach.
+                        </p>
+                    </div>
+
+                    <!-- INFO CARDS -->
+                    <div class="grid sm:grid-cols-2 gap-4">
+
+                        <!-- Industry -->
+                        <div class="border border-gray-300 p-5">
+                            <p class="text-xs tracking-widest uppercase text-gray-500 mb-2 font-jakarta">
+                            Industry
+                            </p>
+                            <p class="font-jakarta text-sm md:text-base text-[#233D77] font-medium">
+                            Architecture & Interior Design.
+                            </p>
+                        </div>
+
+                        <!-- Vibe -->
+                        <div class="border border-gray-300 p-5">
+                            <p class="text-xs tracking-widest uppercase text-gray-500 mb-2 font-jakarta">
+                            Vibe
+                            </p>
+                            <p class="font-jakarta text-sm md:text-base text-[#233D77] font-medium">
+                            Modern, Professional, Expressive.
+                            </p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section class="bg-[#0d0d0d] text-white px-6 md:px-16 py-24 fade-up">
+
+            <div class="max-w-7xl mx-auto grid md:grid-cols-2 gap-16 items-center">
+
+                <!-- LEFT CONTENT -->
+                <div>
+
+                    <!-- Heading -->
+                    <h2 class="font-liberation text-[clamp(40px,5vw,80px)] leading-[1] mb-8 tracking-tight">
+                    THE CHALLENGE
+                    </h2>
+
+                    <!-- Paragraph -->
+                    <p class="font-jakarta text-base md:text-lg leading-relaxed text-gray-300 mb-10 max-w-lg">
+                    The primary challenge was balancing client requirements with user experience. Where requests risked 
+                    impacting usability, they were thoughtfully adjusted and aligned through clear communication and mutual 
+                    agreement.
+                    </p>
+
+                    <!-- Bullet Points -->
+                    <div class="space-y-6 font-jakarta text-sm md:text-base text-gray-300">
+
+                        <div class="flex items-start gap-4">
+                            <div class="w-5 h-5 flex-shrink-0 border border-gray-400 rounded-full flex items-center justify-center text-xs mt-1">
+                                ✓
+                            </div>
+                            <p>
+                            Build a digital experience that reflects both contemporary and solid structures.
+                            </p>
+                        </div>
+
+                        <div class="flex items-start gap-4">
+                            <div class="w-5 h-5 flex-shrink-0 border border-gray-400 rounded-full flex items-center justify-center text-xs mt-1">
+                                ✓
+                            </div>
+                            <p>
+                            Translate architectural craftsmanship into an image-led web interface.
+                            </p>
+                        </div>
+
+                        <div class="flex items-start gap-4">
+                            <div class="w-5 h-5 flex-shrink-0 border border-gray-400 rounded-full flex items-center justify-center text-xs mt-1">
+                            ✓
+                            </div>
+                            <p>
+                            Ensure smooth navigation with user-friendly flow across projects.
+                            </p>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- RIGHT IMAGE AREA (YOU ADD YOUR IMAGE HERE) -->
+                <div class="relative w-full h-[400px] md:h-[500px]">
+
+                    <!-- Placeholder (replace with your images) -->
+                    <div class="w-full h-full  flex items-center justify-center text-gray-500 font-jakarta">
+                        <img src="akashdeep-images/challenge-akashdeep.png" alt="">
+                    </div>
+
+                    <!-- Example if you want layered images later -->
+                    <!--
+                        <img src="/image1.jpg" class="absolute top-0 left-0 w-[80%] rounded-lg shadow-lg" />
+                        <img src="/image2.jpg" class="absolute bottom-0 right-0 w-[70%] rounded-lg shadow-lg" />
+                    -->
+                </div>
+            </div>
+        </section>
+        
+        <section class="bg-[#f5f5f5] px-6 md:px-16 py-24 text-[#1a1a1a] fade-up">
+
+            <div class="max-w-7xl mx-auto">
+
+                <!-- Heading -->
+                <h2 class="font-liberation text-[clamp(40px,5vw,80px)] leading-[1] mb-16 tracking-tight text-center">
+                GOALS & OBJECTIVES
+                </h2>
+
+                <!-- Cards -->
+                <div class="grid md:grid-cols-5 gap-8">
+
+                    <!-- Item -->
+                    <div class="border-l-2 border-[#1a2a4a] pl-6">
+                        <h3 class="font-jakarta font-semibold text-sm mb-3 uppercase text-[#233D77]">High Impact</h3>
+                        <p class="font-jakarta text-sm text-gray-600">Redesign and modernize the existing 
+                        website into a refreshed, high-impact digital presence.</p>
+                    </div>
+
+                    <div class="border-l-2 border-[#1a2a4a] pl-6">
+                        <h3 class="font-jakarta font-semibold text-sm mb-3 uppercase text-[#233D77]">Intuitive Navigation</h3>
+                        <p class="font-jakarta text-sm text-gray-600">Ensure smooth, intuitive navigation
+                        across all pages.</p>
+                    </div>
+
+                    <div class="border-l-2 border-[#1a2a4a] pl-6">
+                        <h3 class="font-jakarta font-semibold text-sm mb-3 uppercase text-[#233D77]">Craftsmanship</h3>
+                        <p class="font-jakarta text-sm text-gray-600">Build an image-led website that 
+                        visually validates the studio’s craftsmanship.</p>
+                    </div>
+
+                    <div class="border-l-2 border-[#1a2a4a] pl-6">
+                        <h3 class="font-jakarta font-semibold text-sm mb-3 uppercase text-[#233D77]">Animation-driven</h3>
+                        <p class="font-jakarta text-sm text-gray-600">Incorporate motion without compromising 
+                        usability.</p>
+                    </div>
+
+                    <div class="border-l-2 border-[#1a2a4a] pl-6">
+                        <h3 class="font-jakarta font-semibold text-sm mb-3 uppercase text-[#233D77]">Heritage</h3>
+                        <p class="font-jakarta text-sm text-gray-600">Highlight legacy while adapting 
+                        to modern offerings.</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section class="bg-[#f5f5f5] px-6 md:px-16 py-24 text-[#1a1a1a] fade-up">
+
+            <div class="max-w-7xl mx-auto">
+
+                <!-- Heading -->
+                <h2 class="font-liberation text-[clamp(40px,5vw,80px)] leading-[1] mb-16 tracking-tight text-center">
+                INFORMATION <br /> ARCHITECTURE
+                </h2>
+
+                <!-- Table Header -->
+                <div class="grid md:grid-cols-3 pb-4 border-b border-gray-400 font-jakarta text-sm font-semibold uppercase tracking-wide">
+                    <p>Page Name</p>
+                    <p>Key Sections</p>
+                    <p>Core Functionality</p>
+                </div>
+
+                <!-- Rows -->
+                <div class="divide-y divide-gray-300 font-jakarta text-sm">
+
+                    <div class="grid md:grid-cols-3 py-6">
+                        <p class="font-medium">Home</p>
+                        <p class="text-gray-600">Hero Header, Our Approach, Services,<br>
+                        Project Showcase, Clientele, Contact Us</p>
+                        <p class="text-gray-600">Brand introduction, high-level service overview,
+                        and primary navigation hub.</p>
+                    </div>
+
+                    <div class="grid md:grid-cols-3 py-6">
+                        <p class="font-medium">About Us</p>
+                        <p class="text-gray-600">Header Section, History, Our Approach, <br> 
+                        Leadership + Team, Team Gallery</p>
+                        <p class="text-gray-600">Establishing studio legacy, methodology, and humanizing
+                        the design practice.</p>
+                    </div>
+
+                    <div class="grid md:grid-cols-3 py-6">
+                        <p class="font-medium">Projects</p>
+                        <p class="text-gray-600">Header Section, Project Tab Section</p>
+                        <p class="text-gray-600">Categorized portfolio display with filtering 
+                        capabilities for architectural niches.</p>
+                    </div>
+
+                    <div class="grid md:grid-cols-3 py-6">
+                        <p class="font-medium">Project Insider</p>
+                        <p class="text-gray-600">Hero Header, Brief Description, Key Info,<br> 
+                        Photo Carousel, Facts + Highlights</p>
+                        <p class="text-gray-600">Deep dive into specific architectural solutions
+                        with technical and visual data.</p>
+                    </div>
+
+                    <div class="grid md:grid-cols-3 py-6">
+                        <p class="font-medium">Blog</p>
+                        <p class="text-gray-600">Architecture Feed, Project Cards</p>
+                        <p class="text-gray-600">Knowledge sharing and thought leadership 
+                        within the design industry.</p>
+                    </div>
+
+                    <div class="grid md:grid-cols-3 py-6">
+                        <p class="font-medium">Contact</p>
+                        <p class="text-gray-600">Header Section, Map Location, Contact Details,<br> Inquiry Form.</p>
+                        <p class="text-gray-600">Lead generation and physical studio localization.</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section class="bg-[#f2f2f2] px-6 md:px-16 py-28 text-[#1a1a1a] fade-up">
+
+            <div class="max-w-7xl mx-auto">
+
+                <!-- MAIN HEADING -->
+                <h2 class="font-liberation text-[clamp(48px,6vw,96px)] leading-[1] tracking-tight mb-24">
+                DESIGN SYSTEM
+                </h2>
+
+                <div class="grid md:grid-cols-2 gap-20">
+
+                    <!-- LEFT: TYPOGRAPHY -->
+                    <div>
+
+                        <!-- Label -->
+                        <p class="text-xs tracking-[0.3em] uppercase text-gray-400 mb-10 font-jakarta">
+                        Typography System
+                        </p>
+
+                        <!-- SUPER DISPLAY -->
+                        <div class="flex items-end justify-between border-b border-gray-300 pb-6 mb-10">
+                            <h3 class="font-helveticaCompressed text-[clamp(56px,6vw,110px)] leading-[0.9]">
+                            SUPER <br /> DISPLAY
+                            </h3>
+                            <span class="font-jakarta text-xs text-gray-400 whitespace-nowrap">
+                            HELVETICA COMPRESSED / 96PX
+                            </span>
+                        </div>
+
+                        <!-- HEADINGS -->
+                        <div class="flex items-center justify-between border-b border-gray-300 py-5">
+                            <h4 class="font-helveticaCompressed text-4xl">
+                            HEADINGS
+                            </h4>
+                            <span class="font-jakarta text-xs text-gray-400">
+                            HELVETICA COMPRESSED / 48PX
+                            </span>
+                        </div>
+
+                        <!-- BODY TEXT -->
+                        <div class="flex items-center justify-between border-b border-gray-300 py-5">
+                            <p class="font-spotify text-base">
+                            Body Text Style
+                            </p>
+                            <span class="font-jakarta text-xs text-gray-400">
+                            SPOTIFY MIX / 20PX
+                            </span>
+                        </div>
+
+                        <!-- MICRO TEXT -->
+                        <div class="flex items-center justify-between border-b border-gray-300 py-5">
+                            <p class="font-spotify text-sm">
+                            Microtext for labels
+                            </p>
+                            <span class="font-jakarta text-xs text-gray-400">
+                            SPOTIFY MIX / 12PX
+                            </span>
+                        </div>
+                    </div>
+
+                    <!-- RIGHT: COLOR SYSTEM -->
+                    <div>
+
+                        <!-- Label -->
+                        <p class="text-xs tracking-[0.3em] uppercase text-gray-400 mb-10 font-jakarta">
+                        Color System
+                        </p>
+
+                        <div class="grid grid-cols-2 gap-6">
+
+                            <!-- Primary -->
+                            <div class="h-48 bg-[#F6F6F6] border border-gray-300 p-6 flex flex-col justify-end">
+                                <p class="font-jakarta text-sm font-medium">Primary</p>
+                                <p class="font-jakarta text-xs text-gray-500">#F6F6F6 (BG)</p>
+                            </div>
+
+                            <!-- Secondary -->
+                            <div class="h-48 bg-[#1B1B1B] text-white p-6 flex flex-col justify-end">
+                                <p class="font-jakarta text-sm font-medium">Secondary</p>
+                                <p class="font-jakarta text-xs opacity-70">#1B1B1B (TEXT)</p>
+                            </div>
+
+                            <!-- Accent -->
+                            <div class="h-48 bg-[#0E1E42] text-white p-6 flex flex-col justify-end">
+                                <p class="font-jakarta text-sm font-medium">Accent</p>
+                                <p class="font-jakarta text-xs opacity-70">#0E1E42 (LOGO)</p>
+                            </div>
+
+                            <!-- Shadow -->
+                            <div class="h-48 bg-[#999797] text-white p-6 flex flex-col justify-end">
+                                <p class="font-jakarta text-sm font-medium">Shadow</p>
+                                <p class="font-jakarta text-xs opacity-70">#999797 (SUPPORT)</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section class="bg-[#0d0d0d] text-white px-6 md:px-16 py-28 fade-up">
+
+            <div class="max-w-7xl mx-auto">
+
+                <!-- SECTION HEADING -->
+                <h2 class="font-liberation text-[clamp(40px,5vw,80px)] leading-[1] tracking-tight mb-20">
+                KEY INTERFACES
+                </h2>
+
+                <div class="grid md:grid-cols-2 gap-16 items-center">
+
+                    <!-- LEFT: IMAGE STACK -->
+                    <div class="relative w-full h-[500px] md:h-[1000px]">
+
+                        <!-- Main Image -->
+                        <img 
+                            src="akashdeep-images/home-akashdeep.jpg" 
+                            class="absolute top-0 left-0 w-[100%]  shadow-2xl object-cover"
+                        />
+                    </div>
+
+                    <!-- RIGHT: CONTENT -->
+                    <div>
+
+                        <!-- Title -->
+                        <h3 class="font-liberation text-[28px] md:text-[36px] leading-tight mb-10">
+                        THE PORTAL <br />(HOME)
+                        </h3>
+
+                        <!-- DESIGN CONSIDERATIONS -->
+                        <div class="relative pl-6 mb-8 bg-white/5 py-6 pr-6">
+                            <div class="absolute left-0 top-0 h-full w-[2px] bg-[#477EFA]"></div>
+                            <p class="text-xs uppercase tracking-widest text-gray-400 mb-3 font-jakarta font-bold">
+                            Design Considerations
+                            </p>
+                            <p class="font-jakarta text-sm md:text-base text-gray-300 leading-relaxed max-w-md">
+                            A minimal hero ensures instant clarity, supported by intuitive navigation and subtle 
+                            motion, while varied layouts and a consistent visual language maintain engagement 
+                            and cohesive brand identity.
+                            </p>
+                        </div>
+
+                        <!-- PSYCHOLOGICAL RATIONALE -->
+                        <div class="relative pl-6 bg-white/5 py-6 pr-6">
+                            <div class="absolute left-0 top-0 h-full w-[2px] bg-[#477EFA]"></div>
+                            <p class="text-xs uppercase tracking-widest text-gray-400 mb-3 font-jakarta font-bold">
+                            Psychological Rationale
+                            </p>
+                            <p class="font-jakarta text-sm md:text-base text-gray-300 leading-relaxed max-w-md">
+                            The CTA is positioned at the end to align with user commitment readiness, encouraging 
+                            action only after trust is built through content, while soft color treatment 
+                            reduces pressure and supports natural decision-making.
+                            </p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section class="bg-[#0d0d0d] text-white px-6 md:px-16 pt-[160px] pb-28 fade-up">
+
+            <div class="max-w-7xl mx-auto grid md:grid-cols-2 gap-16 items-center">
+
+                <div class="flex flex-col items-end w-full">
+
+                    <!-- Heading aligned with cards -->
+                    <div class="w-full max-w-lg text-right mb-12">
+                        <h3 class="font-liberation text-[28px] md:text-[36px] leading-tight">
+                        THE EVOLUTION <br />(ABOUT)
+                        </h3>
+                    </div>
+
+                    <!-- DESIGN CONSIDERATIONS -->
+                    <div class="relative pr-6 mb-8 bg-white/5 py-6 pl-6 w-full max-w-lg">
+
+                        <div class="absolute right-0 top-0 h-full w-[2px] bg-[#477EFA]"></div>
+                        <p class="text-xs uppercase tracking-widest text-gray-400 mb-3 font-jakarta text-right font-bold">
+                        Design Considerations
+                        </p>
+
+                        <p class="font-jakarta text-sm md:text-base text-gray-300 leading-relaxed text-right">
+                        A cohesive tone balances heritage and modernity, with curated imagery and progressive 
+                        content reflecting the studio’s evolution. A horizontal layout, inline profiles, and 
+                        restrained motion ensure seamless, uninterrupted exploration.
+                        </p>
+                    </div>
+
+                    <!-- COGNITIVE LOAD -->
+                    <div class="relative pr-6 bg-white/5 py-6 pl-6 w-full max-w-lg">
+
+                        <div class="absolute right-0 top-0 h-full w-[2px] bg-[#477EFA]"></div>
+                        <p class="text-xs uppercase tracking-widest text-gray-400 mb-3 font-jakarta text-right font-bold">
+                        Cognitive Load Consideration
+                        </p>
+
+                        <p class="font-jakarta text-sm md:text-base text-gray-300 leading-relaxed text-right">
+                        “Our Team” and “Team Gallery” are kept simple to reduce cognitive load, maintain focus 
+                        on people, and conclude the page on a clear, human note.
+                        </p>
+
+                    </div>
+                </div>
+
+                <!-- RIGHT: IMAGE -->
+                <div class="w-full h-[500px] md:h-[1000px]">
+
+                    <!-- Replace with your image -->
+                    <img 
+                        src="akashdeep-images/akashdeep-about.jpg" 
+                        class="w-full h-full object-cover shadow-2xl"
+                    />
+                </div>
+            </div>
+        </section>
+
+        <section class="bg-[#0d0d0d] text-white px-6 md:px-16 py-28 fade-up">
+
+            <div class="max-w-7xl mx-auto">
+                <div class="grid md:grid-cols-2 gap-16 items-center">
+
+                    <!-- LEFT: IMAGE STACK -->
+                    <div class="relative w-full h-[500px] md:h-[582px]">
+
+                        <!-- Main Image -->
+                        <img 
+                            src="akashdeep-images/work-akashdeep.jpg" 
+                            class="absolute top-0 left-0 w-[100%]  shadow-2xl object-cover"
+                        />
+                    </div>
+
+                    <!-- RIGHT: CONTENT -->
+                    <div>
+
+                        <!-- Title -->
+                        <h3 class="font-liberation text-[28px] md:text-[36px] leading-tight mb-10">
+                        THE ARCHIVE <br />(WORK)
+                        </h3>
+
+                        <!-- DESIGN CONSIDERATIONS -->
+                        <div class="relative pl-6 mb-8 bg-white/5 py-6 pr-6">
+                            <div class="absolute left-0 top-0 h-full w-[2px] bg-[#477EFA]"></div>
+                            <p class="text-xs uppercase tracking-widest text-gray-400 mb-3 font-jakarta font-bold">
+                            Design Considerations
+                            </p>
+
+                            <p class="font-jakarta text-sm md:text-base text-gray-300 leading-relaxed max-w-md">
+                            A focused, intuitive portfolio experience that balances visual impact with structure, 
+                            reinforcing credibility while making project exploration effortless.
+                            </p>
+                        </div>
+
+                        <!-- Interaction & Information Efficiency -->
+                        <div class="relative pl-6 bg-white/5 py-6 pr-6">
+                            <div class="absolute left-0 top-0 h-full w-[2px] bg-[#477EFA]"></div>
+                            <p class="text-xs uppercase tracking-widest text-gray-400 mb-3 font-jakarta font-bold">
+                            Interaction & Information Efficiency
+                            </p>
+
+                            <p class="font-jakarta text-sm md:text-base text-gray-300 leading-relaxed max-w-md">
+                            Bold typography conveys scale and confidence, while grouping projects by service 
+                            type reduces search effort. Hover states offer quick previews, enabling 
+                            faster and more informed selection.
+                            </p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section class="bg-[#0d0d0d] text-white px-6 md:px-16 pt-[160px] pb-28 fade-up">
+
+            <div class="max-w-7xl mx-auto grid md:grid-cols-2 gap-16 items-center">
+
+                <div class="flex flex-col items-end w-full">
+
+                    <!-- Heading aligned with cards -->
+                    <div class="w-full max-w-lg text-right mb-12">
+                        <h3 class="font-liberation text-[28px] md:text-[36px] leading-tight">
+                        THE DETAIL <br />(INSIDER)
+                        </h3>
+                    </div>
+
+                    <!-- DESIGN CONSIDERATIONS -->
+                    <div class="relative pr-6 mb-8 bg-white/5 py-6 pl-6 w-full max-w-lg">
+                        <div class="absolute right-0 top-0 h-full w-[2px] bg-[#477EFA]"></div>
+                        <p class="text-xs uppercase tracking-widest text-gray-400 mb-3 font-jakarta text-right font-bold">
+                        Design Considerations
+                        </p>
+
+                        <p class="font-jakarta text-sm md:text-base text-gray-300 leading-relaxed text-right">
+                        Breadcrumbs reinforce hierarchy and enable quick navigation. A minimal hero pairs 
+                        strong imagery with the project name for instant recognition. Structured metadata 
+                        and grouped content reduce cognitive load, while clear sections convey depth without 
+                        overwhelming.
+                        </p>
+                    </div>
+
+                    <!-- COGNITIVE LOAD -->
+                    <div class="relative pr-6 bg-white/5 py-6 pl-6 w-full max-w-lg">
+                        <div class="absolute right-0 top-0 h-full w-[2px] bg-[#477EFA]"></div>
+                        <p class="text-xs uppercase tracking-widest text-gray-400 mb-3 font-jakarta text-right font-bold">
+                        Navigation Flow Optimization
+                        </p>
+
+                        <p class="font-jakarta text-sm md:text-base text-gray-300 leading-relaxed text-right">
+                        Encourages continued exploration without requiring a return to the main listing. Inline 
+                        project suggestions enable seamless browsing and keep users engaged within the portfolio 
+                        ecosystem.
+                        </p>
+                    </div>
+                </div>
+
+                <!-- RIGHT: IMAGE -->
+                <div class="w-full h-[500px] md:h-[1000px]">
+
+                    <!-- Replace with your image -->
+                    <img 
+                        src="akashdeep-images/insider-akashdeep.jpg" 
+                        class="w-full h-full object-cover shadow-2xl"
+                    />
+                </div>
+            </div>
+        </section>
+
+        <!-- ANIMATION APPROACH SECTION -->
+        <section class="bg-[#f5f5f5] text-[#1a1a1a] px-6 md:px-16 py-28 fade-up">
+
+            <div class="max-w-7xl mx-auto text-center">
+
+                <!-- HEADING -->
+                <h2 class="font-liberation text-[clamp(40px,5vw,80px)] leading-[1] tracking-tight mb-6">
+                ANIMATION APPROACH
+                </h2>
+
+                <!-- SUBTEXT -->
+                <p class="font-jakarta text-base md:text-lg text-gray-600 max-w-2xl mx-auto mb-20 leading-relaxed">
+                Controlled and purposeful motion to maintain clarity while adding a layer of sophisticated 
+                interaction. The motion reflects the 'Architectural Monolith' aesthetic: heavy, deliberate, 
+                and structural.
+                </p>
+
+                <!-- GRID -->
+                <div class="grid md:grid-cols-3 gap-12">
+
+                    <!-- ITEM 1 -->
+                    <div class="text-left">
+                        <div 
+                            class="relative w-full h-[180px] bg-gray-200 mb-6 cursor-pointer group overflow-hidden shadow-md hover:shadow-xl transition duration-300"
+                            onclick="openVideo('akashdeep-videos/subtle-transition.mp4')">
+                            <img src="akashdeep-images/subtle-transition-thumbnail.png" class="w-full h-full object-cover group-hover:scale-105 transition duration-500" />
+                            <div class="absolute inset-0 bg-black/30"></div>
+                            <div class="absolute inset-0 flex items-center justify-center">
+                                <div class="w-12 h-12 border border-white rounded-full flex items-center justify-center text-white text-sm backdrop-blur-sm">
+                                    ▶
+                                </div>
+                            </div>
+                        </div>
+                        <h3 class="font-liberation text-lg mb-2 text-[#233D77] font-bold">
+                        SUBTLE INTERACTION TRANSITIONS
+                        </h3>
+                        <p class="font-jakarta text-xs uppercase tracking-widest text-gray-500 mb-2">
+                        Image zoom & responsive layout shifts
+                        </p>
+                        <p class="font-jakarta text-sm text-gray-600 leading-relaxed">
+                        Subtle image zoom and layout shifts on hover enhance depth without disrupting clarity.
+                        </p>
+                    </div>
+
+                    <!-- ITEM 2 -->
+                    <div class="text-left">
+                        <div 
+                            class="relative w-full h-[180px] bg-gray-200 mb-6 cursor-pointer group overflow-hidden shadow-md hover:shadow-xl transition duration-300"
+                            onclick="openVideo('akashdeep-videos/hover-states.mp4')">
+                            <img src="akashdeep-images/hover-state-thumbnail.png" class="w-full h-full object-cover group-hover:scale-105 transition duration-500" />
+                            <div class="absolute inset-0 bg-black/30"></div>
+                            <div class="absolute inset-0 flex items-center justify-center">
+                                <div class="w-12 h-12 border border-white rounded-full flex items-center justify-center text-white text-sm backdrop-blur-sm">
+                                    ▶
+                                </div>      
+                            </div>
+                        </div>
+                        <h3 class="font-liberation text-lg mb-2 text-[#233D77] font-bold">
+                        HOVER TRANSITION
+                        </h3>
+                        <p class="font-jakarta text-xs uppercase tracking-widest text-gray-500 mb-2">
+                        Depth-driven image expansion
+                        </p>
+                        <p class="font-jakarta text-sm text-gray-600 leading-relaxed">
+                        Project cards respond to user presence with subtle scale and shadow shifts, 
+                        emphasizing structural depth.
+                        </p>
+                    </div>
+
+                    <!-- ITEM 3 -->
+                    <div class="text-left">
+                        <div 
+                            class="relative w-full h-[180px] bg-gray-200 mb-6 border border-[#e5e5e5] cursor-pointer group overflow-hidden shadow-md hover:shadow-xl transition duration-300"
+                            onclick="openVideo('akashdeep-videos/micro-interaction-ver2.mp4')">
+                            <img src="akashdeep-images/micro-interaction-thumbnail.png" class="w-full h-full object-cover group-hover:scale-105 transition duration-500" />
+                            <div class="absolute inset-0 bg-black/30"></div>
+                            <div class="absolute inset-0 flex items-center justify-center">
+                                <div class="w-12 h-12 border border-white rounded-full flex items-center justify-center text-white text-sm backdrop-blur-sm">
+                                    ▶
+                                </div>
+                            </div>
+                        </div>
+                        <h3 class="font-liberation text-lg mb-2 text-[#233D77] font-bold">
+                        MAGNETIC MICRO-INTERACTION
+                        </h3>
+                        <p class="font-jakarta text-xs uppercase tracking-widest text-gray-500 mb-2">
+                        Tactile cursor response
+                        </p>
+                        <p class="font-jakarta text-sm text-gray-600 leading-relaxed">
+                        UI elements exert a subtle pull on the cursor, creating a tactile connection 
+                        between user and interface.
+                        </p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+
+        <!-- VIDEO MODAL -->
+        <div id="videoModal" class="fixed inset-0 bg-black/80 hidden items-center justify-center z-50">
+
+            <!-- Close -->
+            <button onclick="closeVideo()" class="absolute top-6 right-6 text-white text-3xl">
+                ✕
+            </button>
+
+            <!-- Video -->
+            <video id="videoPlayer" controls class="w-[90%] md:w-[70%] rounded-lg shadow-2xl">
+                <source src="" type="video/mp4">
+            </video>
+        </div>
+
+        <section class="bg-[#E8E8E8] text-[#1a1a1a] px-6 md:px-16 py-28 fade-up">
+
+            <div class="max-w-7xl mx-auto">
+
+                <!-- HEADING -->
+                <h2 class="font-liberation text-[clamp(40px,5vw,80px)] leading-[1] tracking-tight mb-16">
+                RESPONSIVE ADAPTATION
+                </h2>
+
+                <!-- CONTENT -->
+                <div class="grid md:grid-cols-2 gap-16 items-center">
+
+                    <!-- LEFT: TEXT -->
+                    <div class="max-w-md">
+                        <p class="font-jakarta text-base md:text-lg text-gray-600 leading-relaxed">
+                        A desktop-first layout system was used, with responsiveness handled through 
+                        flexible grids and adaptive stacking across breakpoints. Select sections were 
+                        refined to preserve hierarchy and clarity across smaller screens.
+                        </p>
+                    </div>
+
+                    <!-- RIGHT: MOBILE MOCKUP -->
+                    <div class="flex justify-center md:justify-end">
+
+                        <!-- Phone Frame -->
+                        <div class="w-[200px] md:w-[300px] bg-black rounded-[40px] p-3 shadow-2xl">
+
+                            <!-- Screen -->
+                            <div class="bg-white rounded-[30px] overflow-hidden">
+
+                                <!-- Replace with your image -->
+                                <img src="akashdeep-images/mobile-layout.jpg" class="w-full h-full object-cover"/>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section class="bg-[#f5f5f5] text-[#1a1a1a] px-6 md:px-16 py-28 fade-up">
+
+            <div class="max-w-7xl mx-auto grid md:grid-cols-2 gap-16 items-start">
+
+                <!-- LEFT: CONTENT -->
+                <div>
+                    <!-- HEADING -->
+                    <h2 class="font-liberation text-[clamp(40px,5vw,80px)] leading-[1] tracking-tight mb-12">
+                    OUTCOMES & <br /> LEARNINGS
+                    </h2>
+
+                    <!-- ITEM 1 -->
+                    <div class="mb-10">
+                        <h3 class="font-jakarta font-semibold text-base md:text-lg mb-2">
+                        01 / BRAND ALIGNMENT
+                        </h3>
+                        <p class="font-jakarta text-sm md:text-base text-gray-600 leading-relaxed max-w-md">
+                        The redesign established a modern, cohesive digital identity that perfectly aligns 
+                        with the studio’s architectural vision.
+                        </p>
+                    </div>
+
+                    <!-- ITEM 2 -->
+                    <div>
+                        <h3 class="font-jakarta font-semibold text-base md:text-lg mb-2">
+                        02 / USER ENGAGEMENT
+                        </h3>
+                        <p class="font-jakarta text-sm md:text-base text-gray-600 leading-relaxed max-w-md">
+                        Motion and interactive elements increased average session duration, encouraging 
+                        users to explore the full archive of work.
+                        </p>
+                    </div>
+                </div>
+
+                <!-- RIGHT: TESTIMONIAL CARD -->
+                <div class="flex justify-center md:justify-end">
+                    <div class="bg-white w-full max-w-[520px] h-[410px] p-20 shadow-[0_20px_40px_rgba(0,0,0,0.08)] relative">
+
+                        <!-- Top Accent -->
+                        <div class="absolute top-0 left-0 w-full h-[6px] bg-[#0e1e42]"></div>
+
+                        <!-- Quote -->
+                        <p class="font-jakarta text-[17px] leading-relaxed text-[#233D77] mb-10">
+                        "The digital studio finally feels like our physical office. It has weight, it has 
+                        history, and it has a future. It is not just a website; it is an architectural document."
+                        </p>
+
+                        <!-- Author -->
+                        <div class="flex items-center gap-4">
+                            <img src="akashdeep-images/akashdeep-profile.jpg" class="w-12 h-12 rounded-full object-cover"/>
+                            <div>
+                                <p class="font-jakarta font-semibold text-sm text-[#233D77]">
+                                AKASHDEEP MONDAL
+                                </p>
+                                <p class="font-jakarta text-xs text-gray-500 tracking-widest uppercase">
+                                Principal Architect
+                                </p>
+                            </div>
+
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- SCRIPT -->
+        <script>
+
+            const observer = new IntersectionObserver((entries) => {
+                entries.forEach((entry) => {
+                if (entry.isIntersecting) {
+                entry.target.classList.add('show');
+                }
+                });
+            }, {
+                threshold: 0.2
+            });
+
+            document.querySelectorAll('.fade-up').forEach((el) => {
+                observer.observe(el);
+            });
+
+            function openVideo(src) {
+                const modal = document.getElementById('videoModal');
+                const player = document.getElementById('videoPlayer');
+
+                player.src = src;
+                modal.classList.remove('hidden');
+                modal.classList.add('flex');
+            }
+
+            function closeVideo() {
+                const modal = document.getElementById('videoModal');
+                const player = document.getElementById('videoPlayer');
+
+                player.pause();
+                player.src = "";
+                modal.classList.add('hidden');
+            }
+        </script>
+
+    </body>
+</html>        
+
+
+

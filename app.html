@@ -1,0 +1,281 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+        <title>Scribbles | App Explorations</title>
+
+        <script src="https://cdn.tailwindcss.com"></script>
+
+        <link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@300;400;500;600&display=swap" rel="stylesheet">
+        <link href="website-images/logo-white.png" rel="shortcut icon" type="image/x-icon">
+
+        <style>
+            .font-jakarta { font-family: 'Plus Jakarta Sans', sans-serif; }
+            .font-liberation { font-family: Arial, sans-serif; }
+
+            .fade-up {
+                opacity: 0;
+                transform: translateY(40px);
+                transition: all 0.8s ease;
+            }
+
+            .fade-up.show {
+                opacity: 1;
+                transform: translateY(0);
+            }
+
+            .delay-100 { animation-delay: 0.1s; }
+            .delay-200 { animation-delay: 0.2s; }
+            .delay-300 { animation-delay: 0.3s; }
+            .delay-500 { animation-delay: 0.5s; }
+        </style>
+    </head>
+
+    <body class="bg-[#0d0d0d] text-white font-jakarta">
+
+        <!-- HERO -->
+        <section class="px-6 md:px-16 py-16 mb-24 fade-up">
+            <div class="max-w-7xl mx-auto grid md:grid-cols-2 gap-16 items-center">
+                <div>
+                    <p class="text-xs tracking-[0.3em] uppercase text-gray-400 mb-6">
+                    Scribbles · App Exploration
+                    </p>
+
+                    <h1 class="font-liberation text-[clamp(60px,8vw,140px)] leading-[0.95] tracking-tight mb-6">
+                    APP <br/> EXPLORE
+                    </h1>
+
+                    <p class="text-base md:text-lg text-gray-400 max-w-md">
+                    Interaction patterns, navigation logic, and component behavior explored across mobile interfaces.
+                    </p>
+                </div>
+
+                <div class="pl-16">
+                    <img src="website-images/app-hero.png" class="object-cover"/>
+                </div>
+            </div>
+        </section>
+
+        <!-- PURPOSE -->
+        <section class="px-6 md:px-16 fade-up">
+            <div class="max-w-7xl mx-auto">
+
+                <h2 class="font-liberation text-[clamp(40px,5vw,80px)] mb-6">
+                PURPOSE
+                </h2>
+
+                <p class="text-gray-400 max-w-2xl ">
+                These YouTube screens were recreated as a focused design exercise to understand 
+                how large-scale products structure their interfaces — studying grid systems, layout logic, 
+                and component behavior.
+                </p>
+            </div>
+        </section>
+
+        <section class="px-6 md:px-16 py-28 fade-up">
+            <div class="max-w-7xl mx-auto relative">
+
+                <!-- ONLY slider gets clipped -->
+                <div class="overflow-hidden">
+                    <div id="slider" class="flex transition-transform duration-500">
+                    
+                        <!-- SLIDE 1 -->
+                        <div class="min-w-full">
+                            <div class="flex justify-center gap-12 md:gap-20 items-end">
+
+                                <!-- ORIGINAL -->
+                                <div class="text-center">
+                                    <p class="text-sm uppercase tracking-widest  text-[#b08a94] mb-6">Original</p>
+                                    <img src="website-images/spotify-original.png" 
+                                    class="h-[600px] md:h-[680px] object-contain"/>
+                                </div>
+
+                                <!-- RECREATED -->
+                                <div class="text-center">
+                                    <p class="text-sm uppercase tracking-widest  text-[#b08a94] mb-6">Recreated</p>
+                                    <img src="website-images/spotify-recreated.png" 
+                                    class="h-[600px] md:h-[680px] object-contain"/>
+                                </div>
+                            </div>
+
+                            <p class="text-gray-400 text-center max-w-xl mx-auto mt-12">
+                            Exploring how components adapt and reflow within constrained mobile screen sizes.
+                            </p>
+                        </div>
+
+                        <!-- SLIDE 2 -->
+                        <div class="min-w-full">
+                            <div class="flex justify-center gap-12 md:gap-20 items-end">
+
+                                <!-- ORIGINAL -->
+                                <div class="text-center">
+                                    <p class="text-sm uppercase tracking-widest  text-[#b08a94] mb-6">Original</p>
+                                    <img src="website-images/instamart-original.png" 
+                                    class="h-[600px] md:h-[680px] object-contain"/>
+                                </div>
+
+                                <!-- RECREATED -->
+                                <div class="text-center">
+                                    <p class="text-sm uppercase tracking-widest  text-[#b08a94] mb-6">Recreated</p>
+                                    <img src="website-images/instamart-recreated.png" 
+                                    class="h-[600px] md:h-[680px] object-contain"/>
+                                </div>
+                            </div>
+
+                            <p class="text-gray-400 text-center max-w-xl mx-auto mt-12">
+                            Understanding how layout, spacing, and hierarchy support quick decision-making in commerce interfaces.
+                            </p>
+                        </div>
+
+                        <!-- SLIDE 3 -->
+                        <div class="min-w-full">
+                            <div class="flex justify-center gap-12 md:gap-20 items-end">
+
+                            <!-- MAP -->
+                            <div class="text-center">
+                                <p class="text-sm uppercase tracking-widest  text-[#b08a94] mb-6">Map Interface</p>
+                                <img src="website-images/map.png" 
+                                class="h-[600px] md:h-[680px] object-contain"/>
+                            </div>
+
+                            <!-- RIDE -->
+                            <div class="text-center">
+                                <p class="text-sm uppercase tracking-widest  text-[#b08a94] mb-6">Ride Interface</p>
+                                <img src="website-images/uber.png" 
+                                class="h-[600px] md:h-[680px] object-contain"/>
+                            </div>
+                        </div>
+
+                        <p class="text-gray-400 text-center max-w-xl mx-auto mt-12">
+                        Studying how map-based and list-based interfaces guide quick, confident user actions.
+                        </p>
+                    </div>
+                </div>    
+
+                <!-- ARROWS -->
+                <button id="prev" class="absolute left-0 top-1/2 -translate-y-1/2 text-white/40 hover:text-white px-4 text-2xl">
+                 ←
+                </button>
+
+                <button id="next" class="absolute right-0 top-1/2 -translate-y-1/2 text-white/40 hover:text-white px-4 text-2xl">
+                 →
+                </button>
+            </div>
+        </section>
+
+        <!-- UI EXPLORATIONS -->
+        <section class="px-6 md:px-16 py-28 fade-up">
+            <div class="max-w-7xl mx-auto">
+
+                <h2 class="font-liberation text-[clamp(40px,5vw,80px)] mb-6">
+                UI EXPLORATIONS
+                </h2>
+
+                <p class="text-gray-400 mb-16 max-w-2xl">
+                A series of focused recreations exploring usability patterns, hierarchy, and interaction design across different apps.
+                </p>
+
+                <div class="flex gap-8 overflow-x-auto pb-8" id="dragScroll">
+                    <img src="website-images/scroll-amazon.png" class="h-[520px] md:h-[560px] lg:h-[520px] w-auto object-contain shadow-lg"/>
+                    <img src="website-images/scroll-spotify.png" class="h-[520px] md:h-[560px] lg:h-[520px] w-auto object-contain shadow-lg"/>
+                    <img src="website-images/scroll-settings.png" class="h-[520px] md:h-[560px] lg:h-[520px] w-auto object-contain shadow-lg"/>
+                    <img src="website-images/scroll-whatsapp.png" class="h-[520px] md:h-[560px] lg:h-[520px] w-auto object-contain shadow-lg"/>
+                    <img src="website-images/scroll-timer-1.png" class="h-[520px] md:h-[560px] lg:h-[520px] w-auto object-contain shadow-lg"/>
+                    <img src="website-images/scroll-timer-2.png" class="h-[520px] md:h-[560px] lg:h-[520px] w-auto object-contain shadow-lg"/>
+                    <img src="website-images/scroll-timer-3.png" class="h-[520px] md:h-[560px] lg:h-[520px] w-auto object-contain shadow-lg"/>
+                </div>
+            </div>
+        </section>
+
+        <!-- COMPONENT STUDY (MASONRY like you wanted) -->
+        <section class="bg-[#444444] px-6 md:px-16 py-28 fade-up">
+            <div class="max-w-7xl mx-auto">
+
+                <h2 class="font-liberation text-[clamp(40px,5vw,80px)] mb-6">
+                COMPONENT STUDIES
+                </h2>
+
+                <p class="text-gray-400 mb-16 max-w-2xl">
+                A breakdown of reusable UI elements to understand scalability, consistency, and system-level thinking.
+                </p>
+
+                <div class="columns-1 md:columns-2 gap-6 space-y-6">
+                    <img src="website-images/yt-music-components.png" class="w-full break-inside-avoid shadow-lg"/>
+                    <img src="website-images/spotify-components.png" class="w-full break-inside-avoid shadow-lg"/>
+                    <img src="website-images/uber-components.png" class="w-full break-inside-avoid shadow-lg"/>
+                </div>
+            </div>
+        </section>
+
+        <!-- DISCLAIMER -->
+        <section class="px-6 md:px-16 py-16 text-center fade-up">
+            <p class="text-[#FF0033] max-w-3xl mx-auto text-s">
+            Disclaimer - This is a self-initiated exploration project. All trademarks belong to their respective owners.
+            </p>
+        </section>
+
+        <script>
+
+            const observer = new IntersectionObserver((entries) => {
+                entries.forEach((entry) => {
+                if (entry.isIntersecting) {
+                entry.target.classList.add('show');
+                }
+                });
+            }, {
+                threshold: 0.2
+            });
+
+            document.querySelectorAll('.fade-up').forEach((el) => {
+                observer.observe(el);
+            });
+
+            /* SLIDER */
+            const slider = document.getElementById('slider');
+            const next = document.getElementById('next');
+            const prev = document.getElementById('prev');
+
+            let index = 0;
+            const total = slider.children.length;
+
+            function update() {
+                slider.style.transform = `translateX(-${index * 100}%)`;
+            }
+
+            next.onclick = () => {
+                if(index < total - 1) index++;
+                update();
+            };
+
+            prev.onclick = () => {
+                if(index > 0) index--;
+                update();
+            };
+
+            /* DRAG SCROLL */
+            const scroll = document.getElementById('dragScroll');
+
+            let isDown = false;
+            let startX;
+            let scrollLeft;
+
+            scroll.addEventListener('mousedown', e => {
+                isDown = true;
+                startX = e.pageX - scroll.offsetLeft;
+                scrollLeft = scroll.scrollLeft;
+            });
+
+            scroll.addEventListener('mouseleave', () => isDown = false);
+            scroll.addEventListener('mouseup', () => isDown = false);
+
+            scroll.addEventListener('mousemove', e => {
+                if(!isDown) return;
+                e.preventDefault();
+                const x = e.pageX - scroll.offsetLeft;
+                const walk = (x - startX);
+                scroll.scrollLeft = scrollLeft - walk;
+            });
+        </script>
+    </body>
+</html>

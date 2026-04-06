@@ -1,0 +1,192 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+        <title>Scribbles | YouTube Clone</title>
+
+        <script src="https://cdn.tailwindcss.com"></script>
+
+        <link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@300;400;500;600&display=swap" rel="stylesheet">
+        <link href="website-images/logo-white.png" rel="shortcut icon" type="image/x-icon">
+
+        <style>
+            .font-jakarta { font-family: 'Plus Jakarta Sans', sans-serif; }
+            .font-liberation { font-family: Arial, sans-serif; }
+
+            .fade-up {
+                opacity: 0;
+                transform: translateY(40px);
+                transition: all 0.8s ease;
+            }
+
+            .fade-up.show {
+                opacity: 1;
+                transform: translateY(0);
+            }
+
+            .delay-100 { animation-delay: 0.1s; }
+            .delay-200 { animation-delay: 0.2s; }
+            .delay-300 { animation-delay: 0.3s; }
+            .delay-500 { animation-delay: 0.5s; }
+        </style>
+    </head>
+
+    <body class="bg-[#0d0d0d] text-white font-jakarta">
+
+        <!-- HERO -->
+        <section class="px-6 md:px-16 py-32 mb-24 fade-up">
+            <div class="max-w-7xl mx-auto grid md:grid-cols-2 gap-16 items-center">
+                <div>
+                    <p class="text-xs tracking-[0.3em] uppercase text-gray-400 mb-6">
+                    Scribbles · UI Exploration
+                    </p>
+
+                    <h1 class="font-liberation text-[clamp(60px,8vw,140px)] leading-[0.95] tracking-tight mb-6">
+                    YOUTUBE <br/> CLONE
+                    </h1>
+
+                    <p class="text-base md:text-lg text-gray-400 max-w-md">
+                    UI replication, layout systems, and visual hierarchy study through recreating a complex interface.
+                    </p>
+                </div>
+
+                <div class="shadow-2xl">
+                    <img src="website-images/youtube-hero.png" class="w-full h-full object-cover"/>
+                </div>
+            </div>
+        </section>
+
+        <!-- PURPOSE -->
+        <section class="px-6 md:px-16 fade-up">
+            <div class="max-w-7xl mx-auto">
+
+                <h2 class="font-liberation text-[clamp(40px,5vw,80px)] mb-6">
+                PURPOSE
+                </h2>
+
+                <p class="text-gray-400 max-w-2xl ">
+                These YouTube screens were recreated as a focused design exercise to understand 
+                how large-scale products structure their interfaces — studying grid systems, layout logic, 
+                and component behavior.
+                </p>
+            </div>
+        </section>
+
+        <!-- COMPARISON -->
+        <section class="px-6 md:px-16 py-14 fade-up">
+            <div class="max-w-7xl mx-auto grid md:grid-cols-2 gap-12">
+                <div>
+                    <p class="text-sm uppercase tracking-widest text-[#b08a94] mb-4">
+                    Original Interface
+                    </p>
+                    <img src="website-images/youtube-original.png" class="w-full shadow-2xl"/>
+                </div>
+
+                <div>
+                    <p class="text-sm uppercase tracking-widest text-[#b08a94] mb-4">
+                    Recreated in Figma
+                    </p>
+                    <img src="website-images/youtube-recreated.png" class="w-full shadow-2xl"/>
+                </div>
+            </div>
+        </section>
+
+        <!-- INTERFACE STUDY -->
+        <section class="px-6 md:px-16 py-32 fade-up">
+            <div class="max-w-7xl mx-auto">
+
+                <h2 class="font-liberation text-[clamp(40px,5vw,80px)] mb-6">
+                INTERFACE STUDY
+                </h2>
+
+                <p class="text-gray-400 max-w-2xl mb-16">
+                Key screens were recreated to study layout behavior, spacing systems, and visual hierarchy across different states.
+                </p>
+
+                <div class="flex gap-6 overflow-x-auto pb-4">
+                    <img src="website-images/youtube-scroll-1.png" class="h-[400px] shadow-lg"/>
+                    <img src="website-images/youtube-scroll-2.png" class="h-[400px] shadow-lg"/>
+                    <img src="website-images/youtube-scroll-3.png" class="h-[400px] shadow-lg"/>
+                    <img src="website-images/youtube-scroll-4.png" class="h-[400px] shadow-lg"/>
+                    <img src="website-images/youtube-scroll-5.png" class="h-[400px] shadow-lg"/>
+                </div>
+            </div>
+        </section>
+
+        <!-- SYSTEM BREAKDOWN -->
+        <section class="bg-[#444444] px-6 md:px-16 py-28 fade-up">
+            <div class="max-w-7xl mx-auto">
+
+                <h2 class="font-liberation text-[clamp(40px,5vw,80px)] mb-6">
+                SYSTEM BREAKDOWN
+                </h2>
+
+                <p class="text-gray-400 max-w-2xl mb-16">
+                The interface was deconstructed into reusable components to understand structure, scalability, and consistency across the system.
+                </p>
+
+                <div class="columns-1 md:columns-2 gap-6 space-y-6">
+                    <img src="website-images/youtube-component-cards.png" class="w-full rounded-lg shadow-lg break-inside-avoid"/>
+                    <img src="website-images/youtube-component-overlays.png" class="w-full rounded-lg shadow-lg break-inside-avoid"/>
+                    <img src="website-images/youtube-component-playing.png" class="w-full rounded-lg shadow-lg break-inside-avoid"/>
+                    <img src="website-images/youtube-component-animation.png" class="w-full rounded-lg shadow-lg break-inside-avoid"/>
+                    <img src="website-images/youtube-component-icons.png" class="w-full rounded-lg shadow-lg break-inside-avoid"/>
+                </div>
+            </div>
+        </section>
+
+        <!-- INTERACTIONS -->
+        <section class="px-6 md:px-16 py-28 fade-up">
+            <div class="max-w-7xl mx-auto">
+
+                <h2 class="font-liberation text-[clamp(40px,5vw,80px)] mb-6">
+                INTERACTION STUDY
+                </h2>
+
+                <p class="text-gray-400 max-w-2xl mb-16">
+                Motion and micro-interactions were analyzed to understand how feedback, transitions, and states enhance usability.
+                </p>
+
+                <div class="grid md:grid-cols-2 gap-16">
+                    <div>
+                        <video src="website-videos/youtube-voice-search.mp4" controls class="w-full shadow-xl"></video>
+                        <p class="text-sm uppercase tracking-widest  text-[#b08a94] mt-4">
+                        Voice search interaction
+                        </p>
+                    </div>
+
+                    <div>
+                        <video src="website-videos/youtube-feedback.mp4" controls class="w-full shadow-xl"></video>
+                        <p class="text-sm uppercase tracking-widest  text-[#b08a94] mt-4">
+                        Hover & feedback behavior
+                        </p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- DISCLAIMER -->
+        <section class="px-6 md:px-16 py-16 text-center fade-up">
+            <p class="text-sm text-[#FF0033] max-w-3xl mx-auto">
+            Disclaimer - This is a self-initiated UI exploration project. YouTube is a trademark of Google and this work is not affiliated with or endorsed by YouTube.
+            </p>
+        </section>
+        <script>
+
+            const observer = new IntersectionObserver((entries) => {
+                entries.forEach((entry) => {
+                if (entry.isIntersecting) {
+                entry.target.classList.add('show');
+                }
+                });
+            }, {
+                threshold: 0.2
+            });
+
+            document.querySelectorAll('.fade-up').forEach((el) => {
+                observer.observe(el);
+            });
+        </script>    
+    </body>
+</html>

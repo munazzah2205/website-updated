@@ -1,0 +1,1137 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+        <title>Case Study | Ecopath</title>
+
+        <!-- Tailwind CDN -->
+        <script src="https://cdn.tailwindcss.com"></script>
+
+        <!-- Fonts -->
+        <link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@300;400;500;600&display=swap" rel="stylesheet">
+        <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;600;700&family=Montserrat:wght@300;400;500;600&family=Poppins:wght@500;600;700&display=swap" rel="stylesheet">
+        <link href="website-images/logo-white.png" rel="shortcut icon" type="image/x-icon">
+
+        <style>
+            @font-face {
+            font-family: 'Liberation Sans';
+            src: local('Liberation Sans'), local('LiberationSans');
+            }
+
+            .font-jakarta {
+            font-family: 'Plus Jakarta Sans', sans-serif;
+            }
+
+            .font-liberation {
+            font-family: 'Liberation Sans', Arial, sans-serif;
+            }
+
+            .font-playfairDisplay {
+            font-family: 'Playfair Display', serif;
+            }
+
+            .font-montserrat {
+            font-family: 'Montserrat', sans-serif;
+            }
+
+            .font-poppins {
+            font-family: 'Poppins', sans-serif;
+            }
+
+    
+            @font-face {
+            font-family: 'ProductSans';
+            src: url('./fonts/ProductSans-Black.woff2') format('woff2'),
+            url('fonts/product-sans-\ black.woff') format('woff');
+            font-weight: 900;
+            font-style: normal;
+            }
+
+            .font-productSans {
+            font-family: 'ProductSans', sans-serif;
+            font-weight: 900;
+            }
+
+
+            .fade-up {
+                opacity: 0;
+                transform: translateY(60px) scale(0.98);
+                transition: all 0.9s cubic-bezier(0.22, 1, 0.36, 1);
+                will-change: transform, opacity;
+            }
+
+            .fade-up.show {
+                opacity: 1;
+                transform: translateY(0) scale(1);
+            }
+
+            .delay-100 { animation-delay: 0.1s; }
+            .delay-200 { animation-delay: 0.2s; }
+            .delay-300 { animation-delay: 0.3s; }
+            .delay-500 { animation-delay: 0.5s; }
+
+        </style>
+    </head>
+
+    <body class="bg-black">
+
+
+        <!-- HERO SECTION -->
+        <section class="bg-cover h-screen bg-[position:10%_40%] flex items-center px- md:px-16 text-white fade-up"
+            style="background-image: url('ecopath-images/hero-ecopath.jpg');">
+
+            <!-- Overlay -->
+            <div class="absolute inset-0 bg-black/60"></div>
+
+            <!-- Content -->
+            <div class="relative z-10 max-w-4xl">
+      
+                <!-- Tag -->
+                <p class="text-xs tracking-[0.3em] opacity-70 mb-5 font-jakarta">
+                CASE STUDY 2025 | UI/UX DESIGN | SUSTAINABLE ROAD DEVELOPMENT WEBSITE</p>
+
+                <!-- Heading -->
+                <h1 class="text-[clamp(60px,8vw,190px)] leading-[0.95] font-medium tracking-tight mb-6 font-liberation">
+                ECOPATH.<br>
+                EARTH</h1>
+
+                <!-- Subtitle -->
+                <p class="text-base md:text-lg max-w-md opacity-80 font-jakarta">
+                Reframing a sustainable infrastructure brand to communicate expertise, reliability, and 
+                long-term impact.
+                </p>
+
+            </div>
+        </section>
+
+        <!-- BRAND + MOCKUP SECTION -->
+        <div class="mt-24 md:mt-32 pb-16 md:pb-24 flex flex-col items-center">
+
+            <!-- Laptop Mockup -->
+            <div class="w-full max-w-5xl mx-auto  transform fade-up delay-500 hover:scale-[1.02] transition duration-700">
+
+                <div class="p-12 shadow-[0_40px_100px_rgba(0,0,0,0.6)]">
+                    <img src="ecopath-images/laptop-ecopath.png" class="w-full h-full object-cover rounded-lg "/>
+                </div>
+
+            </div>
+
+        </div>
+
+        <section class="bg-[#f5f5f5] text-[#17411A] px-6 md:px-16 py-20 fade-up">
+
+            <div class="max-w-7xl mx-auto grid md:grid-cols-2 gap-16">
+
+                <!-- LEFT: PROJECT OVERVIEW -->
+                <div>
+                    <h2 class="font-liberation text-[clamp(36px,4vw,64px)] leading-[1] mb-8">
+                    PROJECT <br /> OVERVIEW
+                    </h2>
+
+                    <div class="font-jakarta text-base md:text-lg leading-relaxed space-y-6 text-[#2e2e2e]">
+                        <p>Ecopath did not have an existing website and needed a digital platform that could 
+                        clearly communicate their services, showcase their range of road construction products, 
+                        and establish credibility within the industry.
+                        </p>
+
+                        <p>The primary goal of the project was to design a website that would highlight 
+                        Ecopath’s expertise, showcase their achievements, and clearly explain their 
+                        road-building process to potential clients while reinforcing their identity as a 
+                        sustainable infrastructure provider.
+                        </p>
+                    </div>
+                </div>
+
+                <!-- RIGHT: CLIENT CONTEXT -->
+                <div>
+                    <h2 class="font-liberation text-[clamp(36px,4vw,64px)] leading-[1] mb-8">
+                    CLIENT <br /> CONTEXT
+                    </h2>
+
+                    <div class="font-jakarta text-base md:text-lg leading-relaxed text-[#2e2e2e] mb-10">
+                        <p>
+                        Ecopath is a sustainable road infrastructure company focused on developing durable, 
+                        environmentally responsible road construction solutions. It enhances traditional 
+                        methods by integrating sustainable materials and processes, offering both construction 
+                        services and a range of infrastructure products.
+                        </p>
+                    </div>
+
+                    <!-- INFO CARDS -->
+                    <div class="grid sm:grid-cols-2 gap-4">
+
+                        <!-- Industry -->
+                        <div class="border border-gray-300 p-5">
+                            <p class="text-xs tracking-widest uppercase text-gray-500 mb-2 font-jakarta">
+                            Industry
+                            </p>
+                            <p class="font-jakarta text-sm md:text-base text-[#215E26] font-medium">
+                            Sustainable Road Infrastructure Company.
+                            </p>
+                        </div>
+
+                        <!-- Vibe -->
+                        <div class="border border-gray-300 p-5">
+                            <p class="text-xs tracking-widest uppercase text-gray-500 mb-2 font-jakarta">
+                            Vibe
+                            </p>
+                            <p class="font-jakarta text-sm md:text-base text-[#215E26] font-medium">
+                            Reliable, Industrial, Sustainability-Focused.
+                            </p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section class="bg-[#0d0d0d] text-white px-6 md:px-16 py-24 fade-up">
+
+            <div class="max-w-7xl mx-auto grid md:grid-cols-2 gap-16 items-center">
+
+                <!-- LEFT CONTENT -->
+                <div>
+
+                    <!-- Heading -->
+                    <h2 class="font-liberation text-[clamp(40px,5vw,80px)] leading-[1] mb-8 tracking-tight">
+                    THE CHALLENGE
+                    </h2>
+
+                    <!-- Paragraph -->
+                    <p class="font-jakarta text-base md:text-lg leading-relaxed text-gray-300 mb-10 max-w-lg">
+                    Operating in a technical and trust-driven industry, Ecopath 
+                    needed a way to communicate complex processes, products, and 
+                    sustainability efforts without overwhelming users. The challenge was 
+                    to transform this information into a structured, intuitive experience that simplifies 
+                    understanding while reinforcing credibility and engagement.
+                    </p>
+
+                    <!-- Bullet Points -->
+                    <div class="space-y-6 font-jakarta text-sm md:text-base text-gray-300">
+
+                        <div class="flex items-start gap-4">
+                            <div class="w-5 h-5 flex-shrink-0 border border-gray-400 rounded-full flex items-center justify-center text-xs mt-1">
+                                ✓
+                            </div>
+                            <p>
+                            Establishing a professional and trustworthy digital presence in a 
+                            highly technical and credibility-driven domain.
+                            </p>
+                        </div>
+
+                        <div class="flex items-start gap-4">
+                            <div class="w-5 h-5 flex-shrink-0 border border-gray-400 rounded-full flex items-center justify-center text-xs mt-1">
+                                ✓
+                            </div>
+                            <p>
+                            Presenting both services and road construction products clearly without causing 
+                            information overload.
+                            </p>
+                        </div>
+
+                        <div class="flex items-start gap-4">
+                            <div class="w-5 h-5 flex-shrink-0 border border-gray-400 rounded-full flex items-center justify-center text-xs mt-1">
+                            ✓
+                            </div>
+                            <p>
+                            Structuring complex information around processes and sustainability in a way that 
+                            is easy to understand.
+                            </p>
+                        </div>
+
+                        <div class="flex items-start gap-4">
+                            <div class="w-5 h-5 flex-shrink-0 border border-gray-400 rounded-full flex items-center justify-center text-xs mt-1">
+                            ✓
+                            </div>
+                            <p>
+                            Designing navigation that remains simple and intuitive despite the breadth of content.
+                            </p>
+                        </div>
+
+                    </div>
+                </div>
+
+                <!-- RIGHT IMAGE AREA (YOU ADD YOUR IMAGE HERE) -->
+                <div class="relative w-full h-[400px] md:h-[500px]">
+
+                    <!-- Placeholder (replace with your images) -->
+                    <div class="w-full h-full  flex items-center justify-center text-gray-500 font-jakarta">
+                        <img src="ecopath-images/challenge-ecopath.png" alt="">
+                    </div>
+
+                    <!-- Example if you want layered images later -->
+                    <!--
+                        <img src="/image1.jpg" class="absolute top-0 left-0 w-[80%] rounded-lg shadow-lg" />
+                        <img src="/image2.jpg" class="absolute bottom-0 right-0 w-[70%] rounded-lg shadow-lg" />
+                    -->
+                </div>
+            </div>
+        </section>
+        
+        <section class="bg-[#f5f5f5] px-6 md:px-16 py-24 text-[#1a1a1a] fade-up">
+
+            <div class="max-w-7xl mx-auto">
+
+                <!-- Heading -->
+                <h2 class="font-liberation text-[clamp(40px,5vw,80px)] leading-[1] mb-16 tracking-tight text-center">
+                GOALS & OBJECTIVES
+                </h2>
+
+                <!-- Cards -->
+                <div class="grid md:grid-cols-5 gap-8">
+
+                    <!-- Item -->
+                    <div class="border-l-2 border-[#17411A] pl-6">
+                        <h3 class="font-jakarta font-semibold text-sm mb-3 uppercase text-[#215E26]">STRONG PRESENCE</h3>
+                        <p class="font-jakarta text-sm text-gray-600">
+                        Establish a credible digital presence that reflects Ecopath’s expertise 
+                        in sustainable infrastructure.
+                        </p>
+                    </div>
+
+                    <div class="border-l-2 border-[#17411A] pl-6">
+                        <h3 class="font-jakarta font-semibold text-sm mb-3 uppercase text-[#215E26]">STRUCTURED OFFERINGS</h3>
+                        <p class="font-jakarta text-sm text-gray-600">
+                        Present services and product offerings in a structured and easy-to-understand manner.
+                        </p>
+                    </div>
+
+                    <div class="border-l-2 border-[#17411A] pl-6">
+                        <h3 class="font-jakarta font-semibold text-sm mb-3 uppercase text-[#215E26]">TRUST BUILDING</h3>
+                        <p class="font-jakarta text-sm text-gray-600">
+                        Showcase capabilities, achievements, and industry experience to build 
+                        confidence among clients.
+                        </p>
+                    </div>
+
+                    <div class="border-l-2 border-[#17411A] pl-6">
+                        <h3 class="font-jakarta font-semibold text-sm mb-3 uppercase text-[#215E26]">INTUITIVE EXPERIENCE</h3>
+                        <p class="font-jakarta text-sm text-gray-600">
+                        Design a seamless and well-structured navigation for effortless user exploration.
+                        </p>
+                    </div>
+
+                    <div class="border-l-2 border-[#17411A] pl-6">
+                        <h3 class="font-jakarta font-semibold text-sm mb-3 uppercase text-[#215E26]">CLARITY IN COMPLEXITY</h3>
+                        <p class="font-jakarta text-sm text-gray-600">
+                        Simplify technical and process-driven information into clear, digestible content.
+                        </p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section class="bg-[#f5f5f5] px-6 md:px-16 py-24 text-[#1a1a1a] fade-up">
+
+            <div class="max-w-7xl mx-auto">
+
+                <!-- Heading -->
+                <h2 class="font-liberation text-[clamp(40px,5vw,80px)] leading-[1] mb-16 tracking-tight text-center">
+                INFORMATION <br /> ARCHITECTURE
+                </h2>
+
+                <!-- Table Header -->
+                <div class="grid md:grid-cols-3 pb-4 border-b border-gray-400 font-jakarta text-sm font-semibold uppercase tracking-wide">
+                    <p>Page Name</p>
+                    <p>Key Sections</p>
+                    <p>Core Functionality</p>
+                </div>
+
+                <!-- Rows -->
+                <div class="divide-y divide-gray-300 font-jakarta text-sm">
+
+                    <div class="grid md:grid-cols-3 py-6">
+                        <p class="font-medium">Home</p>
+                        <p class="text-gray-600">Hero, Problem → Solution, Why Ecopath,<br>
+                        Products, Road Types, Clients</p>
+                        <p class="text-gray-600">First impression, problem-solution narrative, 
+                        primary navigation hub.</p>
+                    </div>
+
+                    <div class="grid md:grid-cols-3 py-6">
+                        <p class="font-medium">About Us</p>
+                        <p class="text-gray-600">Leadership, Team, Vision, Testimonials</p>
+                        <p class="text-gray-600">Build trust, showcase people & brand credibility.</p>
+                    </div>
+
+                    <div class="grid md:grid-cols-3 py-6">
+                        <p class="font-medium">Technology & Products</p>
+                        <p class="text-gray-600">Eco Concrete, Comparison, Product Range,<br> R&D</p>
+                        <p class="text-gray-600">Explain innovation, validate product strength.</p>
+                    </div>
+
+                    <div class="grid md:grid-cols-3 py-6">
+                        <p class="font-medium">Services</p>
+                        <p class="text-gray-600">Road Design, Construction Types</p>
+                        <p class="text-gray-600">Present core offerings clearly.</p>
+                    </div>
+
+                    <div class="grid md:grid-cols-3 py-6">
+                        <p class="font-medium">Projects</p>
+                        <p class="text-gray-600">Projects, Case Cards</p>
+                        <p class="text-gray-600">Showcase real work, build credibility.</p>
+                    </div>
+
+                    <div class="grid md:grid-cols-3 py-6">
+                        <p class="font-medium">Sustainability</p>
+                        <p class="text-gray-600">Problem, Opportunity, Impact,<br> Vision, Calculator</p>
+                        <p class="text-gray-600">Communicate sustainability story & environmental impact.</p>
+                    </div>
+
+                    <div class="grid md:grid-cols-3 py-6">
+                        <p class="font-medium">Blog</p>
+                        <p class="text-gray-600">Articles, Insights</p>
+                        <p class="text-gray-600">Thought leadership & knowledge sharing.</p>
+                    </div>
+
+                    <div class="grid md:grid-cols-3 py-6">
+                        <p class="font-medium">Contact</p>
+                        <p class="text-gray-600">Header Section, Map Location, Contact Details,<br> Inquiry Form</p>
+                        <p class="text-gray-600">Lead generation and physical company localization.</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section class="bg-[#f2f2f2] px-6 md:px-16 py-28 text-[#1a1a1a] fade-up">
+
+            <div class="max-w-7xl mx-auto">
+
+                <!-- MAIN HEADING -->
+                <h2 class="font-liberation text-[clamp(48px,6vw,96px)] leading-[1] tracking-tight mb-24">
+                DESIGN SYSTEM
+                </h2>
+
+                <div class="grid md:grid-cols-2 gap-20">
+
+                    <!-- LEFT: TYPOGRAPHY -->
+                    <div>
+
+                        <!-- Label -->
+                        <p class="text-xs tracking-[0.3em] uppercase text-gray-400 mb-10 font-jakarta">
+                        Typography System
+                        </p>
+
+                        <!-- SUPER DISPLAY -->
+                        <div class="flex items-end justify-between border-b border-gray-300 pb-6 mb-10">
+                            <h3 class="font-playfairDisplay text-[clamp(56px,6vw,110px)] leading-[0.9]">
+                            SUPER <br /> DISPLAY
+                            </h3>
+                            <span class="font-jakarta text-xs text-gray-400 whitespace-nowrap">
+                            PLAYFAIR DISPLAY / 96PX
+                            </span>
+                        </div>
+
+                        <!-- HEADINGS -->
+                        <div class="flex items-center justify-between border-b border-gray-300 py-5">
+                            <h4 class="font-productSans text-4xl">
+                            HEADINGS
+                            </h4>
+                            <span class="font-jakarta text-xs text-gray-400">
+                            PRODUCT SANS BLACK / 48PX
+                            </span>
+                        </div>
+
+                        <!-- BODY TEXT -->
+                        <div class="flex items-center justify-between border-b border-gray-300 py-5">
+                            <p class="font-montserrat text-base">
+                            Body Text Style
+                            </p>
+                            <span class="font-jakarta text-xs text-gray-400">
+                            MONTSERRAT / 18PX
+                            </span>
+                        </div>
+
+                        <!-- MICRO TEXT -->
+                        <div class="flex items-center justify-between border-b border-gray-300 py-5">
+                            <p class="font-montserrat text-sm">
+                            Microtext for labels
+                            </p>
+                            <span class="font-jakarta text-xs text-gray-400">
+                            MONTSERRAT / 12PX
+                            </span>
+                        </div>
+                    </div>
+
+                    <!-- RIGHT: COLOR SYSTEM -->
+                    <div>
+
+                        <!-- Label -->
+                        <p class="text-xs tracking-[0.3em] uppercase text-gray-400 mb-10 font-jakarta">
+                        Color System
+                        </p>
+
+                        <div class="grid grid-cols-2 gap-6">
+
+                            <!-- Primary -->
+                            <div class="h-48 bg-[#F6F6F6] border border-gray-300 p-6 flex flex-col justify-end">
+                                <p class="font-jakarta text-sm font-medium">Primary</p>
+                                <p class="font-jakarta text-xs text-gray-500">#F6F6F6 (BG)</p>
+                            </div>
+
+                            <!-- Secondary -->
+                            <div class="h-48 bg-[#1B1B1B] text-white p-6 flex flex-col justify-end">
+                                <p class="font-jakarta text-sm font-medium">Secondary</p>
+                                <p class="font-jakarta text-xs opacity-70">#1B1B1B (TEXT)</p>
+                            </div>
+
+                            <!-- Accent -->
+                            <div class="h-48 bg-[#17411A] text-white p-6 flex flex-col justify-end">
+                                <p class="font-jakarta text-sm font-medium">Accent</p>
+                                <p class="font-jakarta text-xs opacity-70">#17411A (LOGO)</p>
+                            </div>
+
+                            <!-- Shadow -->
+                            <div class="h-48 bg-[#E6E6DF] p-6 flex flex-col justify-end">
+                                <p class="font-jakarta text-sm font-medium">Shadow</p>
+                                <p class="font-jakarta text-xs opacity-70">#E6E6DF (SUPPORT)</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section class="bg-[#0d0d0d] text-white px-6 md:px-16 py-28 fade-up">
+
+            <div class="max-w-7xl mx-auto">
+
+                <!-- SECTION HEADING -->
+                <h2 class="font-liberation text-[clamp(40px,5vw,80px)] leading-[1] tracking-tight mb-20">
+                KEY INTERFACES
+                </h2>
+
+                <div class="grid md:grid-cols-2 gap-16 items-center">
+
+                    <!-- LEFT: IMAGE STACK -->
+                    <div class="relative w-full h-[500px] md:h-[1532px]">
+
+                        <!-- Main Image -->
+                        <img 
+                            src="ecopath-images/home-ecopath.jpg" 
+                            class="absolute top-0 left-0 w-[100%]  shadow-2xl object-cover"
+                        />
+                    </div>
+
+                    <!-- RIGHT: CONTENT -->
+                    <div>
+
+                        <!-- Title -->
+                        <h3 class="font-liberation text-[28px] md:text-[36px] leading-tight mb-10">
+                        THE PORTAL <br />(HOME)
+                        </h3>
+
+                        <!-- DESIGN CONSIDERATIONS -->
+                        <div class="relative pl-6 mb-8 bg-white/5 py-6 pr-6">
+                            <div class="absolute left-0 top-0 h-full w-[2px] bg-[#7DCC83]"></div>
+                            <p class="text-xs uppercase tracking-widest text-gray-400 mb-3 font-jakarta font-bold">
+                            Design Considerations
+                            </p>
+                            <p class="font-jakarta text-sm md:text-base text-gray-300 leading-relaxed max-w-md">
+                            The homepage was structured using a modular, section-based layout to organize 
+                            high-density content into clear and scannable blocks. A strong visual hierarchy, 
+                            balanced spacing, and minimal interactions ensure clarity, while maintaining a 
+                            grounded and industrial visual tone.
+                            </p>
+                        </div>
+
+                        <!-- USER EXPERIENCE RATIONALE -->
+                        <div class="relative pl-6 bg-white/5 py-6 pr-6">
+                            <div class="absolute left-0 top-0 h-full w-[2px] bg-[#7DCC83]"></div>
+                            <p class="text-xs uppercase tracking-widest text-gray-400 mb-3 font-jakarta font-bold">
+                            User Experience Rationale
+                            </p>
+                            <p class="font-jakarta text-sm md:text-base text-gray-300 leading-relaxed max-w-md">
+                            The design approach was driven by the need to simplify complex information 
+                            without overwhelming users. A narrative flow guides users from understanding 
+                            the problem to exploring solutions and finally building trust. Content is 
+                            progressively revealed in digestible sections, aligning with natural reading 
+                            patterns and supporting confident decision-making.
+                            </p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section class="bg-[#0d0d0d] text-white px-6 md:px-16 pt-[160px] pb-28 fade-up">
+
+            <div class="max-w-7xl mx-auto grid md:grid-cols-2 gap-16 items-center">
+
+                <div class="flex flex-col items-end w-full">
+
+                    <!-- Heading aligned with cards -->
+                    <div class="w-full max-w-lg text-right mb-12">
+                        <h3 class="font-liberation text-[28px] md:text-[36px] leading-tight">
+                        THE EVOLUTION <br />(ABOUT)
+                        </h3>
+                    </div>
+
+                    <!-- DESIGN CONSIDERATIONS -->
+                    <div class="relative pr-6 mb-8 bg-white/5 py-6 pl-6 w-full max-w-lg">
+
+                        <div class="absolute right-0 top-0 h-full w-[2px] bg-[#7DCC83]"></div>
+                        <p class="text-xs uppercase tracking-widest text-gray-400 mb-3 font-jakarta text-right font-bold">
+                        Design Considerations
+                        </p>
+
+                        <p class="font-jakarta text-sm md:text-base text-gray-300 leading-relaxed text-right">
+                        A collage-based hero creates a distinctive and visually rich entry point. A vertical 
+                        timeline provides a clear structure, guiding content in a continuous flow. Clean 
+                        spacing, balanced typography, and subtle hover interactions on leadership cards add 
+                        depth while maintaining a minimal and cohesive interface.
+                        </p>
+                    </div>
+
+                    <!-- BEHAVIORAL RATIONALE -->
+                    <div class="relative pr-6 bg-white/5 py-6 pl-6 w-full max-w-lg">
+
+                        <div class="absolute right-0 top-0 h-full w-[2px] bg-[#7DCC83]"></div>
+                        <p class="text-xs uppercase tracking-widest text-gray-400 mb-3 font-jakarta text-right font-bold">
+                        Behavioral Rationale
+                        </p>
+
+                        <p class="font-jakarta text-sm md:text-base text-gray-300 leading-relaxed text-right">
+                        The design focuses on humanizing the brand by introducing people and stories early. The 
+                        timeline guides users step by step, making information easier to process and remember. 
+                        Interactive leadership cards encourage exploration, while articles add curiosity and 
+                        extend engagement.
+                        </p>
+
+                    </div>
+                </div>
+
+                <!-- RIGHT: IMAGE -->
+                <div class="w-full h-[500px] md:h-[1600px]">
+
+                    <!-- Replace with your image -->
+                    <img 
+                        src="ecopath-images/about-ecopath.jpg" 
+                        class="w-full h-full object-cover shadow-2xl"
+                    />
+                </div>
+            </div>
+        </section>
+
+        <section class="bg-[#0d0d0d] text-white px-6 md:px-16 py-28 fade-up">
+
+            <div class="max-w-7xl mx-auto">
+                <div class="grid md:grid-cols-2 gap-16 items-center">
+
+                    <!-- LEFT: IMAGE STACK -->
+                    <div class="relative w-full h-[500px] md:h-[1708px]">
+
+                        <!-- Main Image -->
+                        <img 
+                            src="ecopath-images/technology-ecopath.jpg" 
+                            class="absolute top-0 left-0 w-[100%]  shadow-2xl object-cover"
+                        />
+                    </div>
+
+                    <!-- RIGHT: CONTENT -->
+                    <div>
+
+                        <!-- Title -->
+                        <h3 class="font-liberation text-[28px] md:text-[36px] leading-tight mb-10">
+                        THE SYSTEM <br />(TECHNOLOGY & PRODUCTS)
+                        </h3>
+
+                        <!-- EXPERIENCE OVERVIEW -->
+                        <div class="relative pl-6 mb-8 bg-white/5 py-6 pr-6">
+                            <div class="absolute left-0 top-0 h-full w-[2px] bg-[#7DCC83]"></div>
+                            <p class="text-xs uppercase tracking-widest text-gray-400 mb-3 font-jakarta font-bold">
+                            Experience Overview
+                            </p>
+
+                            <p class="font-jakarta text-sm md:text-base text-gray-300 leading-relaxed max-w-md">
+                            This page presents Ecopath’s offerings in a structured and engaging way. The 
+                            challenge was to handle dense information while maintaining clarity.<br>
+                            The experience follows a narrative flow—starting with industry challenges, moving 
+                            through key data, and introducing Eco Concrete as the core solution. Sections like 
+                            composition, product range, and innovation are layered progressively, allowing users 
+                            to explore without feeling overwhelmed.
+                            </p>
+                        </div>
+
+                        <!-- DESIGN CONSIDERATIONS -->
+                        <div class="relative pl-6 mb-8 bg-white/5 py-6 pr-6">
+                            <div class="absolute left-0 top-0 h-full w-[2px] bg-[#7DCC83]"></div>
+                            <p class="text-xs uppercase tracking-widest text-gray-400 mb-3 font-jakarta font-bold">
+                            Design Considerations
+                            </p>
+
+                            <p class="font-jakarta text-sm md:text-base text-gray-300 leading-relaxed max-w-md">
+                            A mix of structured and varied layouts helps manage dense content without visual 
+                            fatigue. Data sections are designed for quick scanning, while process and 
+                            composition use engaging layouts for better readability. The product range is 
+                            shown in modular blocks to avoid a catalogue feel, and the innovation section uses 
+                            adaptive bento layouts with abstract visuals for a modern touch.
+                            </p>
+                        </div>
+
+                        <!-- INTERACTION RATIONALE -->
+                        <div class="relative pl-6 bg-white/5 py-6 pr-6">
+                            <div class="absolute left-0 top-0 h-full w-[2px] bg-[#7DCC83]"></div>
+                            <p class="text-xs uppercase tracking-widest text-gray-400 mb-3 font-jakarta font-bold">
+                            Interaction Rationale
+                            </p>
+
+                            <p class="font-jakarta text-sm md:text-base text-gray-300 leading-relaxed max-w-md">
+                            The page introduces complexity step by step—starting with context, then insights, 
+                            and finally detailed information. Scannable sections support quick understanding, 
+                            while deeper content caters to users seeking more detail. Visual variation and 
+                            interaction help maintain attention across different user types.
+                            </p>
+                        </div>
+
+                    </div>
+                </div>
+            </div>
+        </section>
+
+          <section class="bg-[#0d0d0d] text-white px-6 md:px-16 pt-[160px] pb-28 fade-up">
+
+            <div class="max-w-7xl mx-auto grid md:grid-cols-2 gap-16 items-center">
+
+                <div class="flex flex-col items-end w-full">
+
+                    <!-- Heading aligned with cards -->
+                    <div class="w-full max-w-lg text-right mb-12">
+                        <h3 class="font-liberation text-[28px] md:text-[36px] leading-tight">
+                        THE EXECUTION <br />(SERVICES)
+                        </h3>
+                    </div>
+
+                    <!-- DESIGN CONSIDERATIONS -->
+                    <div class="relative pr-6 mb-8 bg-white/5 py-6 pl-6 w-full max-w-lg">
+                        <div class="absolute right-0 top-0 h-full w-[2px] bg-[#7DCC83]"></div>
+                        <p class="text-xs uppercase tracking-widest text-gray-400 mb-3 font-jakarta text-right font-bold">
+                        Design Considerations
+                        </p>
+
+                        <p class="font-jakarta text-sm md:text-base text-gray-300 leading-relaxed text-right">
+                        A clean and minimal layout keeps the experience light and easy to scan. Consistent 
+                        section structures maintain visual continuity, while milestones add credibility. 
+                        Service categories are supported with imagery and interactive layouts to make technical 
+                        content more engaging.
+                        </p>
+                    </div>
+
+                    <!-- EXPERIENCE STRATEGY -->
+                    <div class="relative pr-6 bg-white/5 py-6 pl-6 w-full max-w-lg">
+                        <div class="absolute right-0 top-0 h-full w-[2px] bg-[#7DCC83]"></div>
+                        <p class="text-xs uppercase tracking-widest text-gray-400 mb-3 font-jakarta text-right font-bold">
+                        Experience Strategy
+                        </p>
+
+                        <p class="font-jakarta text-sm md:text-base text-gray-300 leading-relaxed text-right">
+                        The page is intentionally simplified to reduce cognitive fatigue after high-density 
+                        sections. Content is structured for quick understanding, while subtle interactions 
+                        maintain engagement. This balance helps users evaluate services clearly without feeling 
+                        overwhelmed.
+                        </p>
+                    </div>
+                </div>
+
+                <!-- RIGHT: IMAGE -->
+                <div class="w-full h-[500px] md:h-[1200px]">
+
+                    <!-- Replace with your image -->
+                    <img 
+                        src="ecopath-images/services-ecopath.jpg" 
+                        class="w-full h-full object-cover shadow-2xl"
+                    />
+                </div>
+            </div>
+        </section>
+
+        <section class="bg-[#0d0d0d] text-white px-6 md:px-16 py-28 fade-up">
+
+            <div class="max-w-7xl mx-auto">
+                <div class="grid md:grid-cols-2 gap-16 items-center">
+
+                    <!-- LEFT: IMAGE STACK -->
+                    <div class="relative w-full h-[500px] md:h-[1090px]">
+
+                        <!-- Main Image -->
+                        <img 
+                            src="ecopath-images/sustainability-ecopath.jpg" 
+                            class="absolute top-0 left-0 w-[100%]  shadow-2xl object-cover"
+                        />
+                    </div>
+
+                    <!-- RIGHT: CONTENT -->
+                    <div>
+
+                        <!-- Title -->
+                        <h3 class="font-liberation text-[28px] md:text-[36px] leading-tight mb-10">
+                        THE IMPACT <br />(SUSTAINABILITY)
+                        </h3>
+
+                        <!-- FROM AMBIGUITY TO CLARITY -->
+                        <div class="relative pl-6 mb-8 bg-white/5 py-6 pr-6">
+                            <div class="absolute left-0 top-0 h-full w-[2px] bg-[#7DCC83]"></div>
+                            <p class="text-xs uppercase tracking-widest text-gray-400 mb-3 font-jakarta font-bold">
+                            From ambiguity to clarity
+                            </p>
+
+                            <p class="font-jakarta text-sm md:text-base text-gray-300 leading-relaxed max-w-md">
+                            With no predefined direction for sustainability, the page was shaped through 
+                            design-led thinking—translating Ecopath’s vision into a clear, impact-driven 
+                            narrative that was later validated by the client.
+                            </p>
+                        </div>
+
+                        <!-- DESIGN CONSIDERATIONS -->
+                        <div class="relative pl-6 mb-8 bg-white/5 py-6 pr-6">
+                            <div class="absolute left-0 top-0 h-full w-[2px] bg-[#7DCC83]"></div>
+                            <p class="text-xs uppercase tracking-widest text-gray-400 mb-3 font-jakarta font-bold">
+                            Design Considerations
+                            </p>
+
+                            <p class="font-jakarta text-sm md:text-base text-gray-300 leading-relaxed max-w-md">
+                            A clean layout balances storytelling with data. Impact metrics are presented in 
+                            simple, scannable blocks, while imagery and spacing maintain clarity. The 
+                            calculator acts as a focused interaction point to showcase real-world impact.
+                            </p>
+                        </div>
+
+                        <!-- IMPACT FLOW -->
+                        <div class="relative pl-6 bg-white/5 py-6 pr-6">
+                            <div class="absolute left-0 top-0 h-full w-[2px] bg-[#7DCC83]"></div>
+                            <p class="text-xs uppercase tracking-widest text-gray-400 mb-3 font-jakarta font-bold">
+                            Impact Flow
+                            </p>
+
+                            <p class="font-jakarta text-sm md:text-base text-gray-300 leading-relaxed max-w-md">
+                            The page is designed to connect emotion with evidence—starting with a strong 
+                            sustainability message and followed by measurable impact. Content flows from 
+                            awareness to validation, helping users understand both the purpose and the results. 
+                            Interactive elements like the calculator make the impact more tangible, encouraging 
+                            deeper engagement.
+                            </p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+
+        <!-- INTERACTION APPROACH SECTION -->
+        <section class="bg-[#f5f5f5] text-[#1a1a1a] px-6 md:px-16 py-28 fade-up">
+
+            <div class="max-w-7xl mx-auto text-center">
+
+                <!-- HEADING -->
+                <h2 class="font-liberation text-[clamp(40px,5vw,80px)] leading-[1] tracking-tight mb-6">
+                INTERACTION APPROACH
+                </h2>
+
+                <!-- SUBTEXT -->
+                <p class="font-jakarta text-base md:text-lg text-gray-600 max-w-2xl mx-auto mb-20 leading-relaxed">
+                Motion across the website is subtle and purposeful, used to support clarity and engagement 
+                without overwhelming the user. Interactions are designed to guide attention, add depth, and 
+                make dense content easier to explore.
+                </p>
+
+                <!-- GRID -->
+                <div class="grid md:grid-cols-3 gap-12">
+
+                    <!-- ITEM 1 -->
+                    <div class="text-left">
+                        <div 
+                            class="relative w-full h-[180px] border bg-gray-200 mb-6 cursor-pointer group overflow-hidden shadow-md hover:shadow-xl transition duration-300"
+                            onclick="openVideo('ecopath-videos/self-adjusting-layout.mp4')">
+                            <img src="ecopath-images/self-adjusting-thumbnail.png" class="w-full h-full object-cover group-hover:scale-105 transition duration-500" />
+                            <div class="absolute inset-0 bg-black/30"></div>
+                            <div class="absolute inset-0 flex items-center justify-center">
+                                <div class="w-12 h-12 border border-white rounded-full flex items-center justify-center text-white text-sm backdrop-blur-sm">
+                                    ▶
+                                </div>
+                            </div>
+                        </div>
+                        <h3 class="font-liberation text-lg mb-2 font-bold text-[#215E26]">
+                        SELF-ADJUSTING LAYOUTS
+                        </h3>
+                        <p class="font-jakarta text-xs uppercase tracking-widest text-gray-500 mb-2">
+                        DYNAMIC CONTENT EMPHASIS
+                        </p>
+                        <p class="font-jakarta text-sm text-gray-600 leading-relaxed">
+                        Layouts subtly shift on hover, bringing focus to selected content and making 
+                        exploration more intuitive.
+                        </p>
+                    </div>
+
+                    <!-- ITEM 2 -->
+                    <div class="text-left">
+                        <div 
+                            class="relative w-full h-[180px] bg-gray-200 mb-6 cursor-pointer group overflow-hidden shadow-md hover:shadow-xl transition duration-300"
+                            onclick="openVideo('ecopath-videos/state-based-switching.mp4')">
+                            <img src="ecopath-images/state-based-switching-thumbnail.png" class="w-full h-full object-cover group-hover:scale-105 transition duration-500" />
+                            <div class="absolute inset-0 bg-black/30"></div>
+                            <div class="absolute inset-0 flex items-center justify-center">
+                                <div class="w-12 h-12 border border-white rounded-full flex items-center justify-center text-white text-sm backdrop-blur-sm">
+                                    ▶
+                                </div>      
+                            </div>
+                        </div>
+                        <h3 class="font-liberation text-lg mb-2 font-bold text-[#215E26]">
+                        STATE-BASED CONTENT SWITCHING
+                        </h3>
+                        <p class="font-jakarta text-xs uppercase tracking-widest text-gray-500 mb-2">
+                        DYNAMIC CONTENT RESPONSE
+                        </p>
+                        <p class="font-jakarta text-sm text-gray-600 leading-relaxed">
+                        Content updates dynamically with user selection, aligning text and visuals for clearer understanding.
+                        </p>
+                    </div>
+
+                    <!-- ITEM 3 -->
+                    <div class="text-left">
+                        <div 
+                            class="relative w-full h-[180px] bg-gray-200 mb-6 border border-[#e5e5e5] cursor-pointer group overflow-hidden shadow-md hover:shadow-xl transition duration-300"
+                            onclick="openVideo('ecopath-videos/hover-driven.mp4')">
+                            <img src="ecopath-images/hover-thumbnail.png" class="w-full h-full object-cover group-hover:scale-105 transition duration-500" />
+                            <div class="absolute inset-0 bg-black/30"></div>
+                            <div class="absolute inset-0 flex items-center justify-center">
+                                <div class="w-12 h-12 border border-white rounded-full flex items-center justify-center text-white text-sm backdrop-blur-sm">
+                                    ▶
+                                </div>
+                            </div>
+                        </div>
+                        <h3 class="font-liberation text-lg mb-2 font-bold text-[#215E26]">
+                        HOVER-DRIVEN FEEDBACK
+                        </h3>
+                        <p class="font-jakarta text-xs uppercase tracking-widest text-gray-500 mb-2">
+                        VISUAL HIERARCHY ON INTERACTION 
+                        </p>
+                        <p class="font-jakarta text-sm text-gray-600 leading-relaxed">
+                        Subtle hover effects highlight key elements and guide attention without disrupting the experience.
+                        </p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+
+        <!-- VIDEO MODAL -->
+        <div id="videoModal" class="fixed inset-0 bg-black/80 hidden items-center justify-center z-50">
+
+            <!-- Close -->
+            <button onclick="closeVideo()" class="absolute top-6 right-6 text-white text-3xl">
+                ✕
+            </button>
+
+            <!-- Video -->
+            <video id="videoPlayer" controls class="w-[90%] md:w-[70%] rounded-lg shadow-2xl">
+                <source src="" type="video/mp4">
+            </video>
+        </div>
+
+        <section class="bg-[#E8E8E8] text-[#1a1a1a] px-6 md:px-16 py-28 fade-up">
+
+            <div class="max-w-7xl mx-auto">
+
+                <!-- HEADING -->
+                <h2 class="font-liberation text-[clamp(40px,5vw,80px)] leading-[1] tracking-tight mb-16">
+                RESPONSIVE ADAPTATION
+                </h2>
+
+                <!-- CONTENT -->
+                <div class="grid md:grid-cols-2 gap-16 items-center">
+
+                    <!-- LEFT: TEXT -->
+                    <div class="max-w-md">
+                        <p class="font-jakarta text-base md:text-lg text-gray-600 leading-relaxed">
+                        A desktop-first structure was followed, with layouts adapting fluidly across screen 
+                        sizes during development. Content hierarchy and readability were maintained to ensure 
+                        a consistent experience across devices.
+                        </p>
+                    </div>
+
+                    <!-- RIGHT: MOBILE MOCKUP -->
+                    <div class="flex justify-center md:justify-end">
+
+                        <!-- Phone Frame -->
+                        <div class="w-[200px] md:w-[300px] bg-black rounded-[40px] p-3 shadow-2xl">
+
+                            <!-- Screen -->
+                            <div class="bg-white rounded-[30px] overflow-hidden">
+
+                                <!-- Replace with your image -->
+                                <img src="ecopath-images/mobile-ecopath.jpg" class="w-full h-full object-cover"/>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section class="bg-[#f5f5f5] text-[#1a1a1a] px-6 md:px-16 py-28 fade-up">
+
+            <div class="max-w-7xl mx-auto grid md:grid-cols-2 gap-16 items-start">
+
+                <!-- LEFT: CONTENT -->
+                <div>
+                    <!-- HEADING -->
+                    <h2 class="font-liberation text-[clamp(40px,5vw,80px)] leading-[1] tracking-tight mb-12">
+                    OUTCOMES & <br /> LEARNINGS
+                    </h2>
+
+                    <!-- ITEM 1 -->
+                    <div class="mb-10">
+                        <h3 class="font-jakarta font-semibold text-base md:text-lg mb-2">
+                        01 / STRUCTURED COMMUNICATION
+                        </h3>
+                        <p class="font-jakarta text-sm md:text-base text-gray-600 leading-relaxed max-w-md">
+                        Simplified complex infrastructure concepts into clear, scannable content for 
+                        better understanding.
+                        </p>
+                    </div>
+
+                    <!-- ITEM 2 -->
+                    <div class="mb-10">
+                        <h3 class="font-jakarta font-semibold text-base md:text-lg mb-2">
+                        02 / STRONGER BRAND POSITIONING
+                        </h3>
+                        <p class="font-jakarta text-sm md:text-base text-gray-600 leading-relaxed max-w-md">
+                        Established Ecopath as a credible, sustainability-driven infrastructure provider.
+                        </p>
+                    </div>
+
+                     <!-- ITEM 3 -->
+                    <div class="mb-10">
+                        <h3 class="font-jakarta font-semibold text-base md:text-lg mb-2">
+                        03 / BALANCE BETWEEN SIMPLICITY & DEPTH
+                        </h3>
+                        <p class="font-jakarta text-sm md:text-base text-gray-600 leading-relaxed max-w-md">
+                        Presented detailed information without overwhelming users, supporting both quick 
+                        insights and deeper exploration.
+                        </p>
+                    </div>
+
+                     <!-- ITEM 4 -->
+                    <div class="mb-10">
+                        <h3 class="font-jakarta font-semibold text-base md:text-lg mb-2">
+                        04 / SYSTEM-DRIVEN DESIGN
+                        </h3>
+                        <p class="font-jakarta text-sm md:text-base text-gray-600 leading-relaxed max-w-md">
+                        Developed consistent layouts and interaction patterns, reinforcing a scalable 
+                        design approach.
+                        </p>
+                    </div>
+
+                     <!-- ITEM 5 -->
+                    <div class="mb-10">
+                        <h3 class="font-jakarta font-semibold text-base md:text-lg mb-2">
+                        05 / DESIGNING FOR MULTIPLE USERS
+                        </h3>
+                        <p class="font-jakarta text-sm md:text-base text-gray-600 leading-relaxed max-w-md">
+                        Balanced the needs of casual visitors and decision-makers through layered content.
+                        </p>
+                    </div>
+
+                </div>
+
+                <!-- RIGHT: TESTIMONIAL CARD -->
+                <div class="flex flex-col items-center md:items-end gap-10">
+
+                    <!-- Card 1 -->
+                    <div class="bg-white w-full max-w-[520px] p-20 shadow-[0_20px_40px_rgba(0,0,0,0.08)] relative">
+
+                        <!-- Top Accent -->
+                        <div class="absolute top-0 left-0 w-full h-[6px] bg-[#17411A]"></div>
+
+                        <!-- Quote -->
+                        <p class="font-jakarta text-[17px] leading-relaxed text-[#215E26] mb-10">
+                        “The platform clearly reflects our vision—structured, purposeful, and rooted in 
+                        sustainability. It simplifies complex ideas and communicates our work with the 
+                        clarity it deserves.”
+                        </p>
+
+                        <!-- Author -->
+                        <div class="flex items-center gap-4">
+                            <img src="ecopath-images/sourabh-profile.jpg" class="w-12 h-12 rounded-full object-cover"/>
+                            <div>
+                                <p class="font-jakarta font-semibold text-sm text-[#215E26]">
+                                Sourabh Kumar
+                                </p>
+                                <p class="font-jakarta text-xs text-gray-500 tracking-widest uppercase">
+                                Founder & CEO
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <!-- Card 2 -->
+                    <div class="bg-white w-full max-w-[520px] p-20 shadow-[0_20px_40px_rgba(0,0,0,0.08)] relative">
+
+                        <!-- Top Accent -->
+                        <div class="absolute top-0 left-0 w-full h-[6px] bg-[#17411A]"></div>
+
+                        <!-- Quote -->
+                        <p class="font-jakarta text-[17px] leading-relaxed text-[#215E26] mb-10">
+                        “The experience strikes the right balance between technical depth and usability. 
+                        It presents our innovations in a way that is both accessible and impactful.”
+                        </p>
+
+                        <!-- Author -->
+                        <div class="flex items-center gap-4">
+                            <img src="ecopath-images/abhishek-profile.jpeg" class="w-12 h-12 rounded-full object-cover"/>
+                            <div>
+                                <p class="font-jakarta font-semibold text-sm text-[#215E26]">
+                                Abhishek Chazed
+                                </p>
+                                <p class="font-jakarta text-xs text-gray-500 tracking-widest uppercase">
+                                Co-Founder & CTO
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- SCRIPT -->
+        <script>
+
+            const observer = new IntersectionObserver((entries) => {
+                entries.forEach((entry) => {
+                if (entry.isIntersecting) {
+                entry.target.classList.add('show');
+                }
+                });
+            }, {
+                threshold: 0.2
+            });
+
+            document.querySelectorAll('.fade-up').forEach((el) => {
+                observer.observe(el);
+            });
+
+            function openVideo(src) {
+                const modal = document.getElementById('videoModal');
+                const player = document.getElementById('videoPlayer');
+
+                player.src = src;
+                modal.classList.remove('hidden');
+                modal.classList.add('flex');
+            }
+
+            function closeVideo() {
+                const modal = document.getElementById('videoModal');
+                const player = document.getElementById('videoPlayer');
+
+                player.pause();
+                player.src = "";
+                modal.classList.add('hidden');
+            }
+
+            
+        </script>
+
+    </body>
+</html>        
+
+
+

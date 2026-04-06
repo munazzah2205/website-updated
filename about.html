@@ -1,0 +1,476 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+        <title>About | Munazzah Zainab</title>
+
+        <script src="https://cdn.tailwindcss.com"></script>
+        <link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@300;400;500;600&display=swap" rel="stylesheet">
+        <link href="website-images/logo-white.png" rel="shortcut icon" type="image/x-icon">
+
+
+        <style>
+            body { font-family: 'Plus Jakarta Sans', sans-serif; }
+
+            /* NAV */
+            .nav-link { position:relative; color:#6b7280; transition:.3s; }
+            .nav-link:hover { color:#b08a94; }
+            .nav-underline {
+                position:absolute; bottom:-4px; left:0;
+                width:0; height:1px; background:#b08a94;
+                transition:.3s;
+            }
+            .nav-link:hover .nav-underline,
+            .nav-link.active .nav-underline { width:100%; }
+            .nav-link.active { color:#b08a94; }
+
+            .link-subtle:hover { color:#b08a94; transition:.3s; }
+
+            .timeline-item {
+                opacity: 0;
+                transform: translateY(90px);
+                transition: all 0.5s ease;
+            }
+
+            .timeline-item.visible {
+                opacity: 1;
+                transform: translateY(0);
+            }
+
+
+            /* Content */
+            .content h3 {
+                color: #eae6e4;
+                font-size: 18px;
+                font-weight: 500;
+                margin-bottom: 10px;
+            }
+
+            .content p {
+                color: #b8b2b0;
+                line-height: 1.7;
+                max-width: 520px;
+            }
+
+            /* Card Base */
+            .card {
+                background: #ffffff;
+                padding: 2rem;
+                border-radius: 16px;
+                border: 1px solid #e8e3e1;
+                transition: all 0.4s cubic-bezier(0.22, 1, 0.36, 1);
+                position: relative;
+                overflow: hidden;
+            }
+
+            /* Hover */
+            .card:hover {
+                transform: translateY(-6px);
+                border-color: #a18484;
+                box-shadow: 0 20px 40px rgba(0, 0, 0, 0.06);
+            }
+
+            /* Subtle warmth overlay */
+            .card::after {
+                content: "";
+                position: absolute;
+                inset: 0;
+                background: radial-gradient(circle at top, rgba(161,132,132,0.12), transparent 60%);
+                opacity: 0;
+                transition: opacity 0.4s ease;
+            }
+
+            .card:hover::after {
+                opacity: 1;
+            }
+
+            /* Typography */
+            .title {
+                color: #b08a94;
+                font-size: 20px;
+                margin-bottom: 10px;
+            }
+
+            .desc {
+                color: #5c4f4f;
+                line-height: 1.6;
+            }
+
+            .preview {
+                margin-top: 20px;
+                border-radius: 12px;
+                display: flex;
+                align-items: center;
+                justify-content: center;
+                color: #9c8f8f;
+                font-size: 14px;
+                min-height: 180px;
+                height: 100%;
+            }
+
+            .preview-small {
+                width: 96px;
+                height: 96px;
+                background: #f1ecea;
+                border-radius: 12px;
+                transition: transform 0.5s ease;
+            }
+
+           /* Tag base */
+           .tag {
+                font-size: 14px;
+                color: #3a2f2f;
+                background: #efe7ee;
+                padding: 10px 16px;
+                border-radius: 8px;
+                border: 1px solid #e4dedd;
+                transition: all 0.25s ease;
+                cursor: default;
+            }
+
+            /* Hover (very subtle, premium) */
+            .tag:hover {
+                background: #e8dee8;
+                border-color: #b08a94;
+                transform: translateY(-1px);
+            }
+
+            .fade-up {
+                opacity: 0;
+                transform: translateY(40px);
+                transition: all 0.8s ease;
+            }
+
+            .fade-up.show {
+                opacity: 1;
+                transform: translateY(0);
+            }
+
+            .delay-100 { animation-delay: 0.1s; }
+            .delay-200 { animation-delay: 0.2s; }
+            .delay-300 { animation-delay: 0.3s; }
+            .delay-500 { animation-delay: 0.5s; }
+
+        </style>
+    </head>
+
+    <body class="bg-[#f7f6f4] text-[#1a1a1a] overflow-x-hidden">
+
+        <!-- NAV -->
+        <header class="fixed top-0 w-full z-50">
+            <div class="px-6 md:px-16 py-6 flex justify-between backdrop-blur-md bg-[#f7f6f4]/70 border-b border-white/40">
+                <div class="w-[56px] h-[20px]">
+                    <img src="website-images/website-logo.png">
+                </div>
+                <nav class="flex gap-8 text-sm">
+                    <a href="index.html" class="nav-link">Work<span class="nav-underline"></span></a>
+                    <a href="about.html" class="nav-link active">About<span class="nav-underline"></span></a>
+                    <a href="assets/resume.pdf" target="_blank" class="nav-link">Resume<span class="nav-underline"></span></a>
+                </nav>
+            </div>
+        </header>
+
+        <!-- HERO -->
+        <section class="px-6 md:px-16 py-28 bg-[#f6f4f3] fade-up">
+
+                <!-- LEFT -->
+                <div class="max-w-5xl relative">
+
+                    <!-- Headline -->
+                    <h1 class="text-[clamp(48px,6vw,92px)] leading-[1.05] tracking-tight font-semibold">
+                    I’m
+                    <span class="highlight text-[#b08a94]">
+                    Munazzah Zainab,</span> 
+                    designing with empathy,
+                    structure, and clarity.
+                    </h1>
+
+                    <!-- Supporting -->
+                    <p class="mt-12 text-base md:text-lg leading-relaxed text-[#5c4f4f] max-w-xl">
+                    I design digital experiences where aesthetics support usability and every interaction serves a purpose. 
+                    With a background in engineering and hands-on client work, I bring structure, clarity, and technical depth to every solution.
+                    </p>
+
+                </div>
+
+        </section>
+
+        <section id="journey" class="bg-[#0d0d0d] py-40 pl-12 pr-6 md:pl-32 md:pr-16 fade-up">
+
+            <!-- Heading -->
+            <div class="max-w-3xl mx-auto px-20 mb-28">
+                <p class="text-sm uppercase tracking-widest text-[#a18484] mb-4">
+                The Evolution
+                </p>
+                <h2 class="text-4xl md:text-5xl font-semibold text-[#eae6e4]">
+                My Journey
+                </h2>
+            </div>
+
+            <!-- Timeline -->
+            <div class="relative max-w-3xl px-20 mx-auto">
+
+                <!-- Base line -->
+                <div class="absolute left-[80px] md:left-[100px] top-0 w-[2px] h-full bg-[#2a2a2a]"></div>
+
+                <!-- Animated line -->
+                <div id="progressLine" class="absolute left-[80px] md:left-[100px] 
+                    top-0 w-[2px] h-0 bg-[#a18484] transition-all duration-300">
+                </div>
+
+                <div class="space-y-24">
+
+                    <!-- Item -->
+                    <div class="timeline-item pl-10">
+                        <div class="content">
+                            <h3>B.Tech in Information Technology</h3>
+                            <p>
+                            My academic foundation shaped an analytical mindset—breaking down problems and 
+                            approaching systems with clarity and structure.
+                            </p>
+                        </div>
+                    </div>
+
+                    <div class="timeline-item pl-10">
+                        <div class="content">
+                            <h3>Corporate Experience — Full Stack Engineer</h3>
+                            <p>
+                            My experience as a full-stack engineer helped me understand products end-to-end and 
+                            how design choices come to life in code.
+                            </p>
+                        </div>
+                    </div>
+
+                    <div class="timeline-item pl-10">
+                        <div class="content">
+                            <h3>Transition to UI/UX Design</h3>
+                            <p>
+                            Over time, I moved from building systems to shaping experiences, refining my 
+                            design approach through self-driven learning, research, layout exploration, and 
+                            interaction design.
+                            </p>
+                        </div>
+                    </div>
+
+                    <div class="timeline-item pl-10">
+                        <div class="content">
+                            <h3>Professional Design Work — Weblynks</h3>
+                            <p>
+                            I worked on real client projects across diverse domains, balancing user needs, 
+                            brand identity, and technical constraints to deliver thoughtful digital experiences.
+                            </p>
+                        </div>
+                    </div>
+
+                </div>
+            </div>
+
+            <!-- Closing -->
+            <div class="max-w-3xl px-20 mx-auto mt-32 fade-up delay-500">
+                <p class="text-xl text-[#a18484] mb-4">What’s next?</p>
+                <p class="text-[#b8b2b0]">
+                I’m now looking to grow within a design-led team, contributing thoughtfully while 
+                continuing to learn through complex, user-centered problems.
+                </p>
+            </div>
+        </section>
+
+        <section class="bg-[#f6f4f3] py-32 px-6 md:px-16 fade-up">
+            <div class="max-w-6xl mx-auto">
+
+                <!-- Heading -->
+                <div class="max-w-2xl mb-20">
+                    <p class="text-sm uppercase tracking-widest text-[#b08a94] mb-4">
+                    Scribbles
+                    </p>
+                    <h2 class="text-3xl md:text-4xl font-semibold text-[#3a2f2f] mb-6">
+                    Explorations & Practice
+                    </h2>
+                    <p class="text-[#5c4f4f] leading-relaxed">
+                    A collection of sketches, UI explorations, clone screens, and visual experiments. 
+                    These represent my learning process—testing ideas, refining layouts, and exploring 
+                    design beyond final deliverables.
+                    </p>
+                </div>
+
+                <!-- Bento Grid -->
+                <div class="grid md:grid-cols-3 gap-6 items-stretch">
+
+                    <!-- LEFT BIG CARD -->
+                    <a href="youtube.html" class="block md:col-span-2" target="_blank">
+                        <div class="card flex flex-col h-full">
+                            <h3 class="title">YouTube Clone</h3>
+                            <p class="desc">
+                            UI replication · Layout systems · Visual hierarchy
+                            </p>
+
+                            <div class="preview flex-1">
+                                <img src="website-images/youtube-clone.png"/>
+                            </div>
+                        </div>
+                    </a>    
+
+                    <!-- RIGHT COLUMN -->
+                    <div class="flex flex-col gap-6 h-full">
+
+                         <!-- App Explorations -->
+                        <a href="app.html" class="block flex-1 group" target="_blank">
+                            <div class="card flex flex-col h-full transition duration-300 group-hover:scale-[1.02] group-hover:shadow-xl">
+                                <h3 class="title">App Explorations</h3>
+                                <p class="desc text-sm">
+                                Interaction patterns · Navigation · Component behavior
+                                </p>
+                                <div class="preview flex-1 overflow-hidden">
+                                    <img src="website-images/app-clone.png"/>
+                                </div>
+                            </div>
+                        </a>
+
+                        <!-- Talkies App -->
+                        <a href="talkies.html" class="block flex-1 group" target="_blank">
+                            <div class="card flex flex-col h-full transition duration-300 group-hover:scale-[1.02] group-hover:shadow-xl">
+                                <h3 class="title">Talkies App</h3>
+                                <p class="desc text-sm">
+                                Concept project · Feature ideation · User flow design
+                                </p>
+                                <div class="preview flex-1 overflow-hidden">
+                                    <img src="website-images/talkies-clone.png"/>
+                                </div>
+                            </div>
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section class="bg-[#f6f4f3] py-28 px-6 md:px-20 fade-up">
+            <div class="max-w-6xl mx-auto">
+
+                <!-- Heading -->
+                <div class="max-w-2xl mb-12">
+                    <p class="text-sm uppercase tracking-widest text-[#b08a94] mb-4">
+                    Design Philosophy
+                    </p>
+
+                    <h2 class="text-3xl md:text-4xl font-semibold text-[#3a2f2f] mb-6 leading-snug">
+                    Designing with clarity, structure, and intention.
+                    </h2>
+
+                    <p class="text-[#5c4f4f] leading-relaxed">
+                    I approach design through empathy and structured thinking—prioritizing clarity over 
+                    complexity and purpose over decoration.
+                    </p>
+                </div>
+
+                <!-- Tags -->
+                <div class="flex flex-wrap gap-3 max-w-4xl">
+                    <span class="tag">User-centered design</span>
+                    <span class="tag">Empathy-driven problem solving</span>
+                    <span class="tag">UX rationale & decision-making</span>
+                    <span class="tag">Clarity-first thinking</span>
+                    <span class="tag">Information architecture</span>
+                    <span class="tag">Interaction design</span>
+                    <span class="tag">Visual hierarchy</span>
+                    <span class="tag">Typography-led layouts</span>
+                    <span class="tag">Spacing & grid systems</span>
+                    <span class="tag">End-to-end product understanding</span>
+                    <span class="tag">Feasibility-aware design</span>
+                    <span class="tag">Design–development collaboration</span>
+                </div>
+            </div>
+        </section>
+
+        <!-- DESIGN THEORY -->
+        <section class="px-6 md:px-16 py-20 text-center fade-up">
+            <p class="text-2xl text-[#b08a94] md:text-3xl italic max-w-3xl mx-auto">
+            “I see design as the bridge between logic and experience—where structure brings clarity 
+            and every decision has a purpose.”
+            </p>
+        </section>
+
+        <!--- FOOTER -->
+        <footer class="px-6 md:px-16 py-6 border-t border-gray-200 flex flex-col md:flex-row justify-between text-sm text-gray-600">
+            <div>
+                <div class="pl-8">
+                    <img src="website-images/website-logo.png" class="w-[56px] h-[40px]">
+                </div>
+                <p class="text-xs mt-1">© 2026 Munazzah Zainab</p>
+            </div>
+
+            <div class="flex gap-6 mt-4 md:mt-0 py-6">
+                <a href="https://www.linkedin.com/in/munazzah-zainab-a243401b6" 
+                    target="_blank" 
+                    rel="noopener noreferrer"
+                    class="link-subtle uppercase text-xs">
+                    LinkedIn
+                </a>
+
+                <a href="mailto:zainabmunazzah14@gmail.com?subject=Project Inquiry&body=Hi Munazzah," 
+                    class="link-subtle uppercase text-xs">
+                    Email
+                </a>
+            </div>
+        </footer>
+
+        
+        <!-- ACTIVE NAV -->
+        <script>
+            const links = document.querySelectorAll('.nav-link');
+            const currentPage = window.location.pathname.split("/").pop();
+
+            links.forEach(link => {
+                if (link.getAttribute("href") === currentPage || currentPage === "") {
+                link.classList.add("active");
+                }
+            });
+
+            const observer = new IntersectionObserver((entries) => {
+                entries.forEach((entry) => {
+                if (entry.isIntersecting) {
+                entry.target.classList.add('show');
+                }
+                });
+            }, {
+                threshold: 0.2
+            });
+
+            document.querySelectorAll('.fade-up').forEach((el) => {
+                observer.observe(el);
+            });
+
+
+            const section = document.getElementById('journey');
+            const items = document.querySelectorAll('.timeline-item');
+            const line = document.getElementById('progressLine');
+
+            const totalItems = items.length;
+
+            window.addEventListener('scroll', () => {
+                const rect = section.getBoundingClientRect();
+                const windowHeight = window.innerHeight;
+
+                // 🔥 FIXED PROGRESS RANGE
+                const start = windowHeight * 0.2;   // when animation starts
+                const end = windowHeight * 0.6;     // when fully complete
+
+                let progress = (start - rect.top) / (start - end + rect.height);
+                progress = Math.max(0, Math.min(progress, 1));
+
+                // Line sync
+                line.style.height = progress * 100 + "%";
+
+                // 🔥 Reveal logic
+                const visibleCount = Math.ceil(progress * totalItems);
+
+                items.forEach((item, index) => {
+                    if (index < visibleCount) {
+                        item.classList.add('visible');
+                    } else {
+                    item.classList.remove('visible');
+                    }
+                });
+            });
+        </script>
+    </body>
+</html>
