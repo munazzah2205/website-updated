@@ -136,6 +136,36 @@
                 transform: translateY(-1px);
             }
 
+            .tool-dark {
+    display: flex;
+    align-items: center;
+    gap: 18px;
+
+    background: #1a1a1a;
+    border: 1px solid rgba(255,255,255,0.06);
+    border-radius: 18px;
+
+    padding: 20px 22px; /* MORE VERTICAL SPACE */
+
+    font-size: 16px;
+    color: #e5e5e5;
+    font-weight: 500;
+
+    transition: all 0.3s ease;
+}
+
+.tool-dark:hover {
+    border-color: #b08a94;
+    background: #202020;
+    transform: translateY(-3px);
+}
+
+.icon-dark {
+    width: 28px;   /* BIGGER ICON */
+    height: 28px;
+    object-fit: contain;
+}
+
             .fade-up {
                 opacity: 0;
                 transform: translateY(40px);
@@ -276,7 +306,125 @@
             </div>
         </section>
 
-        <section class="bg-[#f6f4f3] py-32 px-6 md:px-16 fade-up">
+        <section class="bg-[#f6f4f3] py-28 px-6 md:px-20 fade-up">
+            <div class="max-w-6xl mx-auto">
+
+                <!-- Heading -->
+                <div class="max-w-2xl mb-12">
+                    <p class="text-sm uppercase tracking-widest text-[#b08a94] mb-4">
+                    Design Philosophy
+                    </p>
+
+                    <h2 class="text-3xl md:text-4xl font-semibold text-[#3a2f2f] mb-6 leading-snug">
+                    Designing with clarity, structure, and intention.
+                    </h2>
+
+                    <p class="text-[#5c4f4f] leading-relaxed">
+                    I approach design through empathy and structured thinking—prioritizing clarity over 
+                    complexity and purpose over decoration.
+                    </p>
+                </div>
+
+                <!-- Tags -->
+                <div class="flex flex-wrap gap-3 max-w-4xl">
+                    <span class="tag">User-centered design</span>
+                    <span class="tag">Empathy-driven problem solving</span>
+                    <span class="tag">UX rationale & decision-making</span>
+                    <span class="tag">Clarity-first thinking</span>
+                    <span class="tag">Information architecture</span>
+                    <span class="tag">Interaction design</span>
+                    <span class="tag">Visual hierarchy</span>
+                    <span class="tag">Typography-led layouts</span>
+                    <span class="tag">Spacing & grid systems</span>
+                    <span class="tag">End-to-end product understanding</span>
+                    <span class="tag">Feasibility-aware design</span>
+                    <span class="tag">Design–development collaboration</span>
+                </div>
+            </div>
+        </section>
+
+        <section class="bg-[#0d0d0d] px-6 md:px-16 py-32 fade-up">
+            <div class="max-w-7xl mx-auto">
+
+                <!-- HEADING -->
+                <div class="mb-20">
+                    <p class="text-sm uppercase tracking-widest text-[#b08a94] mb-4">
+                    Tools & Technical
+                    </p>
+
+                    <h2 class="font-liberation text-[clamp(48px,3vw,96px)] leading-[1] tracking-tight text-[#ffffff]">
+                    Toolkit
+                    </h2>
+                </div>
+
+                <!-- GRID -->
+                <div class="grid md:grid-cols-3 gap-12">
+
+                    <!-- DESIGN -->
+                    <div>
+                        <p class="text-sm uppercase tracking-widest text-[#b08a94] mb-8">
+                        Design
+                        </p>
+                        <div class="space-y-6">
+                            <div class="tool-dark">
+                                <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/figma/figma-original.svg" class="icon-dark"/>
+                                <span>Figma</span>
+                            </div>
+                            <div class="tool-dark">
+                                <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/sketch/sketch-original.svg" class="icon-dark"/>
+                                <span>Sketch</span>
+                            </div>
+                        </div>
+                    </div>
+
+
+                    <!-- COLLAB -->
+                    <div>
+                        <p class="text-sm uppercase tracking-widest text-[#b08a94] mb-8">
+                        Collaboration & Systems
+                        </p>
+                        <div class="space-y-6">
+                            <div class="tool-dark">
+                                <img src="https://cdn.simpleicons.org/miro/FFDD33" class="icon-dark"/>
+                                <span>Miro</span>
+                            </div>
+                            <div class="tool-dark">
+                                <img src="website-images/relume.png" class="icon-dark"/>
+                                <span>Relume</span>
+                            </div>
+                            <div class="tool-dark">
+                                <img src="https://cdn.simpleicons.org/google/ffffff" class="icon-dark"/>
+                                <span>Google Stitch AI</span>
+                            </div>
+                        </div>
+                    </div>
+
+
+                    <!-- DEV -->
+                    <div>
+                        <p class="text-sm uppercase tracking-widest text-[#b08a94] mb-8">
+                        Development
+                        </p>
+                        <div class="space-y-6">
+                            <div class="tool-dark">
+                                <img src="https://cdn.simpleicons.org/webflow" class="icon-dark"/>
+                                <span>Webflow</span>
+                            </div>
+                            <div class="tool-dark">
+                                <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/html5/html5-original.svg" class="icon-dark"/>
+                                <span>HTML / CSS</span>
+                            </div>
+                            <div class="tool-dark">
+                                <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/git/git-original.svg" class="icon-dark"/>
+                                <span>Git</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+                <section class="bg-[#f6f4f3] py-32 px-6 md:px-16 fade-up">
             <div class="max-w-6xl mx-auto">
 
                 <!-- Heading -->
@@ -344,45 +492,9 @@
             </div>
         </section>
 
-        <section class="bg-[#f6f4f3] py-28 px-6 md:px-20 fade-up">
-            <div class="max-w-6xl mx-auto">
-
-                <!-- Heading -->
-                <div class="max-w-2xl mb-12">
-                    <p class="text-sm uppercase tracking-widest text-[#b08a94] mb-4">
-                    Design Philosophy
-                    </p>
-
-                    <h2 class="text-3xl md:text-4xl font-semibold text-[#3a2f2f] mb-6 leading-snug">
-                    Designing with clarity, structure, and intention.
-                    </h2>
-
-                    <p class="text-[#5c4f4f] leading-relaxed">
-                    I approach design through empathy and structured thinking—prioritizing clarity over 
-                    complexity and purpose over decoration.
-                    </p>
-                </div>
-
-                <!-- Tags -->
-                <div class="flex flex-wrap gap-3 max-w-4xl">
-                    <span class="tag">User-centered design</span>
-                    <span class="tag">Empathy-driven problem solving</span>
-                    <span class="tag">UX rationale & decision-making</span>
-                    <span class="tag">Clarity-first thinking</span>
-                    <span class="tag">Information architecture</span>
-                    <span class="tag">Interaction design</span>
-                    <span class="tag">Visual hierarchy</span>
-                    <span class="tag">Typography-led layouts</span>
-                    <span class="tag">Spacing & grid systems</span>
-                    <span class="tag">End-to-end product understanding</span>
-                    <span class="tag">Feasibility-aware design</span>
-                    <span class="tag">Design–development collaboration</span>
-                </div>
-            </div>
-        </section>
 
         <!-- DESIGN THEORY -->
-        <section class="px-6 md:px-16 py-20 text-center fade-up">
+        <section class="px-6 md:px-16 py-28 text-center fade-up">
             <p class="text-2xl text-[#b08a94] md:text-3xl italic max-w-3xl mx-auto">
             “I see design as the bridge between logic and experience—where structure brings clarity 
             and every decision has a purpose.”
