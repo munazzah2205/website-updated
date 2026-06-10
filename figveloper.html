@@ -1,0 +1,2152 @@
+<!DOCTYPE html>
+<html lang="en">
+
+    <head>
+
+        <!-- META -->
+        <meta charset="UTF-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+
+        <!-- TITLE -->
+        <title>Case Study | FIGVELOPER</title>
+
+        <!-- TAILWIND -->
+        <script src="https://cdn.tailwindcss.com"></script>
+
+        <!-- Fonts -->
+        <link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@300;400;500;600&display=swap" rel="stylesheet">
+        <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;600;700&family=Montserrat:wght@300;400;500;600&family=Poppins:wght@500;600;700&display=swap" rel="stylesheet">
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=Courier+Prime:wght@400;700&display=swap" rel="stylesheet">
+        <link href="website-images/logo-white.png" rel="shortcut icon" type="image/x-icon">
+
+        <style>
+
+            /* TYPOGRAPHY */
+
+            @font-face {
+                font-family: 'Liberation Sans';
+                src: local('Liberation Sans'), local('LiberationSans');
+            }
+
+            .font-liberation {
+                font-family: 'Liberation Sans', Arial, sans-serif;
+            }
+
+            .font-jakarta {
+                font-family: 'Plus Jakarta Sans', sans-serif;
+            }
+
+            .font-inter {
+                font-family: 'Inter', sans-serif;
+            }
+
+            .font-courier {
+                font-family: 'Courier Prime', monospace;
+            }
+
+            /* GLOBAL */
+
+            html {
+                scroll-behavior: smooth;
+            }
+
+            body {
+                background: #EEF0E8;
+                color: #151515;
+                overflow-x: hidden;
+            }
+
+            /* ANIMATION */
+
+            .fade-up {
+                opacity: 0;
+                transform: translateY(50px);
+                transition: all 0.9s cubic-bezier(0.22, 1, 0.36, 1);
+            }
+
+            .fade-up.show {
+                opacity: 1;
+                transform: translateY(0);
+            }
+
+            .scrollbar-hide::-webkit-scrollbar {
+                display: none;
+            }
+
+            .scrollbar-hide {
+                -ms-overflow-style: none;
+                scrollbar-width: none;
+            }
+
+        </style>
+
+    </head>
+
+    <body>
+
+        <!-- NAVBAR -->
+        <!-- <header class="w-full">
+            <div class="px-6 md:px-16 py-6 flex items-center justify-between backdrop-blur-md bg-[#f7f6f4]/70 border-b border-white/40">
+                <div class="w-[56px] h-[20px]">
+                    <img src="website-images/website-logo.png">
+                </div>
+                <nav class="flex items-center gap-8 text-sm">
+                    <a href="index.html" class="nav-link group">Work<span class="nav-underline"></span></a>
+                    <a href="about.html" class="nav-link group">About<span class="nav-underline"></span></a>
+                    <a href="assets/Resume-2026.pdf" target="_blank" class="nav-link group">Resume<span class="nav-underline"></span></a>
+                </nav>
+            </div>
+        </header> -->
+
+
+        <!-- HERO SECTION -->
+        <section class="px-6 md:px-24 pt-16 md:pt-24 pb-20 fade-up bg-[#F5FBEF]">
+
+            <div class="max-w-[1400px]">
+
+                <!-- HEADING -->
+                <h1 class="font-liberation font-bold text-[48px] leading-[50px] tracking-[-0.64px] text-[#151515] max-w-[1088px] mb-6">
+                FIGVELOPER: Design-to-Development <br>QA Platform
+                </h1>
+
+                <!-- SUBTEXT -->
+                <p class="font-jakarta font-normal text-[18px] leading-[28px] tracking-[0px] text-[#202020] max-w-[782px] mb-12">
+                A unified workspace for comparing Figma designs against live implementation, 
+                annotating discrepancies, and resolving them — without switching a single tool.
+                </p>
+
+                <!-- META GRID -->
+                <div class="grid grid-cols-2 md:grid-cols-4 gap-x-16 gap-y-10 max-w-[1000px]">
+
+                    <!-- ROLE -->
+                    <div>
+
+                        <p class="font-jakarta font-semibold text-[16px] leading-[24px] tracking-[0.6px] text-[#7C7F75] mb-1">
+                        Role
+                        </p>
+
+                        <p class="font-jakarta font-semibold text-[16px] leading-[24px] tracking-[0px] text-[#151515] whitespace-nowrap">
+                        Product Designer
+                        </p>
+
+                    </div>
+
+                    <!-- TYPE -->
+                    <div>
+
+                        <p class="font-jakarta font-semibold text-[16px] leading-[24px] tracking-[0.6px] text-[#7C7F75] mb-1">
+                        Type
+                        </p>
+
+                        <p class="font-jakarta font-semibold text-[16px] leading-[24px] tracking-[0px] text-[#151515] whitespace-nowrap">
+                        Web Application
+                        </p>
+
+                    </div>
+
+                    <!-- TOOL -->
+                    <div>
+
+                        <p class="font-jakarta font-semibold text-[16px] leading-[24px] tracking-[0.6px] text-[#7C7F75] mb-1">
+                        Tool
+                        </p>
+
+                        <p class="font-jakarta font-semibold text-[16px] leading-[24px] tracking-[0px] text-[#151515] whitespace-nowrap">
+                        Figma & Google Stitch AI
+                        </p>
+
+                    </div>
+
+                    <!-- TIMELINE -->
+                    <div>
+
+                        <p class="font-jakarta font-semibold text-[16px] leading-[24px] tracking-[0.6px] text-[#7C7F75] mb-1">
+                        Timeline
+                        </p>
+
+                        <p class="font-jakarta font-semibold text-[16px] leading-[24px] tracking-[0px] text-[#151515] whitespace-nowrap">
+                        4 Weeks
+                        </p>
+
+                    </div>
+
+                </div>
+
+            </div>
+
+        </section>
+
+
+        <!-- HERO IMAGE -->
+        <section class="pb-20 md:pb-28 fade-up bg-[#F5FBEF]">
+
+            <div class="px-6 md:px-24">
+
+                <div class="w-full">
+
+                    <img 
+                        src="figveloper-images/FIGVELOPER-Hero-Laptop.png"
+                        alt="Pantrio Hero Mockup"
+                        class="w-full h-full object-cover"
+                    >
+
+                </div>
+
+            </div>
+
+        </section>
+
+        <!-- THE PROBLEM -->
+        <section class="w-full px-[96px] py-[96px] bg-[#F8F7F7] fade-up">
+
+            <div class="max-w-[1280px] mx-auto">
+
+                <!-- HEADER -->
+                <div class="mb-[56px]">
+
+                    <!-- TITLE -->
+                    <h2 class="font-liberation font-bold text-[32px] leading-[36px] tracking-[-0.24px] text-[#171D16] mb-[16px]">
+                    The Problem
+                    </h2>
+
+                    <!-- DESCRIPTION -->
+                    <p class="max-w-[768px] font-jakarta font-normal text-[18px] leading-[28px] text-[#171D16]">
+                    There is a workflow every designer knows, yet few can optimize: the friction between vision and execution.
+                    </p>
+
+                </div>
+
+                <!-- QUOTE CARD -->
+                <div class="relative bg-[#FDFDFC] rounded-[28px] overflow-hidden mb-[24px]">
+
+                    <!-- ACCENT BAR -->
+                    <div class="absolute left-0 top-0 h-full w-[6px] bg-[#6B4A56]"></div>
+
+                    <div class="px-[44px] pt-[42px] pb-[38px]">
+
+                        <!-- QUOTE -->
+                        <p class="max-w-[1008px] font-jakarta italic font-normal text-[22px] leading-[34px] text-[#916E77] mb-[24px]">
+                        "I spent four hours explaining why a 4px gap was 6px in production. It wasn't about the pixel—it was about the process. I realized that until we bridge the gap between Figma's JSON and the browser's DOM, we are just guessing."
+                        </p>
+
+                        <!-- AUTHOR -->
+                        <div class="flex justify-end">
+                            <p class="font-jakarta font-bold text-[12px] leading-[16px] tracking-[0.1em] text-[#5C3E47]">
+                            — Munazzah Zainab, UI/UX Designer
+                            </p>
+                        </div>
+
+                    </div>
+
+                </div>
+
+                <!-- PROBLEM CARDS -->
+                <div class="grid grid-cols-1 md:grid-cols-3 gap-[24px]">
+
+                    <!-- CARD 01 -->
+                    <div class="bg-[#FDFDFC] border border-[rgba(23,29,22,0.06)] rounded-[28px] p-[40px]">
+
+                        <!-- NUMBER -->
+                        <div class="font-jakarta font-normal text-[48px] leading-[72px] text-[#D3C4CA] mb-[20px]">
+                        01
+                        </div>
+
+                        <!-- TITLE -->
+                        <h3 class="font-jakarta font-medium text-[24px] leading-[36px] text-[#1A1C1B] mb-[12px]">
+                        Context Switching
+                        </h3>
+
+                        <!-- DESCRIPTION -->
+                        <p class="font-jakarta font-normal text-[16px] leading-[24px] text-[#4F4447]">
+                        You hold CSS values in short-term memory while switching between browser and Figma. By the time you arrive, the precision is already gone.
+                        </p>
+
+                     </div>
+
+                    <!-- CARD 02 -->
+                    <div class="bg-[#FDFDFC] border border-[rgba(23,29,22,0.06)] rounded-[28px] p-[40px]">
+
+                        <!-- NUMBER -->
+                        <div class="font-jakarta font-normal text-[48px] leading-[72px] text-[#D3C4CA] mb-[20px]">
+                        02
+                        </div>
+
+                        <!-- TITLE -->
+                        <h3 class="font-jakarta font-medium text-[24px] leading-[36px] text-[#1A1C1B] mb-[12px]">
+                        Lost Documentation
+                        </h3>
+
+                        <!-- DESCRIPTION -->
+                        <p class="font-jakarta font-normal text-[16px] leading-[24px] text-[#4F4447]">
+                        Word documents and email attachments have no connection to the element they describe. Discrepancies are written, sent, forgotten, and repeated.
+                        </p>
+
+                    </div>
+
+                    <!-- CARD 03 -->
+                    <div class="bg-[#FDFDFC] border border-[rgba(23,29,22,0.06)] rounded-[28px] p-[40px]">
+
+                        <!-- NUMBER -->
+                        <div class="font-jakarta font-normal text-[48px] leading-[72px] text-[#D3C4CA] mb-[20px]">
+                        03
+                        </div>
+
+                        <!-- TITLE -->
+                        <h3 class="font-jakarta font-medium text-[24px] leading-[36px] text-[#1A1C1B] mb-[12px]">
+                        Invisible Resolution
+                        </h3>
+
+                        <!-- DESCRIPTION -->
+                        <p class="font-jakarta font-normal text-[16px] leading-[24px] text-[#4F4447]">
+                        When the new build arrives, there is no record of what changed. Every review cycle starts from zero. The loop never closes, it just restarts.
+                        </p>
+
+                    </div>
+
+                </div>
+
+            </div>
+
+        </section>
+
+
+        <!-- WHERE FIGVELOPER SITS -->
+        <section class="w-full px-[96px] py-[96px] bg-[#F8F7F7] fade-up">
+
+            <div class="max-w-[1280px] mx-auto">
+
+                <!-- HEADING -->
+                <h2 class="font-liberation font-bold text-[32px] leading-[36px] tracking-[-0.24px] text-[#171D16] mb-[40px]">
+                    Where FIGVELOPER sits.
+                </h2>
+
+                <!-- COMPARISON CARDS -->
+                <div class="grid grid-cols-1 md:grid-cols-3 gap-[16px] mb-[24px]">
+
+                    <!-- FIGMA DEV MODE -->
+                    <div class="bg-[#FDFDFC] border border-[rgba(23,29,22,0.08)] rounded-[18px] p-[24px]">
+
+                        <!-- TITLE -->
+                        <h3 class="font-jakarta font-semibold text-[14px] leading-[20px] text-[#171D16] mb-[8px]">
+                            FIGMA DEV MODE
+                        </h3>
+
+                        <!-- SUBTITLE -->
+                        <p class="font-jakarta italic font-normal text-[14px] leading-[20px] text-[#916E77] mb-[16px]">
+                            Stops at the design file.
+                        </p>
+
+                        <!-- DESCRIPTION -->
+                        <p class="font-jakarta font-normal text-[15px] leading-[22px] text-[#3F4A3C]">
+                            Handles spec inspection and design token documentation. The live implementation does not exist inside it. Comparison is still manual.
+                        </p>
+
+                    </div>
+
+                    <!-- ZEPLIN -->
+                    <div class="bg-[#FDFDFC] border border-[rgba(23,29,22,0.08)] rounded-[18px] p-[24px]">
+
+                        <!-- TITLE -->
+                        <h3 class="font-jakarta font-semibold text-[14px] leading-[20px] text-[#171D16] mb-[8px]">
+                            ZEPLIN
+                        </h3>
+
+                        <!-- SUBTITLE -->
+                        <p class="font-jakarta italic font-normal text-[14px] leading-[20px] text-[#916E77] mb-[16px]">
+                            Stops at handoff.
+                        </p>
+
+                        <!-- DESCRIPTION -->
+                        <p class="font-jakarta font-normal text-[15px] leading-[22px] text-[#3F4A3C]">
+                            Handles style guides and asset export. Clean developer-facing documentation. The coded output is never part of the picture.
+                        </p>
+
+                    </div>
+
+                    <!-- BROWSER DEVTOOLS -->
+                    <div class="bg-[#FDFDFC] border border-[rgba(23,29,22,0.08)] rounded-[18px] p-[24px]">
+
+                        <!-- TITLE -->
+                        <h3 class="font-jakarta font-semibold text-[14px] leading-[20px] text-[#171D16] mb-[8px]">
+                            BROWSER DEVTOOLS
+                        </h3>
+
+                        <!-- SUBTITLE -->
+                        <p class="font-jakarta italic font-normal text-[14px] leading-[20px] text-[#916E77] mb-[16px]">
+                            Stops at the browser.
+                        </p>
+
+                        <!-- DESCRIPTION -->
+                        <p class="font-jakarta font-normal text-[15px] leading-[22px] text-[#3F4A3C]">
+                            Full computed CSS access. No Figma frame on the other side. No annotation layer. No tracking. No resolution flow.
+                        </p>
+
+                    </div>
+
+                </div>
+
+                <!-- FIGVELOPER DIFFERENCE -->
+                <div class="flex items-center justify-between gap-[24px] bg-[#B08A94]/40 rounded-[8px] px-[24px] py-[24px]">
+
+                    <!-- CONTENT -->
+                    <div>
+
+                        <!-- LABEL -->
+                        <p class="font-jakarta font-medium text-[14px] leading-[24px] text-[#40252D] mb-[12px]">
+                            THE FIGVELOPER DIFFERENCE
+                        </p>
+
+                        <!-- BODY -->
+                        <p class="max-w-[880px] font-jakarta font-medium text-[17px] leading-[28px] text-[#40252D]">
+                            Figma frame on the left. Live coded output on the right. Click any element. See the CSS spec. Pin the discrepancy. Everything in one screen without switching a single tool.
+                        </p>
+
+                    </div>
+
+                    <!-- ICON -->
+                    <img
+                        src="figveloper-images/bidurectional-icon.png"
+                        alt="Comparison Arrow"
+                        class="w-[56px] h-[56px] flex-shrink-0"
+                    />
+
+                </div>
+
+            </div>
+
+        </section>
+
+
+        <!-- RESEARCH & DISCOVERY -->
+        <section class="w-full px-[96px] py-[96px] bg-[#E9EEE5] fade-up">
+
+            <div class="max-w-[1280px] mx-auto">
+
+                <!-- HEADER -->
+                <div class="mb-[72px]">
+
+                    <!-- TITLE -->
+                    <h2 class="font-liberation font-bold text-[32px] leading-[36px] tracking-[-0.24px] text-[#171D16] mb-[16px]">
+                        Research & Discovery
+                    </h2>
+
+                    <!-- DESCRIPTION -->
+                    <p class="max-w-[895px] font-jakarta font-normal text-[18px] leading-[28px] text-[#171D16]">
+                        This wasn't a research-led process. It was an experience-led one. Across three client projects :- Ecopath,
+                        Akashdeep Design Studio, and House of Shaarag, the same workflow failure repeated itself. By the time
+                        House of Shaarag wrapped, three people had hit their limit independently: the designer, the developer,
+                        and the PM. That convergence was the brief.
+                    </p>
+
+                </div>
+
+                <!-- PROJECT FAILURES -->
+                <div class="mb-[72px]">
+
+                    <!-- SUBHEADING -->
+                    <h3 class="font-jakarta font-medium text-[24px] leading-[24px] text-[#171D16] mb-[24px]">
+                        Three projects. The same failure, each time.
+                    </h3>
+
+                    <!-- CARDS -->
+                    <div class="grid grid-cols-1 md:grid-cols-3 gap-[16px]">
+
+                        <!-- CARD 01 -->
+                        <div class="bg-[#FDFDFC] rounded-[18px] p-[36px]">
+
+                            <div class="font-jakarta font-normal text-[60px] leading-[72px] text-[#B08A94] opacity-60 mb-[16px]">
+                                01
+                            </div>
+
+                            <h4 class="font-jakarta font-medium text-[24px] leading-[36px] text-[#171D16] mb-[16px]">
+                                Akashdeep Studio
+                            </h4>
+
+                            <p class="font-jakarta font-normal text-[16px] leading-[28px] text-[#4F4447]">
+                                The first time the Word document failed. Discrepancies were logged, sent, acknowledged — and still missed. The review cycle restarted from zero.
+                            </p>
+
+                        </div>
+
+                        <!-- CARD 02 -->
+                        <div class="bg-[#FDFDFC] rounded-[18px] p-[36px]">
+
+                            <div class="font-jakarta font-normal text-[60px] leading-[72px] text-[#B08A94] opacity-80 mb-[16px]">
+                                02
+                            </div>
+
+                            <h4 class="font-jakarta font-medium text-[24px] leading-[36px] text-[#171D16] mb-[16px]">
+                                Ecopath
+                            </h4>
+
+                            <p class="font-jakarta font-normal text-[16px] leading-[28px] text-[#4F4447]">
+                                The documentation got more detailed. The problem didn't get smaller. More specificity in the doc meant more time spent writing it, not less time fixing it.
+                            </p>
+
+                        </div>
+
+                        <!-- CARD 03 -->
+                        <div class="bg-[#FDFDFC] rounded-[18px] p-[36px]">
+
+                            <div class="font-jakarta font-normal text-[60px] leading-[72px] text-[#B08A94] mb-[16px]">
+                                03
+                            </div>
+
+                            <h4 class="font-jakarta font-medium text-[24px] leading-[36px] text-[#171D16] mb-[16px]">
+                                House of Shaarag
+                            </h4>
+
+                            <p class="font-jakarta font-normal text-[16px] leading-[28px] text-[#4F4447]">
+                                The breaking point. Three stakeholders, one developer, multiple review rounds. The developer missed details not because of carelessness — but because the document had no connection to the element it described.
+                            </p>
+
+                        </div>
+
+                    </div>
+
+                </div>
+
+                <!-- STAKEHOLDER QUOTES -->
+                <div class="mb-[72px]">
+
+                    <!-- SUBHEADING -->
+                    <h3 class="font-jakarta font-medium text-[24px] leading-[24px] text-[#171D16] mb-[24px]">
+                        Everyone felt it. Nobody had a fix.
+                    </h3>
+
+                    <!-- QUOTE CARDS -->
+                    <div class="grid grid-cols-1 md:grid-cols-3 gap-[16px]">
+
+                        <!-- QUOTE 01 -->
+                        <div class="bg-[#FDFDFC] border border-[rgba(23,29,22,0.06)] rounded-[18px] p-[20px]">
+
+                            <h4 class="font-jakarta font-semibold text-[14px] leading-[20px] text-[#171D16]">
+                                Munazzah Zainab
+                            </h4>
+
+                            <p class="font-jakarta font-normal text-[14px] leading-[20px] text-[#3F4A3C] mb-[16px]">
+                                The Designer
+                            </p>
+
+                            <p class="font-jakarta italic font-normal text-[14px] leading-[20px] text-[#916E77]">
+                                "I spent more time documenting discrepancies than it would have taken to just fix them..."
+                            </p>
+
+                        </div>
+
+                        <!-- QUOTE 02 -->
+                        <div class="bg-[#FDFDFC] border border-[rgba(23,29,22,0.06)] rounded-[18px] p-[20px]">
+
+                            <h4 class="font-jakarta font-semibold text-[14px] leading-[20px] text-[#171D16]">
+                                Deepak K
+                            </h4>
+
+                            <p class="font-jakarta font-normal text-[14px] leading-[20px] text-[#3F4A3C] mb-[16px]">
+                                The Developer
+                            </p>
+
+                            <p class="font-jakarta italic font-normal text-[14px] leading-[20px] text-[#916E77]">
+                                "The document told me what was wrong but never where..."
+                            </p>
+
+                        </div>
+
+                        <!-- QUOTE 03 -->
+                        <div class="bg-[#FDFDFC] border border-[rgba(23,29,22,0.06)] rounded-[18px] p-[20px]">
+
+                            <h4 class="font-jakarta font-semibold text-[14px] leading-[20px] text-[#171D16]">
+                                Suchita Haldar
+                            </h4>
+
+                            <p class="font-jakarta font-normal text-[14px] leading-[20px] text-[#3F4A3C] mb-[16px]">
+                                Project Manager
+                            </p>
+
+                            <p class="font-jakarta italic font-normal text-[14px] leading-[20px] text-[#916E77]">
+                                "I had no visibility into whether a discrepancy was being worked on..."
+                            </p>
+
+                        </div>
+
+                    </div>
+
+                </div>
+
+                <!-- KEY FINDINGS -->
+                <div>
+
+                    <!-- SUBHEADING -->
+                    <h3 class="font-jakarta font-medium text-[24px] leading-[24px] text-[#171D16] mb-[40px]">
+                        Four findings that shaped every design decision.
+                    </h3>
+
+                    <!-- FINDINGS GRID -->
+                    <div class="grid grid-cols-1 md:grid-cols-2 gap-x-[40px] gap-y-[48px]">
+
+                        <!-- FINDING 01 -->
+                        <div class="flex items-center gap-[24px]">
+
+                            <div class="w-[48px] h-[48px] rounded-full bg-[#76555F]/10 flex items-center justify-center flex-shrink-0">
+
+                                <img
+                                    src="figveloper-images/layout-icon.png"
+                                    alt="Design Build Icon"
+                                    class="w-[20px] h-[20px] object-contain"
+                                >
+
+                            </div>
+
+                            <p class="font-jakarta font-semibold text-[18px] leading-[28px] tracking-[-0.45px] text-[#1A1C1B]">
+                                The Design and the Build Never Share a Screen
+                            </p>
+
+                        </div>
+
+                        <!-- FINDING 02 -->
+                        <div class="flex items-center gap-[24px]">
+
+                            <div class="w-[48px] h-[48px] rounded-full bg-[#76555F]/10 flex items-center justify-center flex-shrink-0">
+
+                                <img
+                                    src="figveloper-images/word-icon.png"
+                                    alt="Word Document Icon"
+                                    class="w-[20px] h-[20px] object-contain"
+                                >
+
+                            </div>
+
+                            <p class="font-jakarta font-semibold text-[18px] leading-[28px] tracking-[-0.45px] text-[#1A1C1B]">
+                                A Word Document Is Already Outdated When It's Sent
+                            </p>
+
+                        </div>
+
+                        <!-- FINDING 03 -->
+                        <div class="flex items-center gap-[24px]">
+
+                            <div class="w-[48px] h-[48px] rounded-full bg-[#76555F]/10 flex items-center justify-center flex-shrink-0">
+
+                                <img
+                                    src="figveloper-images/email-icon.png"
+                                    alt="Mail Icon"
+                                    class="w-[20px] h-[20px] object-contain"
+                                >
+
+                            </div>
+
+                            <p class="font-jakarta font-semibold text-[18px] leading-[28px] tracking-[-0.45px] text-[#1A1C1B]">
+                                Fix Status Lived in Emails, Not in Any System
+                            </p>
+
+                        </div>
+
+                        <!-- FINDING 04 -->
+                        <div class="flex items-center gap-[24px]">
+
+                            <div class="w-[48px] h-[48px] rounded-full bg-[#76555F]/10 flex items-center justify-center flex-shrink-0">
+
+                                <img
+                                    src="figveloper-images/code-icon.png"
+                                    alt="Code Icon"
+                                    class="w-[20px] h-[20px] object-contain"
+                                >
+
+                            </div>
+
+                            <p class="font-jakarta font-semibold text-[18px] leading-[28px] tracking-[-0.45px] text-[#1A1C1B]">
+                                Developers Needed Element–Level Specificity
+                            </p>
+
+                        </div>
+
+                    </div>
+
+                </div>
+
+            </div>
+
+        </section>
+
+
+        <!-- THE SOLUTION -->
+        <section class="w-full bg-[#E9EEE5] px-[72px] py-[96px] fade-up">
+
+            <!-- CONTAINER -->
+            <div class="max-w-[1280px] mx-auto">
+
+                <!-- SECTION HEADER -->
+                <div class="max-w-[760px] mb-[64px]">
+
+                    <!-- TITLE -->
+                    <h2 class="font-liberation font-bold text-[32px] leading-[36px] tracking-[-0.24px] text-[#171D16] mb-[16px]">
+                        The Solution
+                    </h2>
+
+                    <!-- DESCRIPTION -->
+                    <p class="font-jakarta font-normal text-[18px] leading-[28px] text-[#171D16]">
+                        A unified workspace that connects Figma directly to the live build. One surface. Every stakeholder. No tab switching.
+                    </p>
+
+                </div>
+
+                <!-- SOLUTION CONTENT -->
+                <div class="grid grid-cols-1 lg:grid-cols-2 gap-[72px] items-center mb-[64px]">
+
+                    <!-- LEFT CONTENT -->
+                    <div class="flex flex-col gap-[48px]">
+
+                        <!-- ITEM 01 -->
+                        <div class="flex items-start gap-[24px]">
+
+                            <div class="w-[48px] h-[48px] rounded-full bg-[#76555F]/10 flex items-center justify-center flex-shrink-0">
+
+                                <img
+                                    src="figveloper-images/canvas-icon.png"
+                                    alt="Comparison Canvas"
+                                    class="w-[20px] h-[20px] object-contain"
+                                >
+
+                            </div>
+
+                            <div>
+
+                                <h3 class="font-jakarta font-semibold text-[18px] leading-[28px] tracking-[-0.45px] text-[#1A1C1B] mb-[8px]">
+                                    Side-by-Side Comparison Canvas
+                                </h3>
+
+                                <p class="font-jakarta font-normal text-[17px] leading-[28px] text-[#4F4447]">
+                                    Figma and the live site. Same viewport, same zoom, same moment. The gap between design intent and built reality — visible instantly.
+                                </p>
+
+                            </div>
+
+                        </div>
+
+                        <!-- ITEM 02 -->
+                        <div class="flex items-start gap-[24px]">
+
+                            <div class="w-[48px] h-[48px] rounded-full bg-[#76555F]/10 flex items-center justify-center flex-shrink-0">
+
+                                <img
+                                    src="figveloper-images/code-icon.png"
+                                    alt="CSS Output"
+                                    class="w-[20px] h-[20px] object-contain"
+                                >
+
+                            </div>
+
+                            <div>
+
+                                <h3 class="font-jakarta font-semibold text-[18px] leading-[28px] tracking-[-0.45px] text-[#1A1C1B] mb-[8px]">
+                                    Element Inspector with CSS Output
+                                </h3>
+
+                                <p class="font-jakarta font-normal text-[17px] leading-[28px] text-[#4F4447]">
+                                    Click any element. See what Figma specified vs what the browser computed. Selector, expected value, actual value, no document needed.
+                                </p>
+
+                            </div>
+
+                        </div>
+
+                        <!-- ITEM 03 -->
+                        <div class="flex items-start gap-[24px]">
+
+                            <div class="w-[48px] h-[48px] rounded-full bg-[#76555F]/10 flex items-center justify-center flex-shrink-0">
+
+                                <img
+                                    src="figveloper-images/pin-icon.png"
+                                    alt="Annotation Pinning"
+                                    class="w-[20px] h-[20px] object-contain"
+                                >
+
+                            </div>
+
+                            <div>
+
+                                <h3 class="font-jakarta font-semibold text-[18px] leading-[28px] tracking-[-0.45px] text-[#1A1C1B] mb-[8px]">
+                                    Annotation Pinning with Comment Threads
+                                </h3>
+
+                                <p class="font-jakarta font-normal text-[17px] leading-[28px] text-[#4F4447]">
+                                    Right-click any element to raise a pin directly on its border. Set severity, assign it, discuss it, resolve it — without leaving the canvas.
+                                </p>
+
+                            </div>
+
+                        </div>
+
+                        <!-- ITEM 04 -->
+                        <div class="flex items-start gap-[24px]">
+
+                            <div class="w-[48px] h-[48px] rounded-full bg-[#76555F]/10 flex items-center justify-center flex-shrink-0">
+
+                                <img
+                                    src="figveloper-images/log-icon.png"
+                                    alt="Discrepancy Log"
+                                    class="w-[20px] h-[20px] object-contain"
+                                >
+
+                            </div>
+
+                            <div>
+
+                                <h3 class="font-jakarta font-semibold text-[18px] leading-[28px] tracking-[-0.45px] text-[#1A1C1B] mb-[8px]">
+                                    Discrepancy Log
+                                </h3>
+
+                                <p class="font-jakarta font-normal text-[17px] leading-[28px] text-[#4F4447]">
+                                    Every pin becomes a tracked issue. Filterable by screen, severity, and status. The review document that used to live in email — now permanent and element-anchored.
+                                </p>
+
+                            </div>
+
+                        </div>
+
+                        <!-- ITEM 05 -->
+                        <div class="flex items-start gap-[24px]">
+
+                            <div class="w-[48px] h-[48px] rounded-full bg-[#76555F]/10 flex items-center justify-center flex-shrink-0">
+
+                                <img
+                                    src="figveloper-images/dashboard-icon.png"
+                                    alt="Project Dashboard"
+                                    class="w-[20px] h-[20px] object-contain"
+                                >
+
+                            </div>
+
+                            <div>
+
+                                <h3 class="font-jakarta font-semibold text-[18px] leading-[28px] tracking-[-0.45px] text-[#1A1C1B] mb-[8px]">
+                                    Project Dashboard
+                                </h3>
+
+                                <p class="font-jakarta font-normal text-[17px] leading-[28px] text-[#4F4447]">
+                                    Total screens, open issues, resolution rate — one screen, no digging. Project health readable in under five seconds.
+                                </p>
+
+                            </div>
+
+                        </div>
+
+                    </div>
+
+                    <!-- RIGHT IMAGE -->
+                    <div class="flex justify-end">
+
+                        <img
+                            src="figveloper-images/solution-collage.png"
+                            alt="FIGVELOPER Interface Overview"
+                            class="w-full max-w-[520px] object-contain"
+                        >
+
+                    </div>
+
+                </div>
+
+                <!-- USER IMPACT -->
+                <div class="flex items-center justify-between gap-[24px] bg-[#B08A94]/40 rounded-[8px] px-[24px] py-[24px]">
+
+                    <!-- CONTENT -->
+                    <div>
+
+                        <p class="font-jakarta font-medium text-[14px] leading-[24px] text-[#40252D] mb-[12px]">
+                            WHAT CHANGES FOR EACH USER
+                        </p>
+
+                        <ul class="space-y-[6px] font-jakarta font-medium text-[17px] leading-[28px] text-[#40252D]">
+                            <li>• Designer - Reviews don't restart with every new build.</li>
+                            <li>• Developer - Gets a selector and exact values, not a sentence in a doc.</li>
+                            <li>• Project Manager - Reads project health without a single Slack message.</li>
+                        </ul>
+
+                    </div>
+
+                    <!-- ICON -->
+                    <div class="flex-shrink-0 items-center mt-[18px]">
+
+                        <img
+                            src="figveloper-images/profile-icon.png"
+                            alt="User Impact"
+                            class="w-[56px] h-[56px] object-contain"
+                        >
+
+                    </div>
+
+                </div>
+
+            </div>
+
+        </section>
+
+        <!-- TECHNICAL CONSTRAINTS -->
+        <section class="w-full bg-[#E9EEE5] px-[96px] py-[96px] fade-up">
+
+            <!-- CONTAINER -->
+            <div class="max-w-[1280px] mx-auto">
+
+                <!-- HEADER -->
+                <div class="mb-[48px]">
+
+                    <!-- TITLE -->
+                    <h2 class="font-liberation font-bold text-[32px] leading-[32px] tracking-[-0.24px] text-[#171D16] mb-[16px]">
+                        Technical Constraints
+                    </h2>
+
+                    <!-- DESCRIPTION -->
+                    <p class="max-w-[680px] font-jakarta font-normal text-[18px] leading-[24px] text-[#000000]">
+                        FIGVELOPER operates at the boundary of browser security, third-party APIs, and live environments. These are the real-world limitations every implementation must navigate.
+                    </p>
+
+                </div>
+
+                <!-- CONSTRAINT GRID -->
+                <div class="grid grid-cols-4 gap-[24px]">
+
+                    <!-- CARD 01 -->
+                    <div class="bg-[#F7F5F5] rounded-[16px] px-[32px] pt-[32px] pb-[32px] min-h-[336px]">
+
+                        <div class="w-[56px] h-[56px] rounded-full bg-[#B08A94]/15 flex items-center justify-center mb-[28px]">
+                            <img
+                                src="figveloper-images/figma-icon.png"
+                                alt=""
+                                class="w-[24px] h-[24px] object-contain"
+                            >
+                        </div>
+
+                        <h3 class="font-jakarta font-bold text-[20px] leading-[28px] text-[#1A1C1B] mb-[20px]">
+                            Figma API Dependency
+                        </h3>
+
+                        <p class="font-jakarta font-normal text-[14px] leading-[22px] text-[#4F4446]">
+                            The Personal Access Token can expire or be revoked at any time. If read access is lost mid-session, the left canvas fails entirely, requiring a full reconnect flow.
+                        </p>
+
+                    </div>
+
+                    <!-- CARD 02 -->
+                    <div class="bg-[#F7F5F5] rounded-[16px] px-[32px] pt-[32px] pb-[32px] min-h-[336px]">
+
+                        <div class="w-[56px] h-[56px] rounded-full bg-[#B08A94]/15 flex items-center justify-center mb-[28px]">
+                            <img
+                                src="figveloper-images/iframe-icon.png"
+                                alt=""
+                                class="w-[32px] h-[32px] object-contain"
+                            >
+                        </div>
+
+                        <h3 class="font-jakarta font-bold text-[20px] leading-[28px] text-[#1A1C1B] mb-[20px]">
+                            iframe Embedding Restrictions
+                        </h3>
+
+                        <p class="font-jakarta font-normal text-[14px] leading-[22px] text-[#4F4446]">
+                            Some sites block live frame loading through security policies. As this is the main technical limitation, the connection fail state was designed as a dedicated screen.
+                        </p>
+
+                    </div>
+
+                    <!-- CARD 03 -->
+                    <div class="bg-[#F7F5F5] rounded-[16px] px-[32px] pt-[32px] pb-[32px] min-h-[336px]">
+
+                        <div class="w-[56px] h-[56px] rounded-full bg-[#B08A94]/15 flex items-center justify-center mb-[28px]">
+                            <img
+                                src="figveloper-images/dom-icon.png"
+                                alt=""
+                                class="w-[24px] h-[24px] object-contain"
+                            >
+                        </div>
+
+                        <h3 class="font-jakarta font-bold text-[20px] leading-[28px] text-[#1A1C1B] mb-[20px]">
+                            Cross-Origin DOM Inspection
+                        </h3>
+
+                        <p class="font-jakarta font-normal text-[14px] leading-[22px] text-[#4F4446]">
+                            Browsers block cross-origin iframe content access natively. Element-level CSS inspection requires either a browser extension, a proxy layer, or script injection on the live site.
+                        </p>
+
+                    </div>
+
+                    <!-- CARD 04 -->
+                    <div class="bg-[#F7F5F5] rounded-[16px] px-[32px] pt-[32px] pb-[32px] min-h-[336px]">
+
+                        <div class="w-[56px] h-[56px] rounded-full bg-[#B08A94]/15 flex items-center justify-center mb-[28px]">
+                            <img
+                                src="figveloper-images/css-icon.png"
+                                alt=""
+                                class="w-[24px] h-[24px] object-contain"
+                            >
+                        </div>
+
+                        <h3 class="font-jakarta font-bold text-[20px] leading-[28px] text-[#1A1C1B] mb-[20px]">
+                            CSS Computed Value Accuracy
+                        </h3>
+
+                        <p class="font-jakarta font-normal text-[14px] leading-[22px] text-[#4F4446]">
+                            The Inspector reads computed CSS, not authored values. Inheritance, overrides, and specificity conflicts can create misleading discrepancies.
+                        </p>
+
+                    </div>
+
+                </div>
+
+            </div>
+
+        </section>
+
+        <!-- INFORMATION ARCHITECTURE & USER FLOWS -->
+        <section class="w-full bg-[#EEF2E8] px-[96px] py-[96px] fade-up">
+
+            <!-- CONTAINER -->
+            <div class="max-w-[1280px] mx-auto">
+
+                <!-- HEADER -->
+                <div class="mb-[48px]">
+
+                    <!-- TITLE -->
+                    <h2 class="font-liberation font-bold text-[32px] leading-[36px] tracking-[-0.24px] text-[#171D16] mb-[16px]">
+                        Information Architecture & User Flows
+                    </h2>
+
+                    <!-- DESCRIPTION -->
+                    <p class="max-w-[720px] font-jakarta font-normal text-[17px] leading-[27px] tracking-[0px] text-[#1A1C1B]">
+                        FIGVELOPER has two distinct entry points and three core workflows. Admin
+                        responsibilities and team workflows stay on separate paths — they never overlap.
+                    </p>
+
+                </div>
+
+                <!-- ENTRY POINTS -->
+                <div class="mb-[48px]">
+
+                    <!-- SUBTITLE -->
+                    <h3 class="font-liberation font-bold text-[18px] leading-[24px] text-[#171D16] mb-[16px]">
+                        Entry Points
+                    </h3>
+
+                    <!-- CARDS -->
+                    <div class="grid grid-cols-2 gap-[16px]">
+
+                        <!-- ADMIN -->
+                        <div class="bg-white rounded-[8px] px-[16px] py-[16px] shadow-[0px_4px_18px_rgba(0,0,0,0.03)]">
+
+                            <h4 class="font-jakarta font-medium text-[16px] leading-[24px] tracking-[0px] text-[#916E77] mb-[8px]">
+                                Admin Setup Flow
+                            </h4>
+
+                            <p class="font-jakarta font-normal text-[15px] leading-[24px] tracking-[0.5px] text-[#3F4A3C]">
+                                Landing Page → Create Account → Project Setup Step 1 (Connect Figma)
+                                → Step 2 (Add Live URL) → Step 3 (Invite Team) → Comparison Workspace.
+                            </p>
+
+                        </div>
+
+                        <!-- MEMBER -->
+                        <div class="bg-white rounded-[8px] px-[16px] py-[16px] shadow-[0px_4px_18px_rgba(0,0,0,0.03)]">
+
+                            <h4 class="font-jakarta font-medium text-[16px] leading-[24px] tracking-[0px] text-[#916E77] mb-[8px]">
+                                Member Entry Flow
+                            </h4>
+
+                            <p class="font-jakarta font-normal text-[15px] leading-[24px] tracking-[0.5px] text-[#3F4A3C]">
+                                Invite Email → Accept Invitation → Comparison Workspace →
+                                (Return visits) → Login → Member Dashboard → Comparison Workspace.
+                            </p>
+
+                        </div>
+
+                    </div>
+
+                </div>
+
+                <!-- CORE USER FLOWS -->
+                <div>
+
+                    <!-- SUBTITLE -->
+                    <h3 class="font-liberation font-bold text-[18px] leading-[24px] text-[#171D16] mb-[16px]">
+                        Core User Flows:
+                    </h3>
+
+                    <!-- FLOW LIST -->
+                    <div class="flex flex-col gap-[16px]">
+
+                        <!-- FLOW 01 -->
+                        <div class="bg-white rounded-[8px] px-[16px] py-[16px] shadow-[0px_4px_18px_rgba(0,0,0,0.03)]">
+
+                            <h4 class="font-jakarta font-medium text-[16px] leading-[24px] tracking-[0px] text-[#916E77] mb-[8px]">
+                                QA Review — Designer
+                            </h4>
+
+                            <p class="font-jakarta font-normal text-[15px] leading-[24px] tracking-[0.5px] text-[#3F4A3C]">
+                                Select Screen → Select Frame → View Split Canvas → Click Element →
+                                Inspect CSS → Right-click → Raise Pin → Set Severity →
+                                Assign to Developer → Pin appears on canvas.
+                            </p>
+
+                        </div>
+
+                        <!-- FLOW 02 -->
+                        <div class="bg-white rounded-[8px] px-[16px] py-[16px] shadow-[0px_4px_18px_rgba(0,0,0,0.03)]">
+
+                            <h4 class="font-jakarta font-medium text-[16px] leading-[24px] tracking-[0px] text-[#916E77] mb-[8px]">
+                                Resolution — Developer
+                            </h4>
+
+                            <p class="font-jakarta font-normal text-[15px] leading-[24px] tracking-[0.5px] text-[#3F4A3C]">
+                                Receive Notification → Open Pin in Workspace → View Properties Diff →
+                                View CSS Output → Fix in Codebase → Mark Resolved →
+                                Designer Notified → Confirm or Reopen.
+                            </p>
+
+                        </div>
+
+                        <!-- FLOW 03 -->
+                        <div class="bg-white rounded-[8px] px-[16px] py-[16px] shadow-[0px_4px_18px_rgba(0,0,0,0.03)]">
+
+                            <h4 class="font-jakarta font-medium text-[16px] leading-[24px] tracking-[0px] text-[#916E77] mb-[8px]">
+                                Log Review — Designer / PM
+                            </h4>
+
+                            <p class="font-jakarta font-normal text-[15px] leading-[24px] tracking-[0.5px] text-[#3F4A3C]">
+                                Open Log → Filter by Status/Severity → Click Row →
+                                View Pin in Context → Open Comment Thread →
+                                Update Status.
+                            </p>
+
+                        </div>
+
+                        <!-- FLOW 04 -->
+                        <div class="bg-white rounded-[8px] px-[16px] py-[16px] shadow-[0px_4px_18px_rgba(0,0,0,0.03)]">
+
+                            <h4 class="font-jakarta font-medium text-[16px] leading-[24px] tracking-[0px] text-[#916E77] mb-[8px]">
+                                Dashboard Review — Project Manager / Scrum Master
+                            </h4>
+
+                            <p class="font-jakarta font-normal text-[15px] leading-[24px] tracking-[0.5px] text-[#3F4A3C]">
+                                Login → Open Project → View Project Dashboard →
+                                Read Issue Summary → Check Severity Distribution →
+                                View Recent Activity → Identify Blockers.
+                            </p>
+
+                        </div>
+
+                    </div>
+
+                </div>
+
+            </div>
+
+        </section>
+
+        <!-- DESIGN & COLOR SYSTEM -->
+        <section class="w-full bg-[#F8F7F7] px-[64px] py-[120px] fade-up">
+
+            <!-- CONTAINER -->
+            <div class="max-w-[1280px] mx-auto">
+
+                <!-- SECTION HEADER -->
+                <div class="mb-[64px]">
+
+                    <!-- TITLE -->
+                    <h2 class="font-liberation font-bold text-[32px] leading-[36px] tracking-[-0.24px] text-[#171D16] mb-6">
+                        Design & Color System
+                    </h2>
+
+                    <!-- DESCRIPTION -->
+                    <p class="max-w-[620px] font-jakarta font-normal text-[16px] leading-[28px] text-[#4F4446]">
+                        The visual language behind FIGVELOPER — built around a deep navy and teal foundation that signals precision and technical authority. Blue tones anchor the status system, reinforcing the tool's role as a structured, professional workspace. Every colour carries a job — nothing is decorative.
+
+                </div>
+
+                <!-- GRID -->
+                <div class="grid grid-cols-2 gap-[28px]">
+
+                    <!-- TYPOGRAPHY CARD -->
+                    <div class="bg-[#FDFDFC] border border-[rgba(23,29,22,0.06)] rounded-[28px] p-[40px]">
+
+                        <!-- CARD TITLE -->
+                        <p class="font-jakarta font-semibold text-[12px] leading-[16px] tracking-[0.12em] uppercase text-[#7D6B5C] mb-[36px]">
+                            Typography System
+                        </p>
+
+                        <!-- TYPE ROW -->
+                        <div class="flex items-start gap-[64px] py-[32px] border-b border-[rgba(23,29,22,0.05)]">
+
+                            <div class="min-w-[140px]">
+
+                                <p class="font-inter font-semibold text-[11px] tracking-[0.08em] uppercase text-[#8B8B8B] mb-[4px]">
+                                    Display
+                                </p>
+
+                                <p class="font-jakarta text-[13px] text-[#000000] font-bold">
+                                    Inter · 44px
+                                </p>
+
+                            </div>
+
+                            <h3 class="font-inter font-bold text-[44px] leading-[56px] tracking-[-0.04em] text-[#171D16]">
+                                Your Project
+                            </h3>
+
+                        </div>
+
+                        <!-- TYPE ROW -->
+                        <div class="flex items-start gap-[110px] py-[32px] border-b border-[rgba(23,29,22,0.05)]">
+
+                            <div class="min-w-[140px]">
+
+                                <p class="font-jakarta font-semibold text-[11px] tracking-[0.08em] uppercase text-[#8B8B8B] mb-[4px]">
+                                    H1
+                                </p>
+
+                                <p class="font-jakarta text-[13px] text-[#000000] font-bold">
+                                    Inter · 36px
+                                </p>
+
+                            </div>
+
+                            <h4 class="font-inter font-bold text-[36px] leading-[40px] tracking-[-0.03em] text-[#171D16]">
+                                Dashboard
+                            </h4>
+
+                        </div>
+
+                        <!-- TYPE ROW -->
+                        <div class="flex items-start gap-[120px] py-[32px] border-b border-[rgba(23,29,22,0.05)]">
+
+                            <div class="min-w-[140px]">
+
+                                <p class="font-jakarta font-semibold text-[11px] tracking-[0.08em] uppercase text-[#8B8B8B] mb-[4px]">
+                                    H2
+                                </p>
+
+                                <p class="font-jakarta text-[13px] text-[#000000] font-bold">
+                                    Inter · 30px
+                                </p>
+
+                            </div>
+
+                            <h5 class="font-inter font-semibold text-[30px] leading-[36px] tracking-[-0.02em] text-[#2B2B2B]">
+                                Discrepancy
+                            </h5>
+
+                        </div>
+
+                        <!-- TYPE ROW -->
+                        <div class="flex items-start gap-[48px] py-[32px] border-b border-[rgba(23,29,22,0.05)]">
+
+                            <div class="min-w-[140px]">
+
+                                <p class="font-jakarta font-semibold text-[11px] tracking-[0.08em] uppercase text-[#8B8B8B] mb-[4px]">
+                                    Body Text
+                                </p>
+
+                                <p class="font-jakarta text-[13px] text-[#000000] font-bold">
+                                    Inter · 22px
+                                </p>
+
+                            </div>
+
+                            <p class="max-w-[280px] font-inter text-[15px] leading-[26px] text-[#5A5A5A]">
+                                Track design discrepancies, review implementation quality, and collaborate with developers in one workspace.
+                            </p>
+
+                        </div>
+
+                        <!-- TYPE ROW -->
+                        <div class="flex items-start gap-[100px] pt-[32px]">
+
+                            <div class="min-w-[160px]">
+
+                                <p class="font-jakarta font-semibold text-[11px] tracking-[0.08em] uppercase text-[#8B8B8B] mb-[4px]">
+                                   CSS Value
+                                </p>
+
+                                <p class="font-jakarta text-[13px] text-[#000000] font-bold">
+                                    Courier New · 20px
+                                </p>
+
+                            </div>
+
+                            <p class="font-courier font-medium text-[15px] tracking-[0.14em] uppercase text-[#8B8B8B]">
+                                div.hero-section
+                            </p>
+
+                        </div>
+
+                    </div>
+
+                    <!-- COLOR SYSTEM CARD -->
+                    <div class="bg-[#FDFDFC] border border-[rgba(23,29,22,0.06)] rounded-[28px] p-[40px]">
+
+                        <!-- CARD TITLE -->
+                        <p class="font-jakarta font-semibold text-[12px] leading-[16px] tracking-[0.12em] uppercase text-[#7D6B5C] mb-[36px]">
+                            Color Language
+                        </p>
+
+                        <!-- SWATCH GRID -->
+                        <div class="grid grid-cols-2 gap-[18px] mb-[40px]">
+
+                            <!-- SWATCH -->
+                            <div class="overflow-hidden rounded-[18px] border border-[rgba(23,29,22,0.06)]">
+
+                                <div class="h-[96px] bg-[#1A1A2E]"></div>
+
+                                <div class="bg-[#FAFAF8] px-[16px] py-[14px]">
+
+                                    <p class="font-jakarta font-semibold text-[13px] text-[#171D16] mb-[2px]">
+                                        Deep Navy
+                                    </p>
+
+                                    <p class="font-jakarta text-[12px] text-[#8B8B8B] tracking-[0.04em]">
+                                        #1A1A2E
+                                    </p>
+
+                                </div>
+
+                            </div>
+
+                            <!-- SWATCH -->
+                            <div class="overflow-hidden rounded-[18px] border border-[rgba(23,29,22,0.06)]">
+
+                                <div class="h-[96px] bg-[#4ECDC4]"></div>
+
+                                <div class="bg-[#FAFAF8] px-[16px] py-[14px]">
+
+                                    <p class="font-jakarta font-semibold text-[13px] text-[#171D16] mb-[2px]">
+                                        Teal Accent
+                                    </p>
+
+                                    <p class="font-jakarta text-[12px] text-[#8B8B8B] tracking-[0.04em]">
+                                        #4ECDC4
+                                    </p>
+
+                                </div>
+
+                            </div>
+
+                            <!-- SWATCH -->
+                            <div class="overflow-hidden rounded-[18px] border border-[rgba(23,29,22,0.06)]">
+
+                                <div class="h-[96px] bg-[#006A65]"></div>
+
+                                <div class="bg-[#FAFAF8] px-[16px] py-[14px]">
+
+                                    <p class="font-jakarta font-semibold text-[13px] text-[#171D16] mb-[2px]">
+                                        Sea Green
+                                    </p>
+
+                                    <p class="font-jakarta text-[12px] text-[#8B8B8B] tracking-[0.04em]">
+                                        #006A65
+                                    </p>
+
+                                </div>
+
+                            </div>
+
+                            <!-- SWATCH -->
+                            <div class="overflow-hidden rounded-[18px] border border-[rgba(23,29,22,0.06)]">
+
+                                <div class="h-[96px] bg-[#00000B]"></div>
+
+                                <div class="bg-[#FAFAF8] px-[16px] py-[14px]">
+
+                                    <p class="font-jakarta font-semibold text-[13px] text-[#171D16] mb-[2px]">
+                                        All Text
+                                    </p>
+
+                                    <p class="font-jakarta text-[12px] text-[#8B8B8B] tracking-[0.04em]">
+                                        #00000B
+                                    </p>
+
+                                </div>
+
+                            </div>
+
+                        </div>
+
+                        <!-- SEVERITY & STATUS SYSTEM + LOGO ROW -->
+                        <div class="grid grid-cols-[1fr_1fr_220px] gap-[32px] items-start">
+
+                            <!-- LEFT CONTENT -->
+                            <div class="col-span-2">
+
+                                <p class="font-inter font-semibold text-[12px] leading-[16px] tracking-[0.12em] uppercase text-[#6B7280] mb-[22px]">
+                                    Severity & Status System
+                                </p>
+
+                                <div class="grid grid-cols-2 gap-[32px]">
+
+                                    <!-- SEVERITY -->
+                                    <div>
+
+                                        <div class="flex flex-col gap-[14px]">
+
+                                            <div class="flex items-center gap-[12px]">
+                                                <div class="w-[12px] h-[12px] rounded-full bg-[#22C55E]"></div>
+                                                <p class="font-inter text-[14px] text-[#374151]">Low</p>
+                                            </div>
+
+                                            <div class="flex items-center gap-[12px]">
+                                                <div class="w-[12px] h-[12px] rounded-full bg-[#F59E0B]"></div>
+                                                <p class="font-inter text-[14px] text-[#374151]">Medium</p>
+                                            </div>
+
+                                            <div class="flex items-center gap-[12px]">
+                                                <div class="w-[12px] h-[12px] rounded-full bg-[#F2733D]"></div>
+                                                <p class="font-inter text-[14px] text-[#374151]">High</p>
+                                            </div>
+
+                                            <div class="flex items-center gap-[12px]">
+                                                <div class="w-[12px] h-[12px] rounded-full bg-[#EF4444]"></div>
+                                                <p class="font-inter text-[14px] text-[#374151]">Critical</p>
+                                            </div>
+
+                                        </div>
+
+                                    </div>
+
+                                    <!-- STATUS -->
+                                    <div>
+
+                                        <div class="flex flex-col gap-[14px]">
+
+                                            <div class="flex items-center gap-[12px]">
+                                                <div class="w-[12px] h-[12px] rounded-full bg-[#006A65]"></div>
+                                                <p class="font-inter text-[14px] text-[#374151]">Assigned</p>
+                                            </div>
+
+                                            <div class="flex items-center gap-[12px]">
+                                                <div class="w-[12px] h-[12px] rounded-full bg-[#041572] flex-shrink-0"></div>
+                                                <p class="font-inter  text-[14px] text-[#374151] whitespace-nowrap">In Progress</p>
+                                            </div>
+
+                                            <div class="flex items-center gap-[12px]">
+                                                <div class="w-[12px] h-[12px] rounded-full bg-[#16A34A]"></div>
+                                                <p class="font-inter text-[14px] text-[#374151]">Resolved</p>
+                                            </div>
+
+                                        </div>
+
+                                    </div>
+
+                                </div>
+
+                            </div>
+
+                            <!-- LOGO -->
+                            <div class="flex items-center justify-center h-full">
+
+                                <img
+                                    src="figveloper-images/logo.png"
+                                    alt="FIGVELOPER Logo"
+                                    class="w-[180px] h-auto object-contain"
+                                >
+
+                            </div>
+
+                        </div>
+
+                    </div>
+
+                </div>
+
+            </div>
+
+        </section>
+
+
+        <!-- DESIGNING WITH GOOGLE STITCH -->
+        <section class="w-full bg-[#EEF2E8] px-[96px] py-[96px] fade-up">
+
+            <!-- CONTAINER -->
+            <div class="max-w-[1280px] mx-auto">
+
+                <div class="flex items-center gap-[14px] mb-[16px]">
+
+                    <img
+                        src="pantrio-images/ai-icon.png"
+                        alt=""
+                        class="w-[32px] h-[32px] object-contain"
+                    >
+
+                    <h2 class="font-liberation font-bold text-[32px] leading-[36px] tracking-[-0.24px] text-[#171D16]">
+                        Designing with Google Stitch AI
+                    </h2>
+
+                </div>
+
+                <!-- INTRO -->
+                <p class="max-w-[820px] font-jakarta font-normal text-[18px] leading-[30px] text-[#000000] mb-[72px]">
+                    Seventeen screens. Six user flows. Google Stitch generated the base structures.
+                    Every decision inside those structures was made by hand.
+                </p>
+
+                <!-- PROCESS GRID -->
+                <div class="grid grid-cols-2 gap-x-[72px] gap-y-[72px] mb-[96px]">
+
+                    <!-- 01 -->
+                    <div>
+
+                        <p class="font-jakarta font-bold text-[14px] leading-[20px] tracking-[0.7px] uppercase text-[#B08A94] mb-[12px]">
+                            01 / Define
+                        </p>
+
+                        <h3 class="font-jakarta font-bold text-[20px] leading-[28px] text-[#1A1C1B] mb-[16px]">
+                            System Framework
+                        </h3>
+
+                        <p class="max-w-[520px] font-jakarta font-normal text-[14px] leading-[20px] text-[#4F4446]">
+                            The full design system — colours, typography, spacing, component rules —
+                            was documented before a single screen was generated. Stitch needed the
+                            complete token set upfront. Without it, screens drifted. With it, they held.
+                        </p>
+
+                    </div>
+
+                    <!-- 02 -->
+                    <div>
+
+                        <p class="font-jakarta font-bold text-[14px] leading-[20px] tracking-[0.7px] uppercase text-[#B08A94] mb-[12px]">
+                            02 / Generate
+                        </p>
+
+                        <h3 class="font-jakarta font-bold text-[20px] leading-[28px] text-[#1A1C1B] mb-[16px]">
+                            Base Iteration
+                        </h3>
+
+                        <p class="max-w-[520px] font-jakarta font-normal text-[14px] leading-[20px] text-[#4F4446]">
+                            Every screen was prompted zone by zone. Specific component briefs,
+                            not vague descriptions. The more precise the input, the less correction
+                            was needed on the other side.
+                        </p>
+
+                    </div>
+
+                    <!-- 03 -->
+                    <div>
+
+                        <p class="font-jakarta font-bold text-[14px] leading-[20px] tracking-[0.7px] uppercase text-[#B08A94] mb-[12px]">
+                            03 / Review
+                        </p>
+
+                        <h3 class="font-jakarta font-bold text-[20px] leading-[28px] text-[#1A1C1B] mb-[16px]">
+                            Audit & Align
+                        </h3>
+
+                        <p class="max-w-[520px] font-jakarta font-normal text-[14px] leading-[20px] text-[#4F4446]">
+                            Stitch hallucinated consistently in one area — copy. Feature lists,
+                            notification labels, button text — all required a full content audit on
+                            every screen. The layout held. The words never did.
+                        </p>
+
+                    </div>
+
+                    <!-- 04 -->
+                    <div>
+
+                        <p class="font-jakarta font-bold text-[14px] leading-[20px] tracking-[0.7px] uppercase text-[#B08A94] mb-[12px]">
+                            04 / Refine
+                        </p>
+
+                        <h3 class="font-jakarta font-bold text-[20px] leading-[28px] text-[#1A1C1B] mb-[16px]">
+                            Editorial Polish
+                        </h3>
+
+                        <p class="max-w-[520px] font-jakarta font-normal text-[14px] leading-[20px] text-[#4F4446]">
+                            Hover states, disabled states, edge cases, badge consistency across
+                            seventeen screens — none of this came from prompts. Stitch built the
+                            skeleton. The craft was manual.
+                        </p>
+
+                    </div>
+
+                </div>
+
+                <!-- WHAT STITCH DID -->
+                <div class="grid grid-cols-[1fr_auto] gap-[72px] items-start">
+
+                    <!-- LEFT -->
+                    <div>
+
+                        <h3 class="font-jakarta font-medium text-[26px] leading-[30px] tracking-[-0.9px] text-[#1A1C1B] mb-[16px]">
+                            What Stitch did. What it didn't.
+                        </h3>
+
+                        <p class="max-w-[560px] font-jakarta font-normal text-[16px] leading-[30px] text-[#4F4446]">
+                            Fast at structure. Blind to decisions.<br>
+                            Layout, hierarchy, component placement, Stitch handled these well.
+                            What it could not do was decide which information belongs where,
+                            what a disabled state should communicate, or why Courier New appears
+                            in one panel and not another. Those answers had to exist before
+                            generation began.
+                        </p>
+
+                    </div>
+
+                    <!-- METRICS -->
+                    <div class="flex gap-[24px]">
+
+                        <!-- CARD -->
+                        <div class="w-[256px] bg-[#F8F7F7] rounded-[20px] px-[28px] py-[32px]">
+
+                            <p class="font-jakarta font-bold text-[30px] leading-[30px] tracking-[0.7px] text-[#B08A94] mb-[12px]">
+                                60%
+                            </p>
+
+                            <p class="font-jakarta font-bold text-[14px] leading-[20px] tracking-[0.7px] uppercase text-[#1A1C1B] mb-[12px]">
+                                Time Saved
+                            </p>
+
+                            <p class="font-jakarta font-normal text-[14px] leading-[20px] text-[#4F4446]">
+                                Generating base screen layouts with Stitch took roughly half the
+                                time compared to designing from scratch in Figma.
+                            </p>
+
+                        </div>
+
+                        <!-- CARD -->
+                        <div class="w-[256px] bg-[#F8F7F7] rounded-[20px] px-[28px] py-[32px]">
+
+                            <p class="font-jakarta font-bold text-[30px] leading-[30px] tracking-[0.7px] text-[#B08A94] mb-[12px]">
+                                40%
+                            </p>
+
+                            <p class="font-jakarta font-bold text-[14px] leading-[20px] tracking-[0.7px] uppercase text-[#1A1C1B] mb-[12px]">
+                                Of Total Effort
+                            </p>
+
+                            <p class="font-jakarta font-normal text-[14px] leading-[20px] text-[#4F4446]">
+                                The manual refinement phase, the 40% that came after generation,
+                                produced 80% of the perceived visual quality of the final screens.
+                            </p>
+
+                        </div>
+
+                    </div>
+
+                </div>
+
+            </div>
+
+        </section>
+
+
+        <!-- KEY SCREENS WALKTHROUGH -->
+        <section class="w-full bg-[#EEF2E8] px-[8px] py-[96px] fade-up">
+
+            <div class="max-w-[1240px] mx-auto">
+
+                <!-- HEADER -->
+                <div class="text-center mb-[64px]">
+
+                    <h2 class="font-liberation font-bold text-[32px] leading-[36px] tracking-[-0.24px] text-[#171D16] mb-[12px]">
+                        Key Screens Walkthrough
+                    </h2>
+
+                    <p class="font-jakarta font-normal text-[18px] leading-[24px] text-[#3F4A3C]">
+                        Interactive prototypes generated during the design process.
+                    </p>
+
+                </div>
+
+                <div class="relative">
+
+                    <!-- PREV -->
+                    <button
+                        id="prevBtn"
+                        class="absolute left-[40px] top-1/2 -translate-y-1/2 z-20
+                        w-[52px] h-[52px]
+                        rounded-full
+                        bg-white
+                        border border-[#D8DDD2]
+                        flex items-center justify-center
+                        shadow-[0_4px_12px_rgba(0,0,0,0.08)]
+                        transition-all duration-200"
+                    >
+                        ←
+                    </button>
+
+                    <!-- NEXT -->
+                    <button
+                        id="nextBtn"
+                        class="absolute right-[40px] top-1/2 -translate-y-1/2 z-20
+                        w-[52px] h-[52px]
+                        rounded-full
+                        bg-white
+                        border border-[#D8DDD2]
+                        flex items-center justify-center
+                        shadow-[0_4px_12px_rgba(0,0,0,0.08)]
+                        transition-all duration-200"
+                    >
+                        →
+                    </button>
+
+                    <div
+                        id="screenSlider"
+                        class="overflow-hidden"
+                    >
+
+                        <div
+                            id="sliderTrack"
+                            class="flex transition-transform duration-500 ease-in-out"
+                        >
+
+                            <!-- SCREEN 01 -->
+                            <div class="w-full flex-shrink-0 flex justify-center px-[80px]">
+
+                                <div class="rounded-[8px]  overflow-hidden shadow-[0_4px_20px_rgba(0,0,0,0.08)]">
+
+                                    <img
+                                        src="figveloper-images/screen-01.jpg"
+                                        class="block w-full max-w-[1050px] max-h-[760px] object-contain"
+                                        alt=""
+                                    >
+
+                                </div>
+
+                            </div>
+
+                            <!-- SCREEN 02 -->
+                            <div class="w-full  flex-shrink-0 flex justify-center px-[80px]">
+
+                                <div class="rounded-[8px]  overflow-hidden shadow-[0_4px_20px_rgba(0,0,0,0.08)]">
+
+                                    <img
+                                        src="figveloper-images/screen-02.png"
+                                        class="block w-full max-w-[1050px] max-h-[760px] object-contain"
+                                        alt=""
+                                    >
+
+                                </div>
+
+                            </div>
+
+                            <!-- SCREEN 03 -->
+                            <div class="w-full flex-shrink-0 flex justify-center px-[80px]">
+
+                                <div class="rounded-[8px] overflow-hidden shadow-[0_4px_20px_rgba(0,0,0,0.08)]">
+
+                                    <img
+                                        src="figveloper-images/screen-03.png"
+                                        class="block w-full max-w-[1050px] max-h-[760px] object-contain"
+                                        alt=""
+                                    >
+
+                                </div>
+
+                            </div>
+
+                            <!-- SCREEN 04 -->
+                            <div class="w-full flex-shrink-0 flex justify-center px-[80px]">
+
+                                <div class="rounded-[8px] overflow-hidden shadow-[0_4px_20px_rgba(0,0,0,0.08)]">
+
+                                    <img
+                                        src="figveloper-images/screen-04.png"
+                                        class="block w-full max-w-[1050px] max-h-[760px] object-contain"
+                                        alt=""
+                                    >
+
+                                </div>
+
+                            </div>
+
+                            <!-- SCREEN 05 -->
+                            <div class="w-full flex-shrink-0 flex justify-center px-[80px]">
+
+                                <div class="rounded-[8px] overflow-hidden shadow-[0_4px_20px_rgba(0,0,0,0.08)]">
+
+                                    <img
+                                        src="figveloper-images/screen-05.png"
+                                        class="block w-full max-w-[1050px] max-h-[760px] object-contain"
+                                        alt=""
+                                    >
+
+                                </div>
+
+                            </div>
+
+                            <!-- SCREEN 06 -->
+                            <div class="w-full flex-shrink-0 flex justify-center px-[80px]">
+
+                                <div class="rounded-[8px] overflow-hidden shadow-[0_4px_20px_rgba(0,0,0,0.08)]">
+
+                                    <img
+                                        src="figveloper-images/screen-06.png"
+                                        class="block w-full max-w-[1050px] max-h-[760px] object-contain"
+                                        alt=""
+                                    >
+
+                                </div>
+
+                            </div>
+
+                            <!-- SCREEN 07 -->
+                            <div class="w-full flex-shrink-0 flex justify-center px-[80px]">
+
+                                <div class="rounded-[8px] overflow-hidden shadow-[0_4px_20px_rgba(0,0,0,0.08)]">
+
+                                    <img
+                                        src="figveloper-images/screen-07.png"
+                                        class="block w-full max-w-[1050px] max-h-[760px] object-contain"
+                                        alt=""
+                                    >
+
+                                </div>
+
+                            </div>
+
+                            <!-- SCREEN 08 -->
+                            <div class="w-full flex-shrink-0 flex justify-center px-[80px]">
+
+                                <div class="rounded-[8px] overflow-hidden shadow-[0_4px_20px_rgba(0,0,0,0.08)]">
+
+                                    <img
+                                        src="figveloper-images/screen-08.png"
+                                        class="block w-full max-w-[1050px] max-h-[760px] object-contain"
+                                        alt=""
+                                    >
+
+                                </div>
+
+                            </div>
+
+                            <!-- SCREEN 09 -->
+                            <div class="w-full flex-shrink-0 flex justify-center px-[80px]">
+
+                                <div class="rounded-[8px] overflow-hidden shadow-[0_4px_20px_rgba(0,0,0,0.08)]">
+
+                                    <img
+                                        src="figveloper-images/screen-09.png"
+                                        class="block w-full max-w-[1050px] max-h-[760px] object-contain"
+                                        alt=""
+                                    >
+
+                                </div>
+
+                            </div>
+
+                            <!-- SCREEN 10 -->
+                            <div class="w-full flex-shrink-0 flex justify-center px-[80px]">
+
+                                <div class="rounded-[8px] overflow-hidden shadow-[0_4px_20px_rgba(0,0,0,0.08)]">
+
+                                    <img
+                                        src="figveloper-images/screen-10.png"
+                                        class="block w-full max-w-[1050px] max-h-[760px] object-contain"
+                                        alt=""
+                                    >
+
+                                </div>
+
+                            </div>
+
+                        </div>
+
+                    </div>
+
+                </div>
+
+            </div>
+
+        </section>
+
+
+        <!-- KEY DESIGN DECISIONS -->
+        <section class="w-full bg-[#E9EEE5] px-[96px] py-[96px] fade-up">
+
+            <!-- CONTAINER -->
+            <div class="px-[20px] py-[20px]">
+
+                <!-- SECTION TITLE -->
+                <h2 class="font-liberation font-bold text-[32px] leading-[36px] tracking-[-0.24px] text-[#171D16] mb-[20px]">
+                    Key Design Decisions
+                </h2>
+
+                <!-- DECISIONS LIST -->
+                <div class="flex flex-col gap-[16px]">
+
+                    <!-- ITEM 01 -->
+                    <div class="bg-[#F8F7F7] rounded-[12px] p-[20px] shadow-[0px_4px_18px_rgba(0,0,0,0.03)]">
+
+                        <h3 class="font-jakarta font-semibold text-[16px] leading-[24px] tracking-[0px] text-[#916E77] mb-[4px]">
+                            1. Right-Click to Pin, Not a Hover Toolbar
+                        </h3>
+
+                        <p class="font-jakarta font-normal text-[15px] leading-[22px] tracking-[0px] text-[#3F4A3C]">
+                            A hover toolbar triggered on every inspection hover. Right-click makes the intent deliberate, separating inspection from annotation at the interaction level.
+                        </p>
+
+                    </div>
+
+                    <!-- ITEM 02 -->
+                    <div class="bg-[#F8F7F7] rounded-[12px] p-[20px] shadow-[0px_4px_18px_rgba(0,0,0,0.03)]">
+
+                        <h3 class="font-jakarta font-semibold text-[16px] leading-[24px] tracking-[0px] text-[#916E77] mb-[4px]">
+                            2. CSS Output is Automatic. The Diff is Human.
+                        </h3>
+
+                        <p class="font-jakarta font-normal text-[15px] leading-[22px] tracking-[0px] text-[#3F4A3C]">
+                            Automated scanning can't distinguish a real bug from intentional responsive behaviour. CSS output is automatic. The judgement call stays human.
+                        </p>
+
+                    </div>
+
+                    <!-- ITEM 03 -->
+                    <div class="bg-[#F8F7F7] rounded-[12px] p-[20px] shadow-[0px_4px_18px_rgba(0,0,0,0.03)]">
+
+                        <h3 class="font-jakarta font-semibold text-[16px] leading-[24px] tracking-[0px] text-[#916E77] mb-[4px]">
+                            3. The Discrepancy Log Opens Unfiltered but is Built to be Filtered
+                        </h3>
+
+                        <p class="font-jakarta font-normal text-[15px] leading-[22px] tracking-[0px] text-[#3F4A3C]">
+                            All discrepancies are visible on open. The summary cards—Assigned, In Progress, and Resolved—are not just counters. Clicking them filters the table to that status.
+                        </p>
+
+                    </div>
+
+                    <!-- ITEM 04 -->
+                    <div class="bg-[#F8F7F7] rounded-[12px] p-[20px] shadow-[0px_4px_18px_rgba(0,0,0,0.03)]">
+
+                        <h3 class="font-jakarta font-semibold text-[16px] leading-[24px] tracking-[0px] text-[#916E77] mb-[4px]">
+                            4. Severity is Required, Not Optional
+                        </h3>
+
+                        <p class="font-jakarta font-normal text-[15px] leading-[22px] tracking-[0px] text-[#3F4A3C]">
+                            The pin form does not submit without a severity selection. Forced structure at the point of creation produces usable data downstream.
+                        </p>
+
+                    </div>
+
+                    <!-- ITEM 05 -->
+                    <div class="bg-[#F8F7F7] rounded-[12px] p-[20px] shadow-[0px_4px_18px_rgba(0,0,0,0.03)]">
+
+                        <h3 class="font-jakarta font-semibold text-[16px] leading-[24px] tracking-[0px] text-[#916E77] mb-[4px]">
+                            5. Status and Severity Colours Never Overlap
+                        </h3>
+
+                        <p class="font-jakarta font-normal text-[15px] leading-[22px] tracking-[0px] text-[#3F4A3C]">
+                            Two colour systems run simultaneously across the product. When amber appeared in both, In Progress was remapped rather than letting either system compromise the other.
+                        </p>
+
+                    </div>
+
+                </div>
+
+            </div>
+
+        </section>
+
+        <!-- ROADMAP AHEAD -->
+        <section class="w-full bg-[#F5FBEF] px-[120px] py-[120px] fade-up">
+
+            <!-- CONTAINER -->
+            <div class="max-w-[1280px] mx-auto">
+
+                <!-- SECTION HEADER -->
+                <div class="mb-[56px]">
+
+                    <!-- TITLE -->
+                    <h2 class="font-liberation font-bold text-[32px] leading-[32px] tracking-[-0.24px] text-[#171D16] mb-[16px]">
+                        The Roadmap Ahead
+                    </h2>
+
+                    <!-- DESCRIPTION -->
+                    <p class="max-w-[594px] font-jakarta font-normal text-[18px] leading-[24px] tracking-[0px] text-[#000000]">
+                        V1 deliberately scoped for the core QA loop — compare, pin, track, resolve. Here is where FIGVELOPER goes next.
+                    </p>
+
+                </div>
+
+                <!-- ROADMAP GRID -->
+                <div class="grid grid-cols-2 gap-[32px]">
+
+                    <!-- CARD 01 -->
+                    <div class="bg-[#F4F3F1] rounded-[12px] px-[40px] py-[40px]">
+
+                        <!-- ICON -->
+                        <div class="w-[56px] h-[56px] rounded-full bg-[#B08A94]/20 flex items-center justify-center mb-[32px]">
+
+                            <img
+                                src="figveloper-images/github-jira-icon.png"
+                                alt="Jira & GitHub Integration"
+                                class="w-[32px] h-[32px] object-contain"
+                            >
+
+                        </div>
+
+                        <!-- TITLE -->
+                        <h3 class="font-jakarta font-bold text-[20px] leading-[28px] tracking-[0px] text-[#1A1C1B] mb-[12px]">
+                            Jira & GitHub Integration
+                        </h3>
+
+                        <!-- BODY -->
+                        <p class="font-jakarta font-normal text-[14px] leading-[22px] tracking-[0px] text-[#4F4446]">
+                            Every discrepancy in the log becomes a ticket or a PR comment automatically. The QA trail and the development workflow live in the same system.
+                        </p>
+
+                    </div>
+
+                    <!-- CARD 02 -->
+                    <div class="bg-[#F4F3F1] rounded-[12px] px-[40px] py-[40px]">
+
+                        <!-- ICON -->
+                        <div class="w-[56px] h-[56px] rounded-full bg-[#B08A94]/20 flex items-center justify-center mb-[32px]">
+
+                            <img
+                                src="figveloper-images/sprint-icon.png"
+                                alt="Sprint Wise Tracking"
+                                class="w-[24px] h-[24px] object-contain"
+                            >
+
+                        </div>
+
+                        <!-- TITLE -->
+                        <h3 class="font-jakarta font-bold text-[20px] leading-[28px] tracking-[0px] text-[#1A1C1B] mb-[12px]">
+                            Sprint Wise Tracking
+                        </h3>
+
+                        <!-- BODY -->
+                        <p class="font-jakarta font-normal text-[14px] leading-[22px] tracking-[0px] text-[#4F4446]">
+                            Projects gain a time-bound layer. Discrepancies are assigned to sprints, and the dashboard reflects what was raised, resolved, and carried over each cycle.
+                        </p>
+
+                    </div>
+
+                </div>
+
+            </div>
+
+        </section>
+
+        <!-- REFLECTION SECTION -->
+        <section class="w-full bg-[#E3E8DD] px-[120px] pt-[120px] pb-[140px] overflow-hidden fade-up">
+
+            <!-- TITLE -->
+            <h2 class="font-liberation font-bold text-[32px] leading-[36px] tracking-[-0.24px] text-[#171D16] mb-6">
+                Reflection
+            </h2>
+
+            <!-- MAIN GRID -->
+            <div class="grid grid-cols-[1.15fr_0.85fr] gap-[56px] items-center">
+
+                <!-- LEFT QUOTE BLOCK -->
+                <div class="relative max-w-[900px]">
+
+                    <!-- OPENING QUOTE -->
+                    <img 
+                        src="figveloper-images/inverted-icon.png"
+                        alt="quote"
+                        class="absolute left-[-56px] top-[16px] w-[44px] h-[40px] pointer-events-none"
+                    />
+
+                    <!-- QUOTE TEXT -->
+                    <h3 class="font-jakarta text-[36px] mt-8 leading-[48px] font-medium text-[#111312] relative z-[2]">
+
+                        FIGVELOPER started as a workflow frustration across three projects and ended as a
+
+                        <span class="italic text-[#916E77] font-semibold">
+                            focused tool that solves exactly that problem.
+                        </span>
+
+                        Not more, not less.
+
+                    </h3>
+
+                    <!-- CLOSING QUOTE -->
+                    <img 
+                        src="figveloper-images/inverted-icon.png"
+                        alt="quote"
+                        class="absolute left-[90px] top-[290px] w-[44px] h-[40px] rotate-180 pointer-events-none"
+                    />
+
+                </div>
+
+                <!-- RIGHT CONTENT -->
+                <div class="pt-[28px] max-w-[620px]">
+
+                    <p class="font-jakarta text-[16px] leading-[24px] font-normal text-[#4C5848] mb-[42px]">
+
+                        The technical constraints are real — iframe restrictions and API dependency are ceilings V1 cannot break through by design alone. Naming them honestly was more important than designing around them.
+
+                    </p>
+
+                    <p class="font-jakarta text-[16px] leading-[24px] font-normal text-[#4C5848]">
+
+                        The sharpest lesson was about scope. Every feature that didn't make it in, browser extension, real-time collaboration, automated regression, would have made FIGVELOPER harder to use, not easier. A tool that does one thing without friction is more valuable than one that does everything poorly.
+
+                    </p>
+
+                </div>
+
+            </div>
+
+        </section>
+
+
+        <!-- SCRIPT -->
+        <script>
+
+            const observer = new IntersectionObserver((entries) => {
+
+                entries.forEach((entry) => {
+
+                    if (entry.isIntersecting) {
+                        entry.target.classList.add('show');
+                    }
+
+                });
+
+            }, {
+                threshold: 0.15
+            });
+
+            document.querySelectorAll('.fade-up').forEach((el) => {
+                observer.observe(el);
+            });
+
+            document.addEventListener("DOMContentLoaded", () => {
+
+            const track = document.getElementById("sliderTrack");
+            const slides = track.children;
+
+            const prevBtn = document.getElementById("prevBtn");
+            const nextBtn = document.getElementById("nextBtn");
+
+            let currentIndex = 0;
+
+            function updateSlider() {
+
+                track.style.transform =
+                    `translateX(-${currentIndex * 100}%)`;
+
+            }
+
+            nextBtn.addEventListener("click", () => {
+
+                if (currentIndex < slides.length - 1) {
+                    currentIndex++;
+                    updateSlider();
+                }
+
+            });
+
+            prevBtn.addEventListener("click", () => {
+
+                if (currentIndex > 0) {
+                    currentIndex--;
+                    updateSlider();
+                }
+
+            });
+
+        });
+
+        </script>
+
+    </body>
+
+</html>
